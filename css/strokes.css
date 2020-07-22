@@ -1,0 +1,190 @@
+/* roboto-regular - latin */
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/roboto/Roboto-Regular.ttf') format('truetype');
+}
+
+/************    Общие стили   *************/
+body {
+    line-height: initial;
+}
+
+ul{
+    list-style-type: none;
+}
+
+ul, div {
+    font-family: Roboto;
+}
+
+a {
+    color: black;
+}
+/************    Header   *************/
+
+.nav-header {
+    margin-top: 46px;
+}
+
+.header-left-logo {
+    position: absolute;
+    left: 47px;
+    cursor: pointer;
+}
+
+.menu-right {
+    position: absolute;
+    right: 60px;
+}
+
+.menu-right ul{
+    list-style-type: none;
+}
+
+.menu-right ul li{
+    padding-bottom: 20px;
+}
+
+
+.menu-right ul li a{
+    color: #737373;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+}
+
+.menu-right ul li.active a{
+    color: white;
+}
+
+
+.lang-dropdown {
+    width: 55px;
+    text-align: center;
+    cursor: pointer;
+    color: white;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+}
+
+.lang-dropdown ul {
+    display: none;
+    padding: 0;
+    margin-top: 4px;
+    background-color: white;
+
+    font-weight: 600;
+    text-align: left;
+    padding-left: 5px;
+}
+
+.lang-dropdown ul li a {
+    display: block;
+    color: #951D1E;
+    text-decoration: none;
+}
+
+
+/************    Лого справа внизу   *************/
+
+.logo-right-bottom {
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+    cursor: pointer;
+}
+
+.logo-mini {
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.logo-text-mini {
+    animation-iteration-count: infinite;
+    animation-duration: 90s;
+    animation-name: slidein;
+    animation-timing-function: linear;
+}
+
+/*@keyframes slidein {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}*/
+
+/************    Slide 1   *************/
+@media (min-width: 1200px) {
+    .slide-1 {
+        /*height: 1081px;*/
+
+    }
+}
+
+@media (min-width: 1200px) {
+
+}
+
+.slide-1 {
+    /*height: 1081px;*/
+    height: 100vh;
+}
+
+.slide-1 .rect-top {
+    position: absolute;
+    width: 49px;
+    height: 2px;
+    left: 68px;
+    top: 128px;
+    background: #BA2425;
+}
+
+.slide-1 .logo-text{
+    position: absolute;
+    width: 278px;
+    height: 57px;
+    left: 120px;
+    top: 135px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: #FFFFFF;
+
+    transform: rotate(90deg);
+    transform-origin: 0% 0%;
+}
+
+.slide-1 .logo-text span{
+    font-weight: bold;
+}
+
+.slide-1 {
+    background-color: black;
+    background-image: url(/img/main/slide-1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+
+
