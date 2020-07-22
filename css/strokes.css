@@ -58,6 +58,10 @@ a {
     color: white;
 }
 
+.menu-right ul li a:hover{
+    color: white;
+    text-decoration: none;
+}
 
 .lang-dropdown {
     width: 55px;
