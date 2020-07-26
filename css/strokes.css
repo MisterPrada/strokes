@@ -153,6 +153,22 @@ a {
     object-fit: cover;
 }
 
+.slide-1 .video-background {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+}
+
+.slide-1 .video-grid {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(https://html5book.ru/wp-content/uploads/2017/01/stripe-black.png);
+}
+
 .slide-1 {
     /*height: 1081px;*/
     height: 100vh;
@@ -199,5 +215,57 @@ a {
 
 
 
+/************    Slide 2   *************/
+.slide-2 {
+    background-color: #121212;
+    height: 100vh;
+    min-height: 750px;
+}
 
+.slide-2 .pencil {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 800px;
+    background-repeat: no-repeat;
+    background-image: url(/img/slide-2/pen.png);
+    filter: drop-shadow(0px 4px 40px #000000);
+    background-size: contain;
+}
 
+.slide-2 .text-content {
+    position: absolute;
+    width: 488px;
+    top: 120px;
+    left: 310px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: white;
+}
+
+.slide-2 h2 {
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+.slide-2 span.red {
+    font-weight: bold;
+    color: #DF3E3E;
+}
+
+.slide-2 .text-content .row div {
+    padding-bottom: 40px;
+}
+
+.slide-2 .video-background {
+    position: absolute;
+    width: 350px;
+    height: 650px;
+    right: 260px;
+    top: 66px;
+    background-image: url(/img/slide-2/back.png);
+    background-repeat: no-repeat;
+}
