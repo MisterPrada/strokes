@@ -315,6 +315,9 @@ a {
     z-index: 120;
 
     background-color: orangered;
+    background-image: url("/img/slide-3/6.png");
+    background-size: contain;
+
     transform: rotate(-14.9deg);
 }
 
@@ -328,6 +331,9 @@ a {
     z-index: 110;
 
     background-color: #f5c6cb;
+    background-image: url("/img/slide-3/2.png");
+    background-size: contain;
+
     transform: rotate(-10.26deg);
 }
 
@@ -342,6 +348,9 @@ a {
     z-index: 100;
 
     background-color: #218838;
+    background-image: url("/img/slide-3/3.png");
+    background-size: contain;
+
     transform: rotate(10.97deg);
 }
 
@@ -355,6 +364,9 @@ a {
     z-index: 100;
 
     background-color: #ffdf7e;
+    background-image: url("/img/slide-3/1.png");
+    background-size: contain;
+
     transform: rotate(-8.79deg);
 }
 
@@ -368,6 +380,10 @@ a {
     z-index: 100;
 
     background-color: #17a2b8;
+    background-image: url("/img/slide-3/5.png");
+    background-size: contain;
+
+
     transform: rotate(14.17deg);
 }
 
@@ -381,5 +397,8 @@ a {
     z-index: 130;
 
     background-color: mediumslateblue;
+    background-image: url("/img/slide-3/4.png");
+    background-size: contain;
+
     transform: rotate(12.14deg);
 }
