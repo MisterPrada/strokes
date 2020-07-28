@@ -314,11 +314,12 @@ a {
 
     z-index: 120;
 
-    background-color: orangered;
     background-image: url("/img/slide-3/6.png");
     background-size: contain;
 
     transform: rotate(-14.9deg);
+
+    border: solid 0px;
 }
 
 .slide-3 .cover-2 {
@@ -330,11 +331,12 @@ a {
 
     z-index: 110;
 
-    background-color: #f5c6cb;
     background-image: url("/img/slide-3/2.png");
     background-size: contain;
 
     transform: rotate(-10.26deg);
+
+    border: solid 0px;
 }
 
 
@@ -347,11 +349,12 @@ a {
 
     z-index: 100;
 
-    background-color: #218838;
     background-image: url("/img/slide-3/3.png");
     background-size: contain;
 
     transform: rotate(10.97deg);
+
+    border: solid 0px;
 }
 
 .slide-3 .cover-4 {
@@ -363,11 +366,12 @@ a {
 
     z-index: 100;
 
-    background-color: #ffdf7e;
     background-image: url("/img/slide-3/1.png");
     background-size: contain;
 
     transform: rotate(-8.79deg);
+
+    border: solid 0px;
 }
 
 .slide-3 .cover-5 {
@@ -379,12 +383,12 @@ a {
 
     z-index: 100;
 
-    background-color: #17a2b8;
     background-image: url("/img/slide-3/5.png");
     background-size: contain;
 
-
     transform: rotate(14.17deg);
+
+    border: solid 0px;
 }
 
 .slide-3 .cover-6 {
@@ -396,7 +400,6 @@ a {
 
     z-index: 130;
 
-    background-color: mediumslateblue;
     background-image: url("/img/slide-3/4.png");
     background-size: contain;
 
