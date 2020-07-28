@@ -4,6 +4,11 @@
     src: url('../fonts/roboto/Roboto-Regular.ttf') format('truetype');
 }
 
+@font-face {
+    font-family: 'Roboto light';
+    src: url('../fonts/roboto/Roboto-Light.ttf') format('truetype');
+}
+
 /************    Общие стили   *************/
 body {
     line-height: initial;
@@ -239,19 +244,25 @@ a {
     top: 120px;
     left: 310px;
 
-    font-family: Roboto;
+    font-family: Roboto light;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
     color: white;
 }
 
+.slide-2 .text-content p {
+    font-family: Roboto light;
+}
+
 .slide-2 h2 {
+    font-family: Roboto;
     font-weight: bold;
     margin-bottom: 2rem;
 }
 
 .slide-2 span.red {
+    font-family: Roboto;
     font-weight: bold;
     color: #DF3E3E;
 }
