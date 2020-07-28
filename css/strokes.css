@@ -294,3 +294,92 @@ a {
     left: 0;
     background: url('/img/main/raster.png');
 }
+
+
+/************    Slide 3   *************/
+
+.slide-3 {
+    background-color: #121212;
+    height: 100vh;
+    min-height: 1010px;
+    margin-top: -1px;
+}
+
+.slide-3 .cover-1 {
+    position: absolute;
+    width: 494.89px;
+    height: 494.89px;
+    left: -85px;
+    top: 40px;
+
+    z-index: 120;
+
+    background-color: orangered;
+    transform: rotate(-14.9deg);
+}
+
+.slide-3 .cover-2 {
+    position: absolute;
+    width: 468.71px;
+    height: 468.71px;
+    left: -111.38px;
+    top: 555px;
+
+    z-index: 110;
+
+    background-color: #f5c6cb;
+    transform: rotate(-10.26deg);
+}
+
+
+.slide-3 .cover-3 {
+    position: absolute;
+    width: 392.87px;
+    height: 392.87px;
+    left: 223.79px;
+    top: 492px;
+
+    z-index: 100;
+
+    background-color: #218838;
+    transform: rotate(10.97deg);
+}
+
+.slide-3 .cover-4 {
+    position: absolute;
+    width: 447.58px;
+    height: 447.58px;
+    right: -130px;
+    top: 40px;
+
+    z-index: 100;
+
+    background-color: #ffdf7e;
+    transform: rotate(-8.79deg);
+}
+
+.slide-3 .cover-5 {
+    position: absolute;
+    width: 385px;
+    height: 385px;
+    right: 190px;
+    top: 119px;
+
+    z-index: 100;
+
+    background-color: #17a2b8;
+    transform: rotate(14.17deg);
+}
+
+.slide-3 .cover-6 {
+    position: absolute;
+    width: 560px;
+    height: 560px;
+    right: -100px;
+    top: 332px;
+
+    z-index: 130;
+
+    background-color: mediumslateblue;
+    transform: rotate(12.14deg);
+}
