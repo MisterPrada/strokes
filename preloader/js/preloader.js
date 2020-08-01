@@ -58,11 +58,56 @@ let paintSymbal = setInterval(() => {
       primer71.setAttribute("fill", "#BA2425");
       primer72.setAttribute("fill", "#BA2425");
       primer73.setAttribute("fill", "#BA2425");
-      primer74.setAttribute("fill", "#BA2425");
+      //primer74.setAttribute("fill", "#BA2425");
       break;
 
     case 8:
-      document.getElementById("preloader").style.display = "none";
+      color_default();
+      time = 0;
+      //document.getElementById("preloader").style.display = "none";
       break;
   }
 }, 100);
+
+
+let color_default = () => {
+  primer11.setAttribute("fill", "#FFFFFF");
+  primer12.setAttribute("fill", "#FFFFFF");
+  primer13.setAttribute("fill", "#FFFFFF");
+
+  primer21.setAttribute("fill", "#FFFFFF");
+  primer22.setAttribute("fill", "#FFFFFF");
+  primer23.setAttribute("fill", "#FFFFFF");
+
+  primer31.setAttribute("fill", "#FFFFFF");
+  primer32.setAttribute("fill", "#FFFFFF");
+  primer33.setAttribute("fill", "#FFFFFF");
+  primer34.setAttribute("fill", "#FFFFFF");
+
+  primer41.setAttribute("fill", "#FFFFFF");
+  primer42.setAttribute("fill", "#FFFFFF");
+  primer43.setAttribute("fill", "#FFFFFF");
+  primer44.setAttribute("fill", "#FFFFFF");
+  primer45.setAttribute("fill", "#FFFFFF");
+  primer46.setAttribute("fill", "#FFFFFF");
+  primer47.setAttribute("fill", "#FFFFFF");
+  primer48.setAttribute("fill", "#FFFFFF");
+  primer49.setAttribute("fill", "#FFFFFF");
+  primer410.setAttribute("fill", "#FFFFFF");
+  primer411.setAttribute("fill", "#FFFFFF");
+
+  primer51.setAttribute("fill", "#FFFFFF");
+  primer52.setAttribute("fill", "#FFFFFF");
+  primer53.setAttribute("fill", "#FFFFFF");
+  primer54.setAttribute("fill", "#FFFFFF");
+  primer55.setAttribute("fill", "#FFFFFF");
+
+  primer61.setAttribute("fill", "#FFFFFF");
+  primer62.setAttribute("fill", "#FFFFFF");
+  primer63.setAttribute("fill", "#FFFFFF");
+
+  primer71.setAttribute("fill", "#FFFFFF");
+  primer72.setAttribute("fill", "#FFFFFF");
+  primer73.setAttribute("fill", "#FFFFFF");
+  //primer74.setAttribute("fill", "#FFFFFF");
+};
