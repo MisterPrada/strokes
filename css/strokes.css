@@ -313,8 +313,8 @@ a {
     position: absolute;
     width: 494.89px;
     height: 494.89px;
-    left: -85px;
-    top: 40px;
+    left: -29.69px;
+    top: 60.31px;
 
     z-index: 120;
 
@@ -330,8 +330,8 @@ a {
     position: absolute;
     width: 468.71px;
     height: 468.71px;
-    left: -111.38px;
-    top: 555px;
+    left: -73.4px;
+    top: 582.79px;
 
     z-index: 110;
 
@@ -348,8 +348,8 @@ a {
     position: absolute;
     width: 392.87px;
     height: 392.87px;
-    left: 223.79px;
-    top: 492px;
+    left: 182.8px;
+    top: 490.8px;
 
     z-index: 100;
 
@@ -365,8 +365,8 @@ a {
     position: absolute;
     width: 447.58px;
     height: 447.58px;
-    right: -130px;
-    top: 40px;
+    right: -93.16px;
+    top: 64.58px;
 
     z-index: 100;
 
@@ -382,8 +382,8 @@ a {
     position: absolute;
     width: 385px;
     height: 385px;
-    right: 190px;
-    top: 119px;
+    right: 245.72px;
+    top: 153.28px;
 
     z-index: 100;
 
@@ -399,8 +399,8 @@ a {
     position: absolute;
     width: 560px;
     height: 560px;
-    right: -100px;
-    top: 332px;
+    right: -48.63px;
+    top: 477.63px;
 
     z-index: 130;
 
@@ -408,4 +408,15 @@ a {
     background-size: contain;
 
     transform: rotate(12.14deg);
+}
+
+.slide-3 .text-content {
+    position: absolute;
+    width: 1272px;
+    height: 430px;
+
+    top: 336px;
+    left: 648px;
+
+    background-color: #202020;
 }
