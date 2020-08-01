@@ -1,5 +1,5 @@
 let time = 0;
-let timeBetweenLetters = 800;
+let timeBetweenLetters = 400;
 
 let timer = setInterval(() => {
   time = time + 1;
