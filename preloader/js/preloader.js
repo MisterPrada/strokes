@@ -62,7 +62,7 @@ let paintSymbal = setInterval(() => {
       break;
 
     case 8:
-      document.getElementById("preloader").style.display = "none";
+      //document.getElementById("preloader").style.display = "none";
       time = 0;
       break;
   }
