@@ -107,6 +107,7 @@ a {
 
 .logo-right-bottom {
     position: fixed;
+    z-index: 1000;
     right: 50px;
     bottom: 50px;
     -moz-user-select: none;
@@ -222,9 +223,10 @@ a {
 
 /************    Slide 2   *************/
 .slide-2 {
+    position: relative;
     background-color: #121212;
     height: 100vh;
-    min-height: 750px;
+    min-height: 1080px;
 }
 
 .slide-2 .pencil {
@@ -241,7 +243,8 @@ a {
 .slide-2 .text-content {
     position: absolute;
     width: 488px;
-    top: 120px;
+    height: 570px;
+    top: 151px;
     left: 310px;
 
     font-family: Roboto light;
@@ -269,15 +272,15 @@ a {
 }
 
 .slide-2 .text-content .row div {
-    padding-bottom: 40px;
+    padding-bottom: 106px;
 }
 
 .slide-2 .video-background {
     position: absolute;
-    width: 350px;
-    height: 614px;
-    right: 260px;
+    width: 475px;
+    height: 833px;
     top: 66px;
+    left: 1085px;
 }
 
 .slide-2 .video-background video{
@@ -299,6 +302,7 @@ a {
 /************    Slide 3   *************/
 
 .slide-3 {
+    position: relative;
     background-color: #121212;
     height: 100vh;
     min-height: 1010px;
