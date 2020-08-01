@@ -63,6 +63,7 @@ let paintSymbal = setInterval(() => {
 
     case 8:
       document.getElementById("preloader").style.display = "none";
+      time = 0;
       break;
   }
 }, 100);
