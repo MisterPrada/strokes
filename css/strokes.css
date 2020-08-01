@@ -226,7 +226,7 @@ a {
     position: relative;
     background-color: #121212;
     height: 100vh;
-    min-height: 1080px;
+    min-height: 1071px;
 }
 
 .slide-2 .pencil {
@@ -306,7 +306,7 @@ a {
     background-color: #121212;
     height: 100vh;
     min-height: 1010px;
-    margin-top: -1px;
+    margin-top: -48px;
 }
 
 .slide-3 .cover-1 {
