@@ -5,8 +5,28 @@
 }
 
 @font-face {
-    font-family: 'Roboto light';
+    font-family: 'Roboto Thin';
+    src: url('../fonts/roboto/Roboto-Thin.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Roboto Medium';
+    src: url('../fonts/roboto/Roboto-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Roboto Light';
     src: url('../fonts/roboto/Roboto-Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Roboto Bold';
+    src: url('../fonts/roboto/Roboto-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Bai Jamjuree SemiBold';
+    src: url('../fonts/bai/BaiJamjuree-SemiBold.ttf') format('truetype');
 }
 
 /************    Общие стили   *************/
@@ -247,7 +267,7 @@ a {
     top: 151px;
     left: 310px;
 
-    font-family: Roboto light;
+    font-family: Roboto Light;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -255,7 +275,7 @@ a {
 }
 
 .slide-2 .text-content p {
-    font-family: Roboto light;
+    font-family: Roboto Light;
 }
 
 .slide-2 h1 {
@@ -420,3 +440,41 @@ a {
 
     background-color: #202020;
 }
+.slide-3 .text-content .content {
+    margin-left: 49px;
+    margin-top: 30px;
+    max-width: 506px;
+
+    font-family: Roboto Light;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: white;
+}
+
+
+.slide-3 .text-content .content h1 {
+    margin-bottom: 29px;
+    font-family: Roboto Bold;
+    color: white;
+
+    font-style: normal;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 59px;
+}
+
+.slide-3 .text-content .content-footer {
+    font-family: 'Roboto Medium';
+    letter-spacing: 1px;
+    color: white;
+    font-size: 20px;
+    line-height: 24px;
+    margin-top: 31px;
+}
+
+.slide-3 .text-content .content-footer img {
+    vertical-align: bottom;
+}
+
