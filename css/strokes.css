@@ -478,3 +478,122 @@ a {
     vertical-align: bottom;
 }
 
+
+/************    Slide 4   *************/
+
+.slide-4 {
+    position: relative;
+    background-color: #121212;
+    height: 100vh;
+    min-height: 1010px;
+    margin-top: -90px;
+}
+
+
+
+.slide-4 .text-content {
+    position: absolute;
+    width: 1272px;
+    height: 430px;
+
+    top: 336px;
+    left: 648px;
+
+    background-color: #202020;
+}
+.slide-4 .text-content .content {
+    margin-left: 49px;
+    margin-top: 30px;
+    max-width: 553px;
+
+    font-family: Roboto Light;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: white;
+}
+
+
+.slide-4 .text-content .content h1 {
+    margin-bottom: 29px;
+    font-family: Roboto Bold;
+    color: white;
+
+    font-style: normal;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 59px;
+}
+
+.slide-4 .text-content .content-footer {
+    font-family: 'Roboto Medium';
+    letter-spacing: 1px;
+    color: white;
+    font-size: 20px;
+    line-height: 24px;
+    margin-top: 31px;
+}
+
+.slide-4 .text-content .content-footer img {
+    vertical-align: bottom;
+}
+
+.slide-4 .text-content .streetwear {
+    position: absolute;
+    top: 24.05px;
+    left: 706.44px;
+    width: 669.9px;
+    height: 382.66px;
+    transform: rotate(2.96deg);
+}
+
+.slide-4 .carabus {
+    position: absolute;
+    width: 425.85px;
+    height: 142.36px;
+    right: -44.76px;
+    top: calc(100% + 32.36px);
+    transform: rotate(5.58deg);
+}
+
+.slide-4 .sadday {
+    position: absolute;
+    width: 521.41px;
+    height: 130.05px;
+    right: -51.01px;
+    bottom: calc(100% + 22.56px);
+    transform: rotate(3.63deg);
+}
+
+
+.slide-4 .massive {
+    position: absolute;
+    width: 602.8px;
+    height: 387.42px;
+    left: 5.75px;
+    top: 150px;
+    transform: rotate(14.42deg);
+}
+
+.slide-4 .minores {
+    position: absolute;
+    width: 437.27px;
+    height: 138.78px;
+    left: -121.07px;
+    top: 558px;
+    transform: rotate(-8.62deg);
+}
+
+.slide-4 .neobhodimost {
+    position: absolute;
+    width: 555.72px;
+    height: 209.51px;
+    left: -98.43px;
+    top: 688.95px;
+    transform: rotate(-5.36deg);
+}
+
+
+/*122,03px;*/
+
