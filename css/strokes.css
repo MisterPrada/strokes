@@ -595,5 +595,95 @@ a {
 }
 
 
-/*122,03px;*/
+/************    Slide 5   *************/
 
+.slide-5 {
+    position: relative;
+    background-color: #121212;
+    height: 100vh;
+    min-height: 1010px;
+    margin-top: -90px;
+}
+
+
+
+.slide-5 .text-content {
+    position: absolute;
+    width: 1272px;
+    height: 430px;
+
+    top: 336px;
+    left: 648px;
+
+    background-color: #202020;
+}
+.slide-5 .text-content .content {
+    margin-left: 49px;
+    margin-top: 30px;
+    max-width: 553px;
+
+    font-family: Roboto Light;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: white;
+}
+
+
+.slide-5 .text-content .content h1 {
+    margin-bottom: 29px;
+    font-family: Roboto Bold;
+    color: white;
+
+    font-style: normal;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 59px;
+}
+
+.slide-5 .text-content .content-footer {
+    font-family: 'Roboto Medium';
+    letter-spacing: 1px;
+    color: white;
+    font-size: 20px;
+    line-height: 24px;
+    margin-top: 31px;
+}
+
+.slide-5 .text-content .content-footer img {
+    vertical-align: bottom;
+}
+
+.slide-5 .merch-left {
+    position: absolute;
+    width: 711.55px;
+    height: 764.06px;
+    left: -164.85px;
+    top: 435.76px;
+    transform: rotate(-14.46deg);
+}
+
+.slide-5 .merch-right {
+    position: absolute;
+    z-index: 100;
+    width: 680.24px;
+    height: 731.48px;
+    right: -134.37px;
+    top: 471.9px;
+    transform: rotate(8.83deg);
+}
+
+/************    Slide 6   *************/
+
+.slide-6 {
+    position: relative;
+    background-color: #121212;
+    margin-top: -45px;
+    z-index: 200;
+}
+
+.slide-6 .video {
+    height: 631px;
+    background-image: url("/img/slide-6/video.png");
+}
