@@ -327,6 +327,7 @@ a {
     height: 100vh;
     min-height: 1010px;
     margin-top: -48px;
+    z-index: 100;
 }
 
 .slide-3 .cover-1 {
