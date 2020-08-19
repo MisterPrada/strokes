@@ -488,6 +488,7 @@ a {
     height: 100vh;
     min-height: 1010px;
     margin-top: -90px;
+    z-index: 99;
 }
 
 
@@ -604,6 +605,7 @@ a {
     height: 100vh;
     min-height: 1010px;
     margin-top: -90px;
+    z-index: 98;
 }
 
 
