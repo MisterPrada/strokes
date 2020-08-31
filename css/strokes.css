@@ -722,7 +722,7 @@ a {
     background: url('/img/main/raster.png');
 }
 
-/************    Slide 6   *************/
+/************    Slide 7   *************/
 
 .slide-7 {
     position: relative;
@@ -873,3 +873,106 @@ a {
 }
 
 
+/************    Slide 8   *************/
+
+.slide-8 {
+    position: relative;
+    background-color: #121212;
+    z-index: 198;
+    min-height: 442px;
+    margin-top: -4px;
+}
+
+.slide-8 .content {
+    width: 200px;
+    height: 387px;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+}
+
+.slide-8 .content .social {
+    width: 75px;
+    height: 100%;
+    position: absolute;
+    background-color: white;
+    left: 0;
+}
+
+.slide-8 .content .social .link {
+    position: relative;
+    width: 100%;
+    margin-top: -1px;
+    height: 75px;
+    cursor: pointer;
+}
+
+.slide-8 .content .social .link img {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.slide-8 .content .social .link:hover {
+    background-color: #BA2425;
+}
+
+.slide-8 .content .social .link:hover img{
+    filter: invert(100%);
+}
+
+.slide-8 .content .right-text {
+    position: absolute;
+    display: block;
+    right: 0;
+    height: 100%;
+    width: 45px;
+}
+
+.slide-8 .content .right-text span {
+    position: absolute;
+    display: block;
+    width: 360px;
+    font-family: Roboto Bold;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 38px;
+    line-height: 45px;
+
+    text-transform: uppercase;
+
+    color: #373737;
+
+    transform-origin: 0% 0%;
+    transform: rotate(-90deg) translateX(-49%);
+    top: 50%;
+}
+
+.slide-8 .content .center-text {
+    position: absolute;
+    display: block;
+    right: 65px;
+    height: 100%;
+    width: 45px;
+}
+
+.slide-8 .content .center-text span {
+    position: absolute;
+    display: block;
+    width: 360px;
+
+    font-family: Roboto Bold;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 70px;
+    line-height: 82px;
+    text-transform: uppercase;
+
+    color: #373737;
+
+    transform-origin: 0% 0%;
+    transform: rotate(-90deg) translateX(-49%);
+    top: 50%;
+}
