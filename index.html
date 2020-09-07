@@ -19,7 +19,9 @@
         <div class="container-fluid fixed-top nav-header">
             <div class="row justify-content-center">
                 <div class="header-left-logo">
-                    <img src="/img/left-logo.svg" alt="Логотип">
+                    <a href="#home">
+                        <img src="/img/left-logo.svg" alt="Логотип">
+                    </a>
                 </div>
 
                 <div class="lang-dropdown">
@@ -33,19 +35,19 @@
 
                 <div class="menu-right">
                     <ul>
-                        <li class="active">
+                        <li class="menu-item">
                             <a href="#about">О нас</a>
                         </li>
 
-                        <li>
-                            <a href="javascript: void(0);">Работы</a>
+                        <li class="menu-item">
+                            <a href="#jobs">Работы</a>
                         </li>
 
-                        <li>
-                            <a href="javascript: void(0);">Отзывы</a>
+                        <li class="menu-item">
+                            <a href="#reviews">Отзывы</a>
                         </li>
 
-                        <li>
+                        <li class="menu-item">
                             <a href="javascript: void(0);">Контакты</a>
                         </li>
                     </ul>
@@ -55,7 +57,7 @@
     </header>
 
     <main>
-        <section class="slide-1" data-scroll-section>
+        <section id="home" class="slide-1" data-scroll-section>
             <video src="/video/background.mp4" muted autoplay loop class="video-background"></video>
             <div class="video-grid"></div>
 
@@ -117,7 +119,7 @@
 
         </section>
 
-        <section class="slide-3" data-scroll-section>
+        <section id="jobs" class="slide-3" data-scroll-section>
             <div class="cover-1"></div>
             <div class="cover-2"></div>
             <div class="cover-3"></div>
@@ -269,7 +271,7 @@
             <div class="video-grid"></div>
         </section>
 
-        <section class="slide-7" data-scroll-section>
+        <section id="reviews" class="slide-7" data-scroll-section>
             <div class="left-block-gradient"></div>
             <div class="right-block-gradient"></div>
             <div class="content">

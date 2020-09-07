@@ -62,6 +62,31 @@ $( document ).ready(function() {
         }
     });
 
+
+
+
+
+    // плавный скролл ссылок
+    const smoothLinks = document.querySelectorAll('a[href^="#"]');
+    for (let smoothLink of smoothLinks) {
+        smoothLink.addEventListener('click', function (e) {
+            e.preventDefault();
+            const id = smoothLink.getAttribute('href');
+
+            $('.menu-item').removeClass('active');
+            $(smoothLink).parent().addClass('active');
+
+            scroll.scrollTo(id);
+
+        });
+    };
+
+
+
+
+
+
+
 });
 
 
