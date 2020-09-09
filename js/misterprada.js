@@ -68,15 +68,33 @@ $( document ).ready(function() {
 
     // плавный скролл ссылок
     const smoothLinks = document.querySelectorAll('a[href^="#"]');
+    let scroll_shield = undefined;
     for (let smoothLink of smoothLinks) {
         smoothLink.addEventListener('click', function (e) {
             e.preventDefault();
             const id = smoothLink.getAttribute('href');
 
-            $('.menu-item').removeClass('active');
-            $(smoothLink).parent().addClass('active');
+            if(scroll_shield != id){
 
-            scroll.scrollTo(id);
+                let offset = 0;
+
+                $('.menu-item').removeClass('active');
+                $(smoothLink).parent().addClass('active');
+
+                scroll_shield = id;
+                /*setTimeout(function(){
+                    scroll_shield = false;
+                }, 600);*/
+
+                if(id == '#reviews'){
+                    offset = -110;
+                }
+
+                scroll.scrollTo(id, offset);
+             /*   scroll.scrollTo(id, 100, 1000, [0.25, 0.00, 0.35, 1.00], true, ()=>{
+                    scroll_shield = false;
+                });*/
+            }
 
         });
     };
