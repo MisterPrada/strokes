@@ -63,9 +63,6 @@ $( document ).ready(function() {
     });
 
 
-
-
-
     // плавный скролл ссылок
     const smoothLinks = document.querySelectorAll('a[href^="#"]');
     let scroll_shield = undefined;
