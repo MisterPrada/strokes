@@ -21,7 +21,7 @@ $( document ).ready(function() {
 
 
 
-
+    let scrollPos = 0; // Начальное положение пользователя
     let time = undefined;
     scroll.on('scroll', func => {
         clearInterval(rotateLogoText);
@@ -42,6 +42,16 @@ $( document ).ready(function() {
                 passiveRotate();
             }, 10);
         }, 100);
+
+        //**************** анимация для меню ************************//
+        if (func.scroll.y > scrollPos){
+            $('#head-menu').removeClass('nimate__fadeInDown animate__fadeOutUp');
+            $('#head-menu').addClass('animate__animated animate__fadeOutUp');
+        } else {
+            $('#head-menu').removeClass('nimate__fadeInDown animate__fadeOutUp');
+            $('#head-menu').addClass('animate__animated animate__fadeInDown');
+        }
+        scrollPos = func.scroll.y;
 
     });
 
