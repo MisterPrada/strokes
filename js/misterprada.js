@@ -1,7 +1,8 @@
 $( document ).ready(function() {
     var scroll = new LocomotiveScroll({
         el: document.querySelector('[data-scroll-container]'),
-        smooth: true
+        smooth: true,
+        repeat: true
     });
 
     let deg = 0;
@@ -44,18 +45,23 @@ $( document ).ready(function() {
         }, 100);
 
         //**************** анимация для меню ************************//
-        if (func.scroll.y > scrollPos){
+        /*if (func.scroll.y > scrollPos){
             $('#head-menu').removeClass('nimate__fadeInDown animate__fadeOutUp');
             $('#head-menu').addClass('animate__animated animate__fadeOutUp');
         } else {
             $('#head-menu').removeClass('nimate__fadeInDown animate__fadeOutUp');
             $('#head-menu').addClass('animate__animated animate__fadeInDown');
         }
-        scrollPos = func.scroll.y;
+        scrollPos = func.scroll.y;*/
 
     });
 
 
+    scroll.on('call', func => {
+        $('.menu-item').removeClass('active');
+        $('.menu-' + func).addClass('active');
+        console.log(func);
+    });
 
     // Выбор язывка
     if($('.lang-dropdown').length){
