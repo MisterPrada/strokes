@@ -45,14 +45,14 @@ $( document ).ready(function() {
         }, 100);
 
         //**************** анимация для меню ************************//
-        /*if (func.scroll.y > scrollPos){
+        if (func.scroll.y > scrollPos){
             $('#head-menu').removeClass('nimate__fadeInDown animate__fadeOutUp');
             $('#head-menu').addClass('animate__animated animate__fadeOutUp');
         } else {
             $('#head-menu').removeClass('nimate__fadeInDown animate__fadeOutUp');
             $('#head-menu').addClass('animate__animated animate__fadeInDown');
         }
-        scrollPos = func.scroll.y;*/
+        scrollPos = func.scroll.y;
 
     });
 
