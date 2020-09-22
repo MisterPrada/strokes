@@ -24,7 +24,13 @@ $( document ).ready(function() {
 
     let scrollPos = 0; // Начальное положение пользователя
     let time = undefined;
+    let scroll_shield = undefined;
+    let scroll_shield_timer = undefined;
     scroll.on('scroll', func => {
+        clearTimeout(scroll_shield_timer);
+        scroll_shield_timer = setTimeout(function(){
+            scroll_shield = undefined;
+        }, 50);
         clearInterval(rotateLogoText);
         clearTimeout(time);
 
@@ -81,7 +87,7 @@ $( document ).ready(function() {
 
     // плавный скролл ссылок
     const smoothLinks = document.querySelectorAll('a[href^="#"]');
-    let scroll_shield = undefined;
+
     for (let smoothLink of smoothLinks) {
         smoothLink.addEventListener('click', function (e) {
             e.preventDefault();
