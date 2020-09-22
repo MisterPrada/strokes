@@ -339,15 +339,13 @@ a {
     -o-transition: all 1s ease;
     -ms-transition: all 1s ease;
     transition: all 1s ease;
-    filter: blur(4px) grayscale(100%);
-    -webkit-filter:  blur(4px) grayscale(100%);
-    /*opacity: 1;*/
+    filter: blur(4px);
+    opacity: 1;
 }
 
 .slide-3 .cover img:hover{
-    filter: blur(0px) grayscale(0%);
-    -webkit-filter:  blur(0px) grayscale(0%);
-    /*opacity: 0;*/
+    filter: blur(0px);
+    opacity: 0;
 }
 
 .slide-3 .cover-1 {
@@ -359,7 +357,7 @@ a {
 
     z-index: 120;
 
-    /*background-image: url("/img/slide-3/6.png");*/
+    background-image: url("/img/slide-3/6.png");
     background-size: contain;
 
     transform: rotate(-14.9deg);
