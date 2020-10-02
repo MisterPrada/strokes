@@ -245,7 +245,7 @@ a {
 /************    Slide 2   *************/
 .slide-2 {
     position: relative;
-    background-color: #121212;
+    background-color: #0C0C0C;
     height: 100vh;
     min-height: 1071px;
 }
@@ -324,7 +324,7 @@ a {
 
 .slide-3 {
     position: relative;
-    background-color: #121212;
+    background-color: #0C0C0C;
     height: 100vh;
     min-height: 1010px;
     margin-top: -48px;
@@ -458,7 +458,7 @@ a {
     top: 336px;
     left: 648px;
 
-    background-color: #202020;
+    background-color: #131313;
 }
 .slide-3 .text-content .content {
     margin-left: 49px;
@@ -503,7 +503,7 @@ a {
 
 .slide-4 {
     position: relative;
-    background-color: #121212;
+    background-color: #0C0C0C;
     height: 100vh;
     min-height: 1010px;
     margin-top: -90px;
@@ -521,7 +521,7 @@ a {
     filter: blur(2px);
     transform: scale(1.04);
     opacity: 1;
-    background-color: #121212;
+    background-color: #0C0C0C;
 }
 
 .slide-4 .cover.carabus img{
@@ -543,7 +543,7 @@ a {
     top: 336px;
     left: 648px;
 
-    background-color: #202020;
+    background-color: #131313;
 }
 .slide-4 .text-content .content {
     margin-left: 49px;
@@ -658,7 +658,7 @@ a {
 
 .slide-5 {
     position: relative;
-    background-color: #121212;
+    background-color: #0C0C0C;
     height: 100vh;
     min-height: 1010px;
     margin-top: -55px;
@@ -692,7 +692,7 @@ a {
     top: 336px;
     left: 648px;
 
-    background-color: #202020;
+    background-color: #131313;
 }
 .slide-5 .text-content .content {
     margin-left: 49px;
@@ -786,7 +786,7 @@ a {
 
 .slide-6 {
     position: relative;
-    background-color: #121212;
+    background-color: #0C0C0C;
     margin-top: -45px;
     z-index: 200;
 }
@@ -811,7 +811,7 @@ a {
 
 .slide-7 {
     position: relative;
-    background-color: #121212;
+    background-color: #0C0C0C;
     z-index: 200;
     min-height: 800px;
     margin-top: -4px;
@@ -875,7 +875,7 @@ a {
 .slide-7 .content .reviews div {
     position: relative;
     height: 133px;
-    background-color: #121212;
+    background-color: #0C0C0C;
     margin-bottom: 6px;
 }
 
@@ -902,7 +902,7 @@ a {
     left: 0;
     width: 141px;
     height: 100%;
-    background-color: #121212;
+    background-color: #0C0C0C;
 }
 
 .slide-7 .content .reviews div .logo img{
@@ -917,7 +917,7 @@ a {
     left: 141px;
     width: calc(100% - 144px);
     height: 100%;
-    background-color: #121212;
+    background-color: #0C0C0C;
 }
 
 .slide-7 .content .reviews div .text-content .head{
@@ -962,7 +962,7 @@ a {
 
 .slide-8 {
     position: relative;
-    background-color: #121212;
+    background-color: #0C0C0C;
     z-index: 198;
     min-height: 442px;
     margin-top: -4px;
