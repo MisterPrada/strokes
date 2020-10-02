@@ -824,26 +824,75 @@ a {
     margin-top: -4px;
 }
 
-.slide-7 .left-block-gradient {
+.slide-7 .left-block-gradient{
     position: absolute;
-    background: linear-gradient(90deg, rgba(18, 18, 18, 0) 13.3%, #B92424 102.75%);
-    transform: matrix(-1, 0, 0, 1, 0, 0);
     width: 461px;
     height: 100%;
     left: 0;
 }
 
+.slide-7 .left-block-gradient .hov {
+    position: absolute;
+
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+
+    background: linear-gradient(90deg, rgba(18, 18, 18, 0) 13.3%, #B92424 102.75%);
+    transform: matrix(-1, 0, 0, 1, 0, 0) translateX(420px);
+    width: 461px;
+    height: 100%;
+    left: 0;
+}
+
+
+
+.slide-7 .left-block-gradient:hover .hov, .slide-7 .left-block-gradient .left-link:hover ~ .hov {
+    transform: matrix(-1, 0, 0, 1, 0, 0) translateX(0px);
+}
+.slide-7 .left-block-gradient:hover .left-link, .slide-7 .left-block-gradient .left-link:hover {
+    color: white;
+}
+
 .slide-7 .right-block-gradient {
     position: absolute;
-    background: linear-gradient(90deg, rgba(18, 18, 18, 0) 13.3%, #B32323 102.75%);
     width: 461px;
     height: 100%;
     right: 0;
 }
 
-.slide-7 .content .left-link {
+.slide-7 .right-block-gradient .hov {
     position: absolute;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+
+    background: linear-gradient(90deg, rgba(18, 18, 18, 0) 13.3%, #B32323 102.75%);
+    transform: translateX(420px);
+    width: 461px;
+    height: 100%;
+    right: 0;
+}
+
+.slide-7 .right-block-gradient:hover .hov, .slide-7 .right-block-gradient .right-link:hover ~ .hov {
+    transform: translateX(0px);
+}
+.slide-7 .right-block-gradient:hover .right-link, .slide-7 .right-block-gradient .right-link:hover {
     color: white;
+}
+
+.slide-7 .left-link {
+    position: absolute;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+    color: #373737;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: bold;
@@ -855,9 +904,14 @@ a {
     cursor: pointer;
 }
 
-.slide-7 .content .right-link {
+.slide-7 .right-link {
     position: absolute;
-    color: white;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+    color: #373737;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: bold;
@@ -873,7 +927,7 @@ a {
     position: absolute;
     min-width: 723px;
     top: -19px;
-    height: 200px;
+    height: auto;
     left: 50%;
     transform: translateX(-50%);
     filter: drop-shadow(0px 0px 10px #000000);
