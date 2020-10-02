@@ -524,6 +524,10 @@ a {
     background-color: #121212;
 }
 
+.slide-4 .cover.carabus img{
+    transform: scale(1.08);
+}
+
 .slide-4 .cover img:hover{
     filter: blur(0px);
     opacity: 0;
