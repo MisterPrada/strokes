@@ -68,10 +68,8 @@ $( document ).ready(function() {
 
     $('#head-menu').on('animationend', () => {
         if (menu_trigger > scrollPos){
-            console.log('После анимации вниз');
             $('#head-menu').show();
         } else {
-            console.log('После анимации вверх');
             $('#head-menu').hide();
         }
     });
