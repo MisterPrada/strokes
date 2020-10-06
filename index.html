@@ -74,7 +74,7 @@
         <section id="about" class="slide-2" data-scroll-section>
             <!--<div class="pencil"></div>-->
 
-            <div class="container text-content">
+            <div data-scroll data-scroll-speed="-6" data-target="#about" class="container text-content">
                 <div class="row">
                     <div>
                         <h1>О нас</h1>
@@ -114,7 +114,7 @@
                 </div>
             </div>
 
-            <div class="video-background">
+            <div data-scroll data-scroll-speed="-6" data-target="#about" class="video-background">
                 <video src="/video/slide-2.mp4" muted autoplay loop></video>
                 <div class="video-grid"></div>
             </div>
@@ -122,60 +122,119 @@
         </section>
 
         <section id="jobs" class="slide-3" data-scroll-section>
-            <div class="cover cover-1">
-                <img src="/img/slide-3/6_bw.png" alt="Dead Space">
+            <div data-scroll
+                 data-scroll-direction="horizontal"
+                 data-scroll-speed="-2"
+                 data-scroll-target="#jobs">
+                <div class="cover cover-1">
+                    <img src="/img/slide-3/6_bw.png" alt="Dead Space">
+                </div>
             </div>
 
-            <div class="cover cover-2">
-                <img src="/img/slide-3/2_bw.png" alt="">
+            <div data-scroll
+                 data-scroll-direction="horizontal"
+                 data-scroll-speed="-3"
+                 data-scroll-target="#jobs">
+                <div class="cover cover-2">
+                    <img src="/img/slide-3/2_bw.png" alt="">
+                </div>
             </div>
 
-            <div class="cover cover-3">
-                <img src="/img/slide-3/3_bw.png" alt="">
+            <div data-scroll
+                 data-scroll-direction="horizontal"
+                 data-scroll-speed="-1"
+                 data-scroll-target="#jobs">
+                <div class="cover cover-3">
+                    <img src="/img/slide-3/3_bw.png" alt="">
+                </div>
             </div>
 
-            <div class="cover cover-4">
-                <img src="/img/slide-3/1_bw.png" alt="">
-            </div>
 
-            <div class="cover cover-5">
-                <img src="/img/slide-3/5_bw.png" alt="">
-            </div>
-
-            <div class="cover cover-6">
-                <img src="/img/slide-3/4_bw.png" alt="">
-            </div>
-
-            <div class="text-content">
+            <div id="slide3-content"
+                 data-scroll
+                 data-scroll-direction="horizontal"
+                 data-scroll-speed="1.5"
+                 data-scroll-target="#jobs"
+                 class="text-content">
                 <div class="content">
-                    <h1>Обложки</h1>
+                    <h1 data-scroll
+                        data-scroll-direction="horizontal"
+                        data-scroll-speed="1"
+                        data-scroll-delay="0.1"
+                        data-scroll-target="#slide3-content">Обложки</h1>
 
-                    <p>
+                    <p data-scroll
+                       data-scroll-direction="horizontal"
+                       data-scroll-speed="1"
+                       data-scroll-delay="0.2"
+                       data-scroll-target="#slide3-content">
                         Лицо Вашего релиза - Ваша обложка. В процессе создания релиза
                         музыкальная группа часто задумывается о том, какую обложку
                         они бы хотели создать для своего музыкального проекта.
                     </p>
 
-                    <p>
+                    <p data-scroll
+                       data-scroll-direction="horizontal"
+                       data-scroll-speed="1"
+                       data-scroll-delay="0.3"
+                       data-scroll-target="#slide3-content">
                         Мы предлагаем реализацию любой из Ваших идей либо своё
                         предложение по анализу и подбору элементов, которые будет
                         содержать Ваша будущая обложка для релиза.
                     </p>
 
-                    <p data-scroll data-scroll-call="jobs">
+                    <p data-scroll data-scroll-call="jobs"
+                       data-scroll-direction="horizontal"
+                       data-scroll-speed="1"
+                       data-scroll-delay="0.7"
+                       data-scroll-target="#slide3-content">
                         Разработка обложек в различных стилистиках: начиная от
                         коллажирования, заканчивая полноценными артами в стилистике
                         реализма и помощь в адаптации готовых обложек под
                         музыкальные площадки - одна из ряда наших основных услуг!
                     </p>
 
-                    <div class="content-footer">
+                    <div class="content-footer" data-scroll
+                         data-scroll-direction="horizontal"
+                         data-scroll-speed="1"
+                         data-scroll-delay="0.9"
+                         data-scroll-target="#slide3-content">
                         <img src="/img/slide-3/facebook.svg" alt="icon">
 
                         Смотреть все обложки
                     </div>
                 </div>
             </div>
+
+            <div data-scroll
+                 data-scroll-direction="horizontal"
+                 data-scroll-speed="2.5"
+                 data-scroll-target="#jobs">
+                <div class="cover cover-4">
+                    <img src="/img/slide-3/1_bw.png" alt="">
+                </div>
+            </div>
+
+            <div data-scroll
+                 data-scroll-direction="horizontal"
+                 data-scroll-speed="3"
+                 data-scroll-target="#jobs">
+                <div class="cover cover-5">
+                    <img src="/img/slide-3/5_bw.png" alt="">
+                </div>
+            </div>
+
+            <div data-scroll
+                 data-scroll-direction="horizontal"
+                 data-scroll-speed="2"
+                 data-scroll-target="#jobs">
+                <div class="cover cover-6">
+                    <img src="/img/slide-3/4_bw.png" alt="">
+                </div>
+            </div>
+
+
+
         </section>
 
         <section class="slide-4" data-scroll-section>
