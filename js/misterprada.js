@@ -26,6 +26,7 @@ $( document ).ready(function() {
     let time = undefined;
     let scroll_shield = undefined;
     let scroll_shield_timer = undefined;
+    let menu_trigger = 0;
     scroll.on('scroll', func => {
         clearTimeout(scroll_shield_timer);
         scroll_shield_timer = setTimeout(function(){
@@ -50,11 +51,14 @@ $( document ).ready(function() {
             }, 10);
         }, 100);
 
+        menu_trigger = scrollPos;
         //**************** анимация для меню ************************//
         if (func.scroll.y > scrollPos){
             $('#head-menu').removeClass('nimate__fadeInDown animate__fadeOutUp');
             $('#head-menu').addClass('animate__animated animate__fadeOutUp');
+
         } else {
+            $('#head-menu').show();
             $('#head-menu').removeClass('nimate__fadeInDown animate__fadeOutUp');
             $('#head-menu').addClass('animate__animated animate__fadeInDown');
         }
@@ -62,11 +66,21 @@ $( document ).ready(function() {
 
     });
 
+    $('#head-menu').on('animationend', () => {
+        if (menu_trigger > scrollPos){
+            console.log('После анимации вниз');
+            $('#head-menu').show();
+        } else {
+            console.log('После анимации вверх');
+            $('#head-menu').hide();
+        }
+    });
+
 
     scroll.on('call', func => {
         $('.menu-item').removeClass('active');
         $('.menu-' + func).addClass('active');
-        console.log(func);
+        //console.log(func);
     });
 
     // Выбор язывка
