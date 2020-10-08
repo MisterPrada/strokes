@@ -181,6 +181,7 @@ a {
 }
 
 .slide-1 .video-background {
+
     width: 100%;
     height: 100%;
     position: absolute;
@@ -610,7 +611,7 @@ a {
     transform: rotate(5.58deg);
 
     background-image: url("/img/slide-4/carabus.png");
-    background-size: contain;
+    background-size: cover;
 }
 
 .slide-4 .sadday {
