@@ -527,7 +527,7 @@ a {
     background-color: #0C0C0C;
 }
 
-.slide-4 .cover.streetwear img{
+.slide-4 .streetwear .cover img{
     background-color: #131313;
 }
 
@@ -590,14 +590,17 @@ a {
     vertical-align: bottom;
 }
 
-.slide-4 .text-content .streetwear {
+.slide-4 .streetwear {
     position: absolute;
     top: 24.05px;
     left: 706.44px;
     width: 669.9px;
     height: 382.66px;
-    transform: rotate(2.96deg);
+    /*transform: rotate(2.96deg);*/
+}
 
+.slide-4 .streetwear .cover {
+    transform: rotate(2.96deg);
     background-image: url("/img/slide-4/streetwear.png");
     background-size: contain;
 }
@@ -608,8 +611,11 @@ a {
     height: 142.36px;
     right: -44.76px;
     top: calc(100% + 32.36px);
-    transform: rotate(5.58deg);
+    /*transform: rotate(5.58deg);*/
+}
 
+.slide-4 .carabus .cover {
+    transform: rotate(3.63deg);
     background-image: url("/img/slide-4/carabus.png");
     background-size: cover;
 }
@@ -621,7 +627,10 @@ a {
     right: -51.01px;
     bottom: calc(100% + 22.56px);
     transform: rotate(3.63deg);
+}
 
+.slide-4 .sadday .cover {
+    transform: rotate(3.63deg);
     background-image: url("/img/slide-4/sadday.png");
     background-size: contain;
 }
