@@ -488,6 +488,10 @@ a {
     line-height: 59px;
 }
 
+.slide-3 .text-content .content-footer{
+    position: relative;
+}
+
 .slide-3 .text-content .content-footer a {
     font-family: 'Roboto Medium';
     letter-spacing: 1px;
@@ -496,6 +500,25 @@ a {
     line-height: 24px;
     margin-top: 31px;
     text-decoration: none;
+}
+
+.slide-3 .text-content .content-footer a.blur-material {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    filter: blur(0px);
+    opacity: 0;
+}
+
+.slide-3 .text-content .content-footer a.blur-material:hover {
+    filter: blur(10px);
+    opacity: 1;
 }
 
 .slide-3 .text-content .content-footer img {
@@ -578,6 +601,11 @@ a {
     line-height: 59px;
 }
 
+
+.slide-4 .text-content .content-footer{
+    position: relative;
+}
+
 .slide-4 .text-content .content-footer a{
     font-family: 'Roboto Medium';
     letter-spacing: 1px;
@@ -586,6 +614,26 @@ a {
     line-height: 24px;
     margin-top: 31px;
     text-decoration: none;
+}
+
+.slide-4 .text-content .content-footer a.blur-material {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    filter: blur(0px);
+    opacity: 0;
+}
+
+
+.slide-4 .text-content .content-footer a.blur-material:hover {
+    filter: blur(10px);
+    opacity: 1;
 }
 
 .slide-4 .text-content .content-footer img {
@@ -740,6 +788,10 @@ a {
     line-height: 59px;
 }
 
+.slide-5 .text-content .content-footer{
+    position: relative;
+}
+
 .slide-5 .text-content .content-footer a{
     font-family: 'Roboto Medium';
     letter-spacing: 1px;
@@ -748,6 +800,26 @@ a {
     line-height: 24px;
     margin-top: 31px;
     text-decoration: none;
+}
+
+.slide-5 .text-content .content-footer a.blur-material {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    filter: blur(0px);
+    opacity: 0;
+}
+
+
+.slide-5 .text-content .content-footer a.blur-material:hover {
+    filter: blur(10px);
+    opacity: 1;
 }
 
 .slide-5 .text-content .content-footer img {
