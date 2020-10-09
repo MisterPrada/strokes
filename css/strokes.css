@@ -488,13 +488,14 @@ a {
     line-height: 59px;
 }
 
-.slide-3 .text-content .content-footer {
+.slide-3 .text-content .content-footer a {
     font-family: 'Roboto Medium';
     letter-spacing: 1px;
     color: white;
     font-size: 20px;
     line-height: 24px;
     margin-top: 31px;
+    text-decoration: none;
 }
 
 .slide-3 .text-content .content-footer img {
@@ -577,13 +578,14 @@ a {
     line-height: 59px;
 }
 
-.slide-4 .text-content .content-footer {
+.slide-4 .text-content .content-footer a{
     font-family: 'Roboto Medium';
     letter-spacing: 1px;
     color: white;
     font-size: 20px;
     line-height: 24px;
     margin-top: 31px;
+    text-decoration: none;
 }
 
 .slide-4 .text-content .content-footer img {
@@ -738,13 +740,14 @@ a {
     line-height: 59px;
 }
 
-.slide-5 .text-content .content-footer {
+.slide-5 .text-content .content-footer a{
     font-family: 'Roboto Medium';
     letter-spacing: 1px;
     color: white;
     font-size: 20px;
     line-height: 24px;
     margin-top: 31px;
+    text-decoration: none;
 }
 
 .slide-5 .text-content .content-footer img {
