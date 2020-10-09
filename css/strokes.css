@@ -45,6 +45,10 @@ ul, div {
 a {
     color: black;
 }
+
+.c-scrollbar_thumb {
+    z-index: 99999999999;
+}
 /************    Header   *************/
 
 .nav-header {
@@ -1128,7 +1132,7 @@ a {
 
 .slide-8 .content {
     width: 200px;
-    height: 387px;
+    height: 440px;
     position: absolute;
     left: 50%;
     bottom: 0;
