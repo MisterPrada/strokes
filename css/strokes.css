@@ -76,7 +76,7 @@ a {
 
 
 .menu-right ul li a{
-    color: #737373;
+    color: white;
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
@@ -84,11 +84,11 @@ a {
 }
 
 .menu-right ul li.active a{
-    color: white;
+    color: #FF2E2E;
 }
 
 .menu-right ul li a:hover{
-    color: white;
+    color: #FF2E2E;
     text-decoration: none;
 }
 
