@@ -54,12 +54,12 @@ $( document ).ready(function() {
         menu_trigger = scrollPos;
         //**************** анимация для меню ************************//
         if (func.scroll.y > scrollPos){
-            $('#head-menu').removeClass('nimate__fadeInDown animate__fadeOutUp');
+            $('#head-menu').removeClass('animate__fadeInDown animate__fadeOutUp');
             $('#head-menu').addClass('animate__animated animate__fadeOutUp');
 
         } else {
             $('#head-menu').show();
-            $('#head-menu').removeClass('nimate__fadeInDown animate__fadeOutUp');
+            $('#head-menu').removeClass('animate__fadeInDown animate__fadeOutUp');
             $('#head-menu').addClass('animate__animated animate__fadeInDown');
         }
         scrollPos = func.scroll.y;
@@ -78,6 +78,13 @@ $( document ).ready(function() {
     scroll.on('call', func => {
         $('.menu-item').removeClass('active');
         $('.menu-' + func).addClass('active');
+
+        if(func === 'main'){
+            $('.lang-dropdown').fadeIn();
+        }else{
+            $('.lang-dropdown').fadeOut()
+        }
+
         //console.log(func);
     });
 
