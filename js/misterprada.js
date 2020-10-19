@@ -1,3 +1,7 @@
+function isInteger(num) {
+    return (num ^ 0) === num;
+}
+
 $( document ).ready(function() {
     var scroll = new LocomotiveScroll({
         el: document.querySelector('[data-scroll-container]'),
@@ -52,23 +56,34 @@ $( document ).ready(function() {
         }, 100);
 
         menu_trigger = scrollPos;
-        //**************** анимация для меню ************************//
-        if (func.scroll.y > scrollPos){
-            $('#head-menu').removeClass('animate__fadeInDown animate__fadeOutUp');
-            $('#head-menu').addClass('animate__animated animate__fadeOutUp');
 
-        } else {
-            $('#head-menu').show();
-            $('#head-menu').removeClass('animate__fadeInDown animate__fadeOutUp');
-            $('#head-menu').addClass('animate__animated animate__fadeInDown');
+        console.log('first: ' + func.scroll.y);
+        console.log('second: ' + scrollPos);
+
+        //**************** анимация для меню ************************//
+        if(func.scroll.y != scrollPos){
+            if (func.scroll.y <= scrollPos){
+
+                console.log('показать');
+                $('#head-menu').show();
+                $('#head-menu').removeClass('animate__fadeInDown animate__fadeOutUp');
+                $('#head-menu').addClass('animate__animated animate__fadeInDown');
+            } else {
+                if(!isInteger(func.scroll.y)){
+                    console.log('Скрыть');
+                    $('#head-menu').removeClass('animate__fadeInDown animate__fadeOutUp');
+                    $('#head-menu').addClass('animate__animated animate__fadeOutUp');
+                }
+            }
         }
+
         scrollPos = func.scroll.y;
 
     });
 
     $('#head-menu').on('animationend', () => {
         if (menu_trigger > scrollPos){
-            $('#head-menu').show();
+                $('#head-menu').show();
         } else {
             $('#head-menu').hide();
         }
