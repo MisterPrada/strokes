@@ -3,7 +3,7 @@ RewriteEngine On
 RewriteBase /
 
 RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /([^.]+)\.html\ HTTP
-RewriteRule ^([^.]+)\.html$ http://html.aaee.by/$1 [R=301,L]
+RewriteRule ^([^.]+)\.html$ http://strokes/$1 [R=301,L]
 RewriteCond %{REQUEST_URI} !(\.[^./]+)$
 RewriteCond %{REQUEST_fileNAME} !-d
 RewriteCond %{REQUEST_fileNAME} !-f
