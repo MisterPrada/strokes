@@ -364,7 +364,45 @@ a {
     transform: translateX(-50%);
 }
 
+.slide-1 .main-center-text {
+    position: absolute;
+    z-index: 100;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 1229px;
+    overflow: hidden;
+}
 
+.slide-1 .main-center-text .title {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 180px;
+    line-height: 211px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    text-indent: -.0608em;
+    white-space: nowrap;
+}
+
+.slide-1 .main-center-text .descr {
+    font-family: 'Roboto Bold';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 29px;
+    letter-spacing: 0.55em;
+    text-transform: uppercase;
+    color: #0C0C0C;
+    mix-blend-mode: normal;
+    background: #BA2425;
+    text-align: center;
+    margin-right: 31px;
+    height: 39px;
+    line-height: 39px;
+}
 
 
 
