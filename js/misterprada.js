@@ -2,7 +2,21 @@ function isInteger(num) {
     return (num ^ 0) === num;
 }
 
+function spanText(text) {
+    var string = text.innerText;
+    var spaned = '';
+    for (var i = 0; i < string.length; i++) {
+        if(string.substring(i, i + 1) === ' ') spaned += string.substring(i, i + 1);
+        else spaned += '<span>' + string.substring(i, i + 1) + '</span>';
+    }
+    text.innerHTML = spaned;
+}
+
 $( document ).ready(function() {
+    /** Анимация для появления главного текста **/
+    var headline = document.getElementById('head_title');
+    spanText(headline);
+
     var scroll = new LocomotiveScroll({
         el: document.querySelector('[data-scroll-container]'),
         smooth: true,
@@ -57,20 +71,20 @@ $( document ).ready(function() {
 
         menu_trigger = scrollPos;
 
-        console.log('first: ' + func.scroll.y);
-        console.log('second: ' + scrollPos);
+        //console.log('first: ' + func.scroll.y);
+        //console.log('second: ' + scrollPos);
 
         //**************** анимация для меню ************************//
         if(func.scroll.y != scrollPos){
             if (func.scroll.y <= scrollPos){
 
-                console.log('показать');
+                //console.log('показать');
                 $('#head-menu').show();
                 $('#head-menu').removeClass('animate__fadeInDown animate__fadeOutUp');
                 $('#head-menu').addClass('animate__animated animate__fadeInDown');
             } else {
                 if(!isInteger(func.scroll.y)){
-                    console.log('Скрыть');
+                    //console.log('Скрыть');
                     $('#head-menu').removeClass('animate__fadeInDown animate__fadeOutUp');
                     $('#head-menu').addClass('animate__animated animate__fadeOutUp');
                 }

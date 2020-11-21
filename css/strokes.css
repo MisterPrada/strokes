@@ -383,7 +383,7 @@ a {
     text-transform: uppercase;
     color: #FFFFFF;
     mix-blend-mode: normal;
-    text-indent: -.0608em;
+    /*text-indent: -.0608em;*/
     white-space: nowrap;
 }
 
@@ -399,7 +399,8 @@ a {
     mix-blend-mode: normal;
     background: #BA2425;
     text-align: center;
-    margin-right: 31px;
+    /*margin-right: 31px;*/
+    margin: 0 14px;
     height: 39px;
     line-height: 39px;
 }
