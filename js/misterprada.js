@@ -15,7 +15,9 @@ function spanText(text) {
 $( document ).ready(function() {
     /** Анимация для появления главного текста **/
     var headline = document.getElementById('head_title');
-    spanText(headline);
+    if(headline){
+        spanText(headline);
+    }
 
     var scroll = new LocomotiveScroll({
         el: document.querySelector('[data-scroll-container]'),
