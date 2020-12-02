@@ -34,7 +34,7 @@ $( document ).ready(function() {
         passive_mode = true;
         deg += 0.08;
         $('.logo-text-mini').css('transform','rotate('+ deg +'deg)');
-    }
+    };
 
     let rotateLogoText = setInterval(function(){
         passiveRotate();
