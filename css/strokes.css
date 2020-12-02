@@ -375,6 +375,7 @@ a {
 }
 
 .slide-1 .main-center-text .title {
+    letter-spacing: 0.04em;
     font-family: 'Roboto Medium';
     font-style: normal;
     font-weight: bold;
@@ -393,14 +394,16 @@ a {
     font-weight: bold;
     font-size: 25px;
     line-height: 29px;
-    letter-spacing: 0.55em;
+    letter-spacing: 0.6em;
+    text-indent: 0.6em;
     text-transform: uppercase;
     color: #0C0C0C;
     mix-blend-mode: normal;
     background: #BA2425;
     text-align: center;
     /*margin-right: 31px;*/
-    margin: 0 14px;
+    margin-right: 16px;
+    margin-left: 8px;
     height: 39px;
     line-height: 39px;
 }

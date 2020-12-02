@@ -16,7 +16,7 @@ $( document ).ready(function() {
     /** Анимация для появления главного текста **/
     var headline = document.getElementById('head_title');
     if(headline){
-        spanText(headline);
+        //spanText(headline);
     }
 
     var scroll = new LocomotiveScroll({
