@@ -85,7 +85,7 @@ $( document ).ready(function() {
                 $('#head-menu').addClass('animate__animated animate__fadeInDown');
             } else {
                 if(!isInteger(func.scroll.y)){
-                    $(".lang-dropdown ul").fadeOut(); // Скрываем меню выбора языка при любом скроле
+                    $(".lang-dropdown ul").hide(); // Скрываем меню выбора языка при любом скроле
                     //console.log('Скрыть');
                     $('#head-menu').removeClass('animate__fadeInDown animate__fadeOutUp');
                     $('#head-menu').addClass('animate__animated animate__fadeOutUp');
