@@ -100,6 +100,7 @@ a {
     font-weight: 500;
     font-size: 16px;
     line-height: 19px;
+    min-height: 56px;
 
     -moz-user-select: none;
     -khtml-user-select: none;
