@@ -48,6 +48,7 @@ $( document ).ready(function() {
     let scroll_shield_timer = undefined;
     let menu_trigger = 0;
     scroll.on('scroll', func => {
+        $(".lang-dropdown ul").fadeOut(); // Скрываем меню выбора языка при любом скроле
         clearTimeout(scroll_shield_timer);
         scroll_shield_timer = setTimeout(function(){
             scroll_shield = undefined;
@@ -103,7 +104,6 @@ $( document ).ready(function() {
         } else {
             $('#head-menu').hide();
         }
-        $(".lang-dropdown ul").fadeOut(); // Скрываем меню выбора языка при любом скроле
     });
 
 
