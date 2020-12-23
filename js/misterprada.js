@@ -103,6 +103,7 @@ $( document ).ready(function() {
         } else {
             $('#head-menu').hide();
         }
+        $(".lang-dropdown ul").fadeOut(); // Скрываем меню выбора языка при любом скроле
     });
 
 
