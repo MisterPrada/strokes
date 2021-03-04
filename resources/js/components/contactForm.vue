@@ -52,6 +52,7 @@
                 formData.append('name', this.name);
                 formData.append('email', this.email);
                 formData.append('message', this.message);
+                formData.append('g-recaptcha-response', response);
 
                 axios.post('/contacts', formData)
                     .then((response) => {
