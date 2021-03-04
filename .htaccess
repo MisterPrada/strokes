@@ -1,20 +1,19 @@
-RewriteEngine On
+<IfModule mod_rewrite.c>
+    <IfModule mod_negotiation.c>
+        Options -MultiViews -Indexes
+    </IfModule>
 
-RewriteBase /
+    RewriteEngine On
 
-RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /([^.]+)\.html\ HTTP
-RewriteRule ^([^.]+)\.html$ http://strokes/$1 [R=301,L]
-RewriteCond %{REQUEST_URI} !(\.[^./]+)$
-RewriteCond %{REQUEST_fileNAME} !-d
-RewriteCond %{REQUEST_fileNAME} !-f
-RewriteRule (.*) /$1.html [L]
+    # Handle Authorization Header
+    RewriteCond %{HTTP:Authorization} .
+    RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
 
-SetOutputFilter DEFLATE
-<ifModule mod_deflate.c>
-    AddOutputFilterByType DEFLATE text/html text/plain text/xml application/xml application/xhtml+xml text/css text/javascript application/javascript application/x-javascript
-</ifModule>
+    # Redirect Trailing Slashes If Not A Folder...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_URI} (.+)/$
+    RewriteRule ^ %1 [L,R=301]
 
-<FilesMatch ".(flv|gif|jpg|jpeg|png|ico|swf|js|css|pdf)$">
-  Header set Cache-Control "max-age=2592000"
-</FilesMatch>
-
+    # Send Requests To Front Controller...
+    RewriteRule ^(.*)$ public/$1 [L]
+</IfModule>

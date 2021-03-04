@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<style>
+
+
+
+
+</style>
+<div class="container">
+    <h1>
+        Мы создаём
+    </h1>
+</div>
+<script>
+    var spanText = function spanText(text) {
+        var string = text.innerText;
+        var spaned = '';
+        for (var i = 0; i < string.length; i++) {
+            if(string.substring(i, i + 1) === ' ') spaned += string.substring(i, i + 1);
+            else spaned += '<span>' + string.substring(i, i + 1) + '</span>';
+        }
+        text.innerHTML = spaned;
+    }
+
+
+    var headline = document.querySelector("h1");
+
+    spanText(headline);
+</script>
+</body>
+</html>
