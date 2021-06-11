@@ -15,7 +15,7 @@
             <textarea required minlength="10" maxlength="7000" v-model="message" type="text" placeholder="Ваш комментарий*" name="message"></textarea>
         </div>
 
-
+        <div id="contacts-rec" class="g-recaptcha" ></div>
 
         <div class="form-group">
             <button v-bind:class="{ 'd-none': sending }" type="submit">Отправить</button>
