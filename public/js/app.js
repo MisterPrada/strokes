@@ -19602,6 +19602,8 @@ var render = function() {
         })
       ]),
       _vm._v(" "),
+      _c("div", { staticClass: "g-recaptcha", attrs: { id: "contacts-rec" } }),
+      _vm._v(" "),
       _c("div", { staticClass: "form-group" }, [
         _c(
           "button",
