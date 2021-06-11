@@ -1277,6 +1277,10 @@ a {
     left: 0;
 }
 
+.slide-7 .left-block-gradient:hover svg path, .slide-7 .right-block-gradient:hover svg path{
+    fill: #ffffff;
+}
+
 .slide-7 .left-block-gradient .hov {
     position: absolute;
 
@@ -1446,7 +1450,7 @@ a {
 .slide-7 .content .reviews div .text-content .text{
     position: absolute;
     margin-top: 56px;
-    width: 522px;
+    width: 95%;
     height: auto;
     font-family: Roboto Light;
     font-style: normal;

@@ -452,12 +452,20 @@
     <section id="reviews" class="slide-7" data-scroll-section>
         <div class="left-block-gradient">
             <div class="hov"></div>
-            <span class="left-link">Ещё отзывы</span>
+            <span class="left-link">
+                <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10.1371 19.8475L29.5633 0.47495C30.1998 -0.159395 31.2303 -0.158329 31.8657 0.478231C32.5006 1.11471 32.4989 2.14576 31.8624 2.78059L13.5925 21.0001L31.863 39.2195C32.4995 39.8544 32.5012 40.8848 31.8663 41.5213C31.5478 41.8404 31.1305 42 30.7132 42C30.297 42 29.8813 41.8415 29.5634 41.5246L10.1371 22.1526C9.83052 21.8476 9.6585 21.4325 9.6585 21.0001C9.6585 20.5676 9.83101 20.153 10.1371 19.8475Z" fill="#343434"/>
+                </svg>
+            </span>
         </div>
 
         <div class="right-block-gradient">
             <div class="hov"></div>
-            <span class="right-link">Ещё отзывы</span>
+            <span class="right-link">
+                <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M31.8629 19.8475L12.4366 0.47495C11.8002 -0.159395 10.7697 -0.158329 10.1343 0.478231C9.49935 1.11471 9.50099 2.14576 10.1376 2.78059L28.4075 21.0001L10.1369 39.2195C9.50042 39.8544 9.49878 40.8848 10.1336 41.5213C10.4521 41.8404 10.8694 42 11.2867 42C11.7029 42 12.1186 41.8415 12.4365 41.5246L31.8629 22.1526C32.1694 21.8476 32.3414 21.4325 32.3414 21.0001C32.3414 20.5676 32.1689 20.153 31.8629 19.8475Z" fill="#343434"/>
+                </svg>
+            </span>
         </div>
 
         <div class="content">
@@ -477,9 +485,6 @@
                             качественно, быстро и технично, рекомендем!
                         </div>
                     </div>
-                    <div class="right-block">
-                        <img src="/img/slide-7/bandcamp.svg" alt="bandcamp">
-                    </div>
                 </div>
 
                 <div class="item">
@@ -498,9 +503,6 @@
                             Обязательно будем обращаться еще!
                         </div>
                     </div>
-                    <div class="right-block">
-                        <img src="/img/slide-7/bandcamp.svg" alt="bandcamp">
-                    </div>
                 </div>
 
                 <div class="item">
@@ -517,9 +519,6 @@
                             ожидаемо-офигительный результат. Очень профессиональный
                             подход и исполнение в срок, услуги стоят своего. Всем советуем!
                         </div>
-                    </div>
-                    <div class="right-block">
-                        <img src="/img/slide-7/bandcamp.svg" alt="bandcamp">
                     </div>
                 </div>
 
@@ -538,9 +537,6 @@
                             гуманный. Не мучайте себя в фотошопах,закажите работу у профи!
                         </div>
                     </div>
-                    <div class="right-block">
-                        <img src="/img/slide-7/bandcamp.svg" alt="bandcamp">
-                    </div>
                 </div>
 
                 <div class="item">
@@ -558,9 +554,6 @@
                             Всем рекомендуем!
                         </div>
                     </div>
-                    <div class="right-block">
-                        <img src="/img/slide-7/bandcamp.svg" alt="bandcamp">
-                    </div>
                 </div>
 
                 <div class="item">
@@ -577,9 +570,6 @@
                             задумываем. Очень рад, что есть такие люди, которые
                             дорабатывают ваши идеи и воплощают идеально. 12 пушек из 10!
                         </div>
-                    </div>
-                    <div class="right-block">
-                        <img src="/img/slide-7/bandcamp.svg" alt="bandcamp">
                     </div>
                 </div>
             </div>
