@@ -15,10 +15,12 @@
             <textarea required minlength="10" maxlength="7000" v-model="message" type="text" placeholder="Ваш комментарий*" name="message"></textarea>
         </div>
 
-        <div id="contacts-rec" class="g-recaptcha" ></div>
+
 
         <div class="form-group">
-            <button type="submit">Отправить</button>
+            <button v-bind:class="{ 'd-none': sending }" type="submit">Отправить</button>
+
+            <img v-bind:class="{ 'd-none': !sending }" src="/img/loaders/ball-triangle.svg" alt="">
         </div>
 
         <div class="footer">
@@ -36,6 +38,7 @@
                 name: '',
                 email: '',
                 message: '',
+                sending: false
             }
         },
         methods: {
@@ -54,16 +57,26 @@
                 formData.append('message', this.message);
                 formData.append('g-recaptcha-response', response);
 
+                this.sending = true;
+
                 axios.post('/contacts', formData)
                     .then((response) => {
                         console.log('Отправили');
                         this.$refs.contactForm.reset();
+                        this.sending = false;
+                        $('#modal_result').fadeIn();
+                        this.closeModal();
                     })
                     .catch((error) => {
-                        console.log('Error');
+                        this.sending = false;
+                        alert('Error email sending');
                     });
 
-
+            },
+            closeModal: function () {
+                setTimeout(function () {
+                    $('#modal_result').fadeOut();
+                }, 5000);
             }
         }
     }

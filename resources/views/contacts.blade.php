@@ -118,6 +118,21 @@
 
         </div>
     </footer>
+
+    <div id="modal_result" class="modal-result">
+        <div class="back"></div>
+
+        <div class="text-content">
+            <h2>
+                Ваша заявка отправлена!
+            </h2>
+
+            <p>
+                После отправки вашей заявки мы свяжется с Вами по Вашему E-mail
+                для уточнения данных и обработки вашего заказа.
+            </p>
+        </div>
+    </div>
 </main>
 
 

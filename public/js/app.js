@@ -1875,13 +1875,16 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: "contactForm",
   data: function data() {
     return {
       name: '',
       email: '',
-      message: ''
+      message: '',
+      sending: false
     };
   },
   methods: {
@@ -1900,13 +1903,25 @@ __webpack_require__.r(__webpack_exports__);
       formData.append('email', this.email);
       formData.append('message', this.message);
       formData.append('g-recaptcha-response', response);
+      this.sending = true;
       axios.post('/contacts', formData).then(function (response) {
         console.log('Отправили');
 
         _this.$refs.contactForm.reset();
+
+        _this.sending = false;
+        $('#modal_result').fadeIn();
+
+        _this.closeModal();
       })["catch"](function (error) {
-        console.log('Error');
+        _this.sending = false;
+        alert('Error email sending');
       });
+    },
+    closeModal: function closeModal() {
+      setTimeout(function () {
+        $('#modal_result').fadeOut();
+      }, 5000);
     }
   }
 });
@@ -19587,9 +19602,18 @@ var render = function() {
         })
       ]),
       _vm._v(" "),
-      _c("div", { staticClass: "g-recaptcha", attrs: { id: "contacts-rec" } }),
-      _vm._v(" "),
-      _vm._m(0),
+      _c("div", { staticClass: "form-group" }, [
+        _c(
+          "button",
+          { class: { "d-none": _vm.sending }, attrs: { type: "submit" } },
+          [_vm._v("Отправить")]
+        ),
+        _vm._v(" "),
+        _c("img", {
+          class: { "d-none": !_vm.sending },
+          attrs: { src: "/img/loaders/ball-triangle.svg", alt: "" }
+        })
+      ]),
       _vm._v(" "),
       _c("div", { staticClass: "footer" }, [
         _vm._v(
@@ -19599,16 +19623,7 @@ var render = function() {
     ]
   )
 }
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "form-group" }, [
-      _c("button", { attrs: { type: "submit" } }, [_vm._v("Отправить")])
-    ])
-  }
-]
+var staticRenderFns = []
 render._withStripped = true
 
 

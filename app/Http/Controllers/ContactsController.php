@@ -17,7 +17,7 @@ class ContactsController extends Controller
     public function contactForm(FeedbackRequest $request){
         $captchaState = Functions::check_google($request->get('g-recaptcha-response'), $request->ip());
         if(!$captchaState)
-            return response()->json(['success' => false, 'errors' => 'Ошибка проверки что вы не робот'], 200);
+            return response()->json(['success' => false, 'errors' => 'Ошибка проверки что вы не робот'], 400);
 
         $form = (object) $request->all();
 
