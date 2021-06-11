@@ -47,6 +47,7 @@ $( document ).ready(function() {
     let scroll_shield = undefined;
     let scroll_shield_timer = undefined;
     let menu_trigger = 0;
+
     scroll.on('scroll', func => {
         clearTimeout(scroll_shield_timer);
         scroll_shield_timer = setTimeout(function(){
@@ -80,15 +81,18 @@ $( document ).ready(function() {
         if(func.scroll.y != scrollPos){
             if (func.scroll.y <= scrollPos){
                 //console.log('показать');
-                $('#head-menu').show();
-                $('#head-menu').removeClass('animate__fadeInDown animate__fadeOutUp');
-                $('#head-menu').addClass('animate__animated animate__fadeInDown');
+                    $('#head-menu').show();
+
+                    $('#head-menu').removeClass('animate__fadeInDown animate__fadeOut');
+                    $('#head-menu').addClass('animate__animated animate__fadeIn');
             } else {
                 if(!isInteger(func.scroll.y)){
                     $(".lang-dropdown ul").fadeOut(); // Скрываем меню выбора языка при любом скроле
                     //console.log('Скрыть');
-                    $('#head-menu').removeClass('animate__fadeInDown animate__fadeOutUp');
-                    $('#head-menu').addClass('animate__animated animate__fadeOutUp');
+
+                    $('#head-menu').removeClass('animate__fadeInDown animate__fadeIn');
+                    $('#head-menu').addClass('animate__animated animate__fadeOut');
+
                 }
             }
         }
@@ -97,13 +101,13 @@ $( document ).ready(function() {
 
     });
 
-    $('#head-menu').on('animationend', () => {
+    /*$('#head-menu').on('animationend', () => {
         if (menu_trigger > scrollPos){
-                $('#head-menu').show();
+            $('#head-menu').show();
         } else {
             $('#head-menu').hide();
         }
-    });
+    });*/
 
 
     scroll.on('call', func => {

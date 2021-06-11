@@ -54,6 +54,9 @@ a {
     margin: 20px auto auto;
 }
 /************    Header   *************/
+#head-menu.animate__fadeOut {
+    pointer-events: none;
+}
 
 .nav-header {
     margin-top: 46px;
