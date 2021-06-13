@@ -227,7 +227,7 @@
         <div data-scroll
              data-scroll-direction="horizontal"
              data-scroll-speed="3"
-             data-scroll-offset="0,105%"
+             data-scroll-offset="0,120%"
              data-scroll-target="#jobs">
             <div class="cover cover-5">
                 <img src="/img/slide-3/5_bw.png" alt="">
