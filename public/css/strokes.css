@@ -1331,6 +1331,7 @@ a {
 
 .slide-7 .left-block-gradient{
     position: absolute;
+    z-index: 100;
     width: 461px;
     height: 100%;
     left: 0;
@@ -1367,6 +1368,7 @@ a {
 
 .slide-7 .right-block-gradient {
     position: absolute;
+    z-index: 100;
     width: 461px;
     height: 100%;
     right: 0;
@@ -1440,6 +1442,11 @@ a {
     left: 50%;
     transform: translateX(-50%);
     filter: drop-shadow(0px 0px 10px #000000);
+}
+
+.slide-7 .content .reviews .item-group{
+    position: absolute;
+    width: 100%;
 }
 
 .slide-7 .content .reviews .item {
