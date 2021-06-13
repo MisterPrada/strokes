@@ -741,7 +741,7 @@ a {
 
 .slide-3 {
     position: relative;
-    background-color: #0C0C0C;
+    background-color: #131313;
     height: 100vh;
     min-height: 1010px;
     margin-top: -48px;
@@ -966,7 +966,7 @@ a {
 }
 
 .slide-4 .streetwear .cover img{
-    background-color: #131313;
+    background-color: #0C0C0C;
 }
 
 .slide-4 .cover.carabus img{
@@ -988,7 +988,7 @@ a {
     top: 336px;
     left: 648px;
 
-    background-color: #131313;
+    background-color: #0C0C0C;
 }
 .slide-4 .text-content .content {
     margin-left: 49px;
@@ -1141,7 +1141,7 @@ a {
 
 .slide-5 {
     position: relative;
-    background-color: #0C0C0C;
+    background-color: #131313;
     height: 100vh;
     min-height: 1010px;
     margin-top: -55px;
