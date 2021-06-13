@@ -50,7 +50,7 @@
                     </li>
 
                     <li class="menu-item menu-contacts">
-                        <a href="/contacts">Контакты</a>
+                        <a href="/contacts">Заказать</a>
                     </li>
                 </ul>
             </div>

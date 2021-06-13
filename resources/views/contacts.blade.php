@@ -41,7 +41,7 @@
                     </li>
 
                     <li class="menu-item menu-contacts active">
-                        <a href="/contacts">Контакты</a>
+                        <a href="/contacts">Заказать</a>
                     </li>
                 </ul>
             </div>
