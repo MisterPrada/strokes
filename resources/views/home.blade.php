@@ -139,45 +139,14 @@
     </section>
 
     <section id="jobs" class="slide-3" data-scroll-section>
-        <div data-scroll
-             data-scroll-direction="horizontal"
-             data-scroll-speed="-2"
-             data-scroll-offset="0,105%"
-             data-scroll-target="#jobs">
-            <div class="cover cover-1">
-                <img src="/img/slide-3/6_bw.png" alt="Dead Space">
-            </div>
-        </div>
-
-        <div data-scroll
-             data-scroll-direction="horizontal"
-             data-scroll-speed="-3"
-             data-scroll-offset="0,105%"
-             data-scroll-target="#jobs">
-            <div class="cover cover-2">
-                <img src="/img/slide-3/2_bw.png" alt="">
-            </div>
-        </div>
-
-        <div data-scroll
-             data-scroll-direction="horizontal"
-             data-scroll-speed="-1"
-             data-scroll-offset="0,105%"
-             data-scroll-target="#jobs">
-            <div class="cover cover-3">
-                <img src="/img/slide-3/3_bw.png" alt="">
-            </div>
-        </div>
-
-
         <div id="slide3-content"
-             data-scroll
-             data-scroll-direction="horizontal"
-             data-scroll-speed="1.5"
-             data-scroll-offset="0,105%"
              data-scroll-target="#jobs"
              class="text-content">
-            <div class="content">
+            <div class="content"
+                 data-scroll
+                 data-scroll-direction="horizontal"
+                 data-scroll-speed="1.5"
+                 data-scroll-offset="0,105%">
                 <h1 data-scroll data-scroll-call="jobs">Обложки</h1>
 
                 <p>
@@ -216,6 +185,37 @@
 
         <div data-scroll
              data-scroll-direction="horizontal"
+             data-scroll-speed="-2"
+             data-scroll-offset="0,105%"
+             data-scroll-target="#jobs">
+            <div class="cover cover-1">
+                <img src="/img/slide-3/6_bw.png" alt="Dead Space">
+            </div>
+        </div>
+
+        <div data-scroll
+             data-scroll-direction="horizontal"
+             data-scroll-speed="-3"
+             data-scroll-offset="0,105%"
+             data-scroll-target="#jobs">
+            <div class="cover cover-2">
+                <img src="/img/slide-3/2_bw.png" alt="">
+            </div>
+        </div>
+
+        <div data-scroll
+             data-scroll-direction="horizontal"
+             data-scroll-speed="-1"
+             data-scroll-offset="0,105%"
+             data-scroll-target="#jobs">
+            <div class="cover cover-3">
+                <img src="/img/slide-3/3_bw.png" alt="">
+            </div>
+        </div>
+
+
+        <div data-scroll
+             data-scroll-direction="horizontal"
              data-scroll-speed="2.5"
              data-scroll-offset="0,105%"
              data-scroll-target="#jobs">
@@ -243,42 +243,9 @@
                 <img src="/img/slide-3/4_bw.png" alt="">
             </div>
         </div>
-
-
-
     </section>
 
     <section id="jobs-2" class="slide-4" data-scroll-section>
-        <div data-scroll
-             data-scroll-direction="horizontal"
-             data-scroll-speed="-2"
-             data-scroll-offset="0,105%"
-             data-scroll-target="#jobs-2">
-            <div class="cover massive">
-                <img src="/img/slide-4/massive_bw.png" alt="massive">
-            </div>
-        </div>
-
-        <div data-scroll
-             data-scroll-direction="horizontal"
-             data-scroll-speed="-3"
-             data-scroll-offset="0,105%"
-             data-scroll-target="#jobs-2">
-            <div class="cover minores">
-                <img src="/img/slide-4/minores_bw.png" alt="minores">
-            </div>
-        </div>
-
-        <div data-scroll
-             data-scroll-direction="horizontal"
-             data-scroll-speed="-1"
-             data-scroll-offset="0,105%"
-             data-scroll-target="#jobs-2">
-            <div class="cover neobhodimost">
-                <img src="/img/slide-4/neobhodimost_bw.png" alt="neobhodimost">
-            </div>
-        </div>
-
         <div data-scroll
              data-scroll-direction="horizontal"
              data-scroll-speed="2.5"
@@ -356,16 +323,14 @@
                 </div>
             </div>
         </div>
-    </section>
 
-    <section id="jobs-3" class="slide-5" data-scroll-section>
         <div data-scroll
              data-scroll-direction="horizontal"
              data-scroll-speed="-2"
              data-scroll-offset="0,105%"
-             data-scroll-target="#jobs-3">
-            <div class="cover merch-left-top">
-                <img src="/img/slide-5/merch-left-top_bw.png" alt="merch">
+             data-scroll-target="#jobs-2">
+            <div class="cover massive">
+                <img src="/img/slide-4/massive_bw.png" alt="massive">
             </div>
         </div>
 
@@ -373,12 +338,24 @@
              data-scroll-direction="horizontal"
              data-scroll-speed="-3"
              data-scroll-offset="0,105%"
-             data-scroll-target="#jobs-3">
-            <div class="cover merch-left">
-                <img src="/img/slide-5/merch-left_bw.png" alt="merch">
+             data-scroll-target="#jobs-2">
+            <div class="cover minores">
+                <img src="/img/slide-4/minores_bw.png" alt="minores">
             </div>
         </div>
 
+        <div data-scroll
+             data-scroll-direction="horizontal"
+             data-scroll-speed="-1"
+             data-scroll-offset="0,105%"
+             data-scroll-target="#jobs-2">
+            <div class="cover neobhodimost">
+                <img src="/img/slide-4/neobhodimost_bw.png" alt="neobhodimost">
+            </div>
+        </div>
+    </section>
+
+    <section id="jobs-3" class="slide-5" data-scroll-section>
         <div data-scroll
              data-scroll-direction="horizontal"
              data-scroll-speed="2.5"
@@ -420,6 +397,26 @@
                         Смотреть все иллюстрации
                     </a>
                 </div>
+            </div>
+        </div>
+
+        <div data-scroll
+             data-scroll-direction="horizontal"
+             data-scroll-speed="-2"
+             data-scroll-offset="0,105%"
+             data-scroll-target="#jobs-3">
+            <div class="cover merch-left-top">
+                <img src="/img/slide-5/merch-left-top_bw.png" alt="merch">
+            </div>
+        </div>
+
+        <div data-scroll
+             data-scroll-direction="horizontal"
+             data-scroll-speed="-3"
+             data-scroll-offset="0,105%"
+             data-scroll-target="#jobs-3">
+            <div class="cover merch-left">
+                <img src="/img/slide-5/merch-left_bw.png" alt="merch">
             </div>
         </div>
 
