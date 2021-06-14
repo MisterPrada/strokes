@@ -31,6 +31,7 @@
 
 /************    Общие стили   *************/
 body {
+    cursor: url('/img/cursor.svg') 20 20, auto;
     line-height: initial;
 }
 
