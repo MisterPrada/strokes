@@ -54,6 +54,7 @@ a {
 .g-recaptcha > div {
     margin: 20px auto auto;
 }
+
 /************    Header   *************/
 #head-menu.animate__fadeOut {
     pointer-events: none;
@@ -311,7 +312,7 @@ a {
     position: absolute;
     top: 167px;
     width: 572px;
-    height: 688px;
+    height: 700px;
     background-color: #0C0C0C;
     left: 50%;
     transform: translateX(-50%);

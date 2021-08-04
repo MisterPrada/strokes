@@ -833,7 +833,6 @@
     </footer>
 </main>
 
-
 <div class="logo-right-bottom">
     <a href="/contacts">
         <img src="/img/logo/logo.svg" class="logo-mini">
