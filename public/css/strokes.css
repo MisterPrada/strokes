@@ -31,8 +31,9 @@
 
 /************    Общие стили   *************/
 body {
-    cursor: url('/img/cursor.svg') 20 20, auto;
+    /*cursor: url('/img/cursor.svg') 20 20, auto;*/
     line-height: initial;
+    overflow-x: hidden;
 }
 
 ul{
@@ -1440,7 +1441,7 @@ a {
 
 .slide-7 .content .reviews {
     position: absolute;
-    min-width: 723px;
+    min-width: 688px;
     top: -19px;
     height: auto;
     left: 50%;
@@ -1520,7 +1521,7 @@ a {
 .slide-7 .content .reviews div .text-content .text{
     position: absolute;
     margin-top: 56px;
-    width: 95%;
+    width: 100%;
     height: auto;
     font-family: Roboto Light;
     font-style: normal;
