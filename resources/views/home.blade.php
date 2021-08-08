@@ -26,15 +26,6 @@
                 </a>
             </div>
 
-            <div class="lang-dropdown ">
-                <span>RUS</span>
-                <img src="/img/main/lang.svg" alt="Иконка">
-
-                <ul>
-                    <li><a href="javascript: void(0);">ENG</a></li>
-                </ul>
-            </div>
-
             <div class="menu-right">
                 <ul>
                     <li class="menu-item menu-about">
@@ -52,6 +43,15 @@
                     <li class="menu-item menu-contacts">
                         <a href="/contacts">Заказать</a>
                     </li>
+                </ul>
+            </div>
+
+            <div class="lang-dropdown">
+                <span>RUS</span>
+                <img src="/img/main/lang.svg" alt="Иконка">
+
+                <ul>
+                    <li><a href="javascript: void(0);">ENG</a></li>
                 </ul>
             </div>
         </div>

@@ -114,11 +114,11 @@ $( document ).ready(function() {
         $('.menu-item').removeClass('active');
         $('.menu-' + func).addClass('active');
 
-        if(func === 'main'){
+        /*if(func === 'main'){
             $('.lang-dropdown').fadeIn();
         }else{
             $('.lang-dropdown').fadeOut()
-        }
+        }*/
 
         //console.log(func);
     });

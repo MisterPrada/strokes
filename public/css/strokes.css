@@ -62,7 +62,7 @@ a {
 }
 
 .nav-header {
-    margin-top: 46px;
+    margin-top: 49px;
 }
 
 .header-left-logo {
@@ -72,8 +72,7 @@ a {
 }
 
 .menu-right {
-    position: absolute;
-    right: 60px;
+    text-align: center;
 }
 
 .menu-right ul{
@@ -81,6 +80,8 @@ a {
 }
 
 .menu-right ul li{
+    float: left;
+    padding-right: 54px;
     padding-bottom: 20px;
 }
 
@@ -103,6 +104,8 @@ a {
 }
 
 .lang-dropdown {
+    position: absolute;
+    right: 62px;
     width: 55px;
     text-align: center;
     color: white;
