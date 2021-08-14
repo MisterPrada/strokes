@@ -1,3 +1,4 @@
+
 function isInteger(num) {
     return (num ^ 0) === num;
 }
@@ -120,6 +121,13 @@ $( document ).ready(function() {
             $('.logo-hider').fadeIn()
         }
 
+
+       /* if(func === 'ttt'){
+            $('.logo-hider').fadeOut();
+        }*/
+        //console.log( visible(document.getElementById('ttt')) )
+
+
         //console.log(func);
     });
 
@@ -234,7 +242,5 @@ $( document ).ready(function() {
         });
 
     }
-
-
 
 });

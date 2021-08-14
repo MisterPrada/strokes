@@ -75,6 +75,8 @@
         <div class="main-center-text">
             <img src="/img/logo/logo.svg">
         </div>
+
+        <div data-scroll data-scroll-call="main" class="main-bottom-border"></div>
     </section>
 
     <section id="about" class="slide-2" data-scroll-section>
@@ -117,11 +119,10 @@
                         реализации Вашей задачи.
                     </p>
 
-                    <p data-scroll data-scroll-call="about">
-                        <br>
+                    <p>
+                        <br data-scroll data-scroll-call="about">
                     </p>
                 </div>
-
             </div>
         </div>
 
@@ -141,7 +142,7 @@
                  data-scroll-direction="horizontal"
                  data-scroll-speed="1.5"
                  data-scroll-offset="0,105%">
-                <h1 data-scroll data-scroll-call="jobs">Обложки</h1>
+                <h1>Обложки</h1>
 
                 <p>
                     Обложка альбома – словно лицо музыкального релиза. Она должна
@@ -164,7 +165,7 @@
                     воплощение смыслов, заложенных вашей музыкой.
                 </p>
 
-                <div class="content-footer">
+                <div data-scroll data-scroll-call="jobs" class="content-footer">
                     <a target="_blank" href="https://www.facebook.com/pg/strokescoredesign/photos/?tab=album&album_id=100991604820835&ref=page_internal">
                         <img src="/img/slide-3/facebook.svg" alt="icon">
                         Смотреть все обложки
