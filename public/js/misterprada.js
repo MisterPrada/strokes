@@ -114,11 +114,11 @@ $( document ).ready(function() {
         $('.menu-item').removeClass('active');
         $('.menu-' + func).addClass('active');
 
-        /*if(func === 'main'){
-            $('.lang-dropdown').fadeIn();
+        if(func === 'main'){
+            $('.logo-hider').fadeOut()
         }else{
-            $('.lang-dropdown').fadeOut()
-        }*/
+            $('.logo-hider').fadeIn()
+        }
 
         //console.log(func);
     });
@@ -235,6 +235,6 @@ $( document ).ready(function() {
 
     }
 
+
+
 });
-
-

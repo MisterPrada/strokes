@@ -14,13 +14,14 @@
     <link rel="stylesheet" href="css/locomotive-scroll.min.css">
     <link rel="stylesheet" href="css/strokes.css">
     <link rel="stylesheet" href="css/title.css">
+    <link rel="stylesheet" href="css/app.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 <body data-scroll-container>
 <header>
     <div id="head-menu" class="container-fluid fixed-top nav-header">
         <div class="row justify-content-center">
-            <div class="header-left-logo">
+            <div class="header-left-logo logo-hider">
                 <a href="#home">
                     <img src="/img/left-logo.svg" alt="Логотип">
                 </a>
@@ -63,7 +64,7 @@
         <video src="/video/background-contacts.mp4" muted autoplay loop class="video-background"></video>
         <div class="video-grid"></div>
 
-        <div class="left-logo-block">
+        <div class="left-logo-block custom">
             <div class="rect-top"></div>
 
             <div class="logo-text" data-scroll data-scroll-call="main">
@@ -72,15 +73,7 @@
         </div>
 
         <div class="main-center-text">
-            <p id="head_title" class="title container_title">
-                <span>МЫ СОЗДАЕМ</span>
-                <span>МЫ СОЗДАЕМ</span>
-                <span>МЫ СОЗДАЕМ</span>
-            </p>
-
-            <p class="descr">
-                дизайн для мировой сцены тяжелой музыки
-            </p>
+            <img src="/img/logo/logo.svg">
         </div>
     </section>
 
@@ -846,5 +839,6 @@
 <script src="js/bootstrap.min.js"></script>
 <script src="js/locomotive-scroll.min.js"></script>
 <script src="js/misterprada.js"></script>
+<script src="js/app.js"></script>
 
 </html>

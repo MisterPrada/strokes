@@ -1951,9 +1951,12 @@ window.onloadCallback = function () {
 };
 
 vue__WEBPACK_IMPORTED_MODULE_0__.default.component('contact-form', __webpack_require__(/*! ./components/contactForm.vue */ "./resources/js/components/contactForm.vue").default);
-var app = new vue__WEBPACK_IMPORTED_MODULE_0__.default({
-  el: '#app'
-});
+
+if ($('#app').length) {
+  var app = new vue__WEBPACK_IMPORTED_MODULE_0__.default({
+    el: '#app'
+  });
+}
 
 /***/ }),
 
@@ -19200,10 +19203,10 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
 
 /***/ }),
 
-/***/ "./resources/css/app.css":
-/*!*******************************!*\
-  !*** ./resources/css/app.css ***!
-  \*******************************/
+/***/ "./resources/sass/app.scss":
+/*!*********************************!*\
+  !*** ./resources/sass/app.scss ***!
+  \*********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -31837,7 +31840,7 @@ Vue.compile = compileToFunctions;
 /******/ 		
 /******/ 		var deferredModules = [
 /******/ 			["./resources/js/app.js"],
-/******/ 			["./resources/css/app.css"]
+/******/ 			["./resources/sass/app.scss"]
 /******/ 		];
 /******/ 		// no chunk on demand loading
 /******/ 		

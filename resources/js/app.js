@@ -14,6 +14,8 @@ window.onloadCallback = function () {
 
 Vue.component('contact-form', require('./components/contactForm.vue').default);
 
-const app = new Vue({
-    el: '#app',
-});
+if($('#app').length){
+    const app = new Vue({
+        el: '#app',
+    });
+}
