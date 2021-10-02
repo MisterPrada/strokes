@@ -21,6 +21,8 @@
 <header>
     <div id="head-menu" class="container-fluid fixed-top nav-header">
         <div class="row justify-content-center">
+            <div class="menu-background"></div>
+
             <div class="header-left-logo logo-hider">
                 <a href="#home">
                     <img src="/img/left-logo.svg" alt="Логотип">
@@ -73,7 +75,7 @@
         </div>
 
         <div class="main-center-text">
-            <img src="/img/logo/logo.svg">
+            <img class="main-logo-img" src="/img/logo/logo.svg">
         </div>
 
         <div data-scroll data-scroll-call="main" class="main-bottom-border"></div>
@@ -436,14 +438,14 @@
         </div>
     </section>
 
-    <section class="slide-6" data-scroll-section>
+{{--    <section class="slide-6" data-scroll-section>
         <video src="/video/eye.mp4" muted autoplay loop class="video"></video>
         <div class="video-grid"></div>
-    </section>
+    </section>--}}
 
     <section id="reviews" class="slide-7" data-scroll-section>
         <div class="left-block-gradient">
-            <div class="hov"></div>
+{{--            <div class="hov"></div>--}}
             <span class="left-link">
                 <svg width="14" height="25" viewBox="0 0 14 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0.277534 12.8462L11.5428 24.0803C11.9119 24.4481 12.5094 24.4475 12.8779 24.0784C13.2461 23.7093 13.2452 23.1114 12.876 22.7433L2.28131 12.1778L12.8764 1.6124C13.2455 1.24422 13.2464 0.646692 12.8783 0.277552C12.6936 0.0925064 12.4516 -1.71661e-05 12.2096 -1.71661e-05C11.9682 -1.71661e-05 11.7272 0.0918884 11.5428 0.275648L0.277534 11.5094C0.0997658 11.6863 1.14441e-05 11.927 1.14441e-05 12.1778C1.14441e-05 12.4286 0.100052 12.669 0.277534 12.8462Z" fill="#343434"/>
@@ -452,7 +454,7 @@
         </div>
 
         <div class="right-block-gradient">
-            <div class="hov"></div>
+{{--            <div class="hov"></div>--}}
             <span class="right-link">
                 <svg width="14" height="25" viewBox="0 0 14 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M13.7225 12.8462L2.45722 24.0803C2.08813 24.4481 1.49056 24.4475 1.12208 24.0784C0.753896 23.7093 0.754847 23.1114 1.12399 22.7433L11.7187 12.1778L1.12361 1.6124C0.754514 1.24422 0.753563 0.646692 1.1217 0.277552C1.30642 0.0925064 1.5484 -1.71661e-05 1.79039 -1.71661e-05C2.03176 -1.71661e-05 2.27279 0.0918884 2.45717 0.275648L13.7225 11.5094C13.9002 11.6863 14 11.927 14 12.1778C14 12.4286 13.8999 12.669 13.7225 12.8462Z" fill="#343434"/>
@@ -778,10 +780,12 @@
     </section>
 
     <footer id="footer" class="slide-8" data-scroll-section>
+        <div id="footer-line-top"></div>
+
         <div class="content">
             <div data-scroll
                  data-scroll-speed="2"
-                 data-scroll-target="#footer" class="social">
+                 data-scroll-target="#footer-line-top" class="social">
                 <div class="link">
                     <a href="https://vk.com/strokesdesign" target="_blank">
                         <img src="/img/slide-8/vk.svg" alt="vk">

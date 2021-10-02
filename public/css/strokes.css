@@ -62,7 +62,16 @@ a {
 }
 
 .nav-header {
-    margin-top: 49px;
+    margin-top: 44px;
+}
+
+.menu-background {
+    background: linear-gradient(
+            180deg, rgba(0, 0, 0, 1) 25%, rgba(0, 0, 0, 0) 97.77%);
+    top: -44px;
+    position: absolute;
+    width: 100%;
+    height: 240%;
 }
 
 .header-left-logo {
@@ -76,6 +85,7 @@ a {
 }
 
 .menu-right {
+    z-index: 50;
     text-align: center;
 }
 
@@ -256,10 +266,12 @@ a {
 
 .slide-1 .custom .rect-top {
     top: 40px;
+    z-index: 10000;
 }
 
 .slide-1 .custom .logo-text {
     top: 47px;
+    z-index: 10000;
 }
 
 .slide-1 .logo-text span{
@@ -279,7 +291,6 @@ a {
     height: 10px;
     bottom: 50%;
 }
-
 
 /** Contacts **/
 .modal-result {
@@ -722,7 +733,7 @@ a {
 }
 
 .slide-3 .text-content .content-footer a {
-    font-family: 'Roboto Medium';
+    font-family: 'Roboto Bold';
     letter-spacing: 1px;
     color: white;
     font-size: 20px;
@@ -733,7 +744,7 @@ a {
 
 .slide-3 .text-content .content-footer a.blur-material {
     position: absolute;
-    top: 0;
+    /*top: 0;*/
     left: 0;
     margin: 0;
     -webkit-transition: all 0.2s ease;
@@ -849,7 +860,7 @@ a {
 
 .slide-4 .text-content .content-footer a.blur-material {
     position: absolute;
-    top: 0;
+    /*top: 0;*/
     left: 0;
     margin: 0;
     -webkit-transition: all 0.2s ease;
@@ -1037,7 +1048,7 @@ a {
 
 .slide-5 .text-content .content-footer a.blur-material {
     position: absolute;
-    top: 0;
+    /*top: 0;*/
     left: 0;
     margin: 0;
     -webkit-transition: all 0.2s ease;
@@ -1115,7 +1126,7 @@ a {
     position: relative;
     background-color: #0C0C0C;
     margin-top: -45px;
-    z-index: 200;
+    /*z-index: 200;*/
 }
 
 .slide-6 .video {
@@ -1138,22 +1149,22 @@ a {
 
 .slide-7 {
     position: relative;
-    background-color: #121212;
-    z-index: 200;
-    min-height: 800px;
+    background-color: #0C0C0C;
+    /*z-index: 200;*/
+    min-height: 1055px;
     margin-top: -4px;
 }
 
 .slide-7 .left-block-gradient{
     position: absolute;
-    z-index: 100;
+    z-index: 250;
     width: 461px;
     height: 100%;
     left: 0;
 }
 
 .slide-7 .left-block-gradient:hover svg path, .slide-7 .right-block-gradient:hover svg path{
-    fill: #ffffff;
+    fill: #BA2425;
 }
 
 .slide-7 .left-block-gradient .hov {
@@ -1183,7 +1194,7 @@ a {
 
 .slide-7 .right-block-gradient {
     position: absolute;
-    z-index: 100;
+    z-index: 250;
     width: 461px;
     height: 100%;
     right: 0;
@@ -1251,10 +1262,12 @@ a {
     cursor: pointer;
 }
 
+
 .slide-7 .content .reviews {
     position: absolute;
+    z-index: 99;
     min-width: 688px;
-    top: -19px;
+    top: 101px;
     height: auto;
     left: 50%;
     transform: translateX(-50%);

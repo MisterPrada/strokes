@@ -1,4 +1,5 @@
 
+
 function isInteger(num) {
     return (num ^ 0) === num;
 }
@@ -116,9 +117,11 @@ $( document ).ready(function() {
         $('.menu-' + func).addClass('active');
 
         if(func === 'main'){
-            $('.logo-hider').fadeOut()
+            $('.logo-hider').fadeOut() // скрываем логотип слева если на главном экране
+            $('.menu-background').fadeOut() // скрываем тень если на главном экране
         }else{
             $('.logo-hider').fadeIn()
+            $('.menu-background').fadeIn()
         }
 
 
