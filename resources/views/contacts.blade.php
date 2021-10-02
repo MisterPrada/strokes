@@ -72,10 +72,12 @@
     </section>
 
     <footer id="footer" class="slide-8" data-scroll-section>
+        <div id="footer-line-top"></div>
+
         <div class="content">
             <div data-scroll
                  data-scroll-speed="2"
-                 data-scroll-target="#footer" class="social">
+                 data-scroll-target="#footer-line-top" class="social">
                 <div class="link">
                     <a href="https://vk.com/strokesdesign" target="_blank">
                         <img src="/img/slide-8/vk.svg" alt="vk">

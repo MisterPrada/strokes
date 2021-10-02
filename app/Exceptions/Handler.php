@@ -38,4 +38,24 @@ class Handler extends ExceptionHandler
             //
         });
     }
+
+    public function render($request, Throwable $exception)
+    {
+        if(get_class($exception) == "Illuminate\Database\Eloquent\ModelNotFoundException") {
+            return redirect(404);
+        }
+
+        if($exception instanceof ModelNotFoundException)
+        {
+            return redirect(404);
+        }
+
+        if ($this->isHttpException($exception)) {
+            if ($exception->getStatusCode() == 404) {
+                return redirect(404);
+            }
+        }
+
+        return parent::render($request, $exception);
+    }
 }

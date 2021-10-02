@@ -20,3 +20,8 @@ Route::get('/', function () {
 
 Route::get('/contacts', [ContactsController::class, 'index'])->name('contacts');
 Route::post('/contacts', [ContactsController::class, 'contactForm']);
+
+// Errors
+Route::get('/404', function(){
+    return response()->view('errors.404', [])->setStatusCode(404);
+})->name('errors.404');
