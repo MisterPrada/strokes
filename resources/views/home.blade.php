@@ -138,12 +138,12 @@
     <section id="jobs" class="slide-3" data-scroll-section>
         <div id="slide3-content"
              data-scroll-target="#jobs"
+             data-scroll
+             data-scroll-direction="horizontal"
+             data-scroll-speed="1.5"
+             data-scroll-offset="0,105%"
              class="text-content">
-            <div class="content"
-                 data-scroll
-                 data-scroll-direction="horizontal"
-                 data-scroll-speed="1.5"
-                 data-scroll-offset="0,105%">
+            <div class="content">
                 <h1>Обложки</h1>
 
                 <p>
@@ -297,8 +297,6 @@
                 </div>
             </div>
 
-
-
             <div data-scroll
                  data-scroll-direction="horizontal"
                  data-scroll-speed="4"
@@ -308,7 +306,6 @@
                     <img src="/img/slide-4/sadday_bw.png" alt="sadday">
                 </div>
             </div>
-
 
             <div data-scroll
                  data-scroll-direction="horizontal"
