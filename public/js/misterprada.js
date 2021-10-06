@@ -101,6 +101,13 @@ $( document ).ready(function() {
 
         scrollPos = func.scroll.y;
 
+        //*************** анимация для тени меню *********************//
+        if ( func.scroll.y < 20) {
+            $('.menu-background').fadeOut() // скрываем тень на меню
+        }else{
+            $('.menu-background').fadeIn(); // скрываем тень на меню
+        }
+
     });
 
     /*$('#head-menu').on('animationend', () => {
@@ -118,10 +125,8 @@ $( document ).ready(function() {
 
         if(func === 'main'){
             $('.logo-hider').fadeOut() // скрываем логотип слева если на главном экране
-            $('.menu-background').fadeOut() // скрываем тень если на главном экране
         }else{
             $('.logo-hider').fadeIn()
-            $('.menu-background').fadeIn()
         }
 
 

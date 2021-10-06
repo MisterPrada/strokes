@@ -66,8 +66,8 @@ a {
 }
 
 .menu-background {
-    background: linear-gradient(
-            180deg, rgba(0, 0, 0, 1) 25%, rgba(0, 0, 0, 0) 97.77%);
+    background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0.81) 38.97%, rgba(0, 0, 0, 0) 78.77%);
+
     top: -44px;
     position: absolute;
     width: 100%;
@@ -1396,6 +1396,7 @@ a {
 
 .slide-8 .content .social {
     width: 75px;
+    /*top: 45px;*/
     height: 100%;
     position: absolute;
     background-color: white;
@@ -1449,7 +1450,7 @@ a {
 
     transform-origin: 0% 0%;
     transform: rotate(-90deg) translateX(-49%);
-    top: 50%;
+    top: 40%;
 }
 
 .slide-8 .content .center-text {
@@ -1476,5 +1477,5 @@ a {
 
     transform-origin: 0% 0%;
     transform: rotate(-90deg) translateX(-49%);
-    top: 50%;
+    top: 40%;
 }
