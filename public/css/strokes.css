@@ -67,7 +67,7 @@ a {
 
 .menu-background {
     background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0.81) 38.97%, rgba(0, 0, 0, 0) 78.77%);
-
+    display: none;
     top: -44px;
     position: absolute;
     width: 100%;
@@ -1161,6 +1161,10 @@ a {
     width: 461px;
     height: 100%;
     left: 0;
+}
+
+.slide-7 .left-block-gradient svg path, .slide-7 .right-block-gradient svg path{
+    fill: white;
 }
 
 .slide-7 .left-block-gradient:hover svg path, .slide-7 .right-block-gradient:hover svg path{
