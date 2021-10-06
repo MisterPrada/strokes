@@ -123,7 +123,9 @@ $( document ).ready(function() {
         $('.menu-item').removeClass('active');
         $('.menu-' + func).addClass('active');
 
-        if(func === 'main'){
+        console.log(func);
+
+        if(func === 'main' || func === 'about'){
             $('.logo-hider').fadeOut() // скрываем логотип слева если на главном экране
         }else{
             $('.logo-hider').fadeIn()
