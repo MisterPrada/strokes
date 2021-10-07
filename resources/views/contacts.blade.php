@@ -19,6 +19,8 @@
 <header>
     <div id="head-menu" class="container-fluid fixed-top nav-header">
         <div class="row justify-content-center">
+            <div class="menu-background"></div>
+
             <div class="header-left-logo">
                 <a href="/#home">
                     <img src="/img/left-logo.svg" alt="Логотип">
@@ -76,8 +78,8 @@
 
         <div class="content">
             <div data-scroll
-                 data-scroll-speed="2"
-                 data-scroll-target="#footer-line-top" class="social">
+                 data-scroll-speed="1"
+                 data-scroll-target="#footer" class="social">
                 <div class="link">
                     <a href="https://vk.com/strokesdesign" target="_blank">
                         <img src="/img/slide-8/vk.svg" alt="vk">
@@ -113,7 +115,7 @@
                 <div data-scroll
                      data-scroll-speed="1"
                      data-scroll-target="#footer" class="right-text">
-                    <span>STAY FA**ING TRUE!</span>
+                    <span>STAY FU**ING TRUE!</span>
                 </div>
             </div>
 

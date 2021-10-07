@@ -109,11 +109,11 @@ a {
 }
 
 .menu-right ul li.active a{
-    color: #FF2E2E;
+    color: #FF4747;
 }
 
 .menu-right ul li a:hover{
-    color: #FF2E2E;
+    color: #FF4747;
     text-decoration: none;
 }
 
