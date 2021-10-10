@@ -182,6 +182,16 @@
 
         <div data-scroll
              data-scroll-direction="horizontal"
+             data-scroll-speed="-1"
+             data-scroll-offset="0,105%"
+             data-scroll-target="#jobs">
+            <div class="cover cover-3">
+                <img src="/img/slide-3/3_bw.png" alt="">
+            </div>
+        </div>
+
+        <div data-scroll
+             data-scroll-direction="horizontal"
              data-scroll-speed="-2"
              data-scroll-offset="0,105%"
              data-scroll-target="#jobs">
@@ -199,17 +209,6 @@
                 <img src="/img/slide-3/2_bw.png" alt="">
             </div>
         </div>
-
-        <div data-scroll
-             data-scroll-direction="horizontal"
-             data-scroll-speed="-1"
-             data-scroll-offset="0,105%"
-             data-scroll-target="#jobs">
-            <div class="cover cover-3">
-                <img src="/img/slide-3/3_bw.png" alt="">
-            </div>
-        </div>
-
 
         <div data-scroll
              data-scroll-direction="horizontal"
