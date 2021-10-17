@@ -1,20 +1,40 @@
-
+var orientationState = true;
 
 function isInteger(num) {
     return (num ^ 0) === num;
 }
 
-function spanText(text) {
-    var string = text.innerText;
-    var spaned = '';
-    for (var i = 0; i < string.length; i++) {
-        if(string.substring(i, i + 1) === ' ') spaned += string.substring(i, i + 1);
-        else spaned += '<span>' + string.substring(i, i + 1) + '</span>';
-    }
-    text.innerHTML = spaned;
+
+function phoneResizeSetHeight() {
+    const doc = document.documentElement;
+    doc.style.setProperty('--app-height', `${window.innerHeight}px`);
 }
 
+const resizeFunction = () => {
+
+    if( orientationState ) {
+        phoneResizeSetHeight();
+        orientationState = undefined;
+    }
+
+};
+window.addEventListener('resize', resizeFunction);
+resizeFunction();
+
+window.addEventListener('orientationchange', function (e) {
+    orientationState = true;
+});
+
+document.addEventListener('touchmove', function (event) {
+    if (event.scale !== 1) { event.preventDefault(); }
+}, { passive: false });
+
+document.addEventListener('dblclick', (event) => {
+    event.preventDefault()
+}, { passive: false });
+
 $( document ).ready(function() {
+
     /** Анимация для появления главного текста **/
     var headline = document.getElementById('head_title');
     if(headline){
@@ -251,4 +271,33 @@ $( document ).ready(function() {
 
     }
 
+    if($('.js-mobile-menu-btn').length){
+        $('.js-mobile-menu-btn').on('click', function(){
+
+            $('.menu-right').show();
+
+            if( !$('.menu-right').hasClass('animate__animated animate__fadeInDown') ){
+                $('.menu-right').off('animationend');
+
+                $('.menu-right').removeClass('animate__animated animate__fadeInDown animate__fadeOutUp');
+
+                $('.menu-right').addClass('animate__animated animate__fadeInDown');
+            } else {
+                $('.menu-right').removeClass('animate__animated animate__fadeInDown animate__fadeOutUp');
+
+                $('.menu-right').addClass('animate__animated animate__fadeOutUp');
+
+                $('.menu-right').one('animationend', () => {
+                    $('.menu-right').removeAttr("style");
+                    $('.menu-right').removeClass('animate__animated animate__fadeInDown animate__fadeOutUp');
+                });
+
+            }
+
+        });
+    }
+
 });
+
+
+

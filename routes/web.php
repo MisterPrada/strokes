@@ -18,6 +18,10 @@ Route::get('/', function () {
     return view('home');
 })->name('home');
 
+Route::get('/responsive', function () {
+    return view('responsive');
+})->name('responsive');
+
 Route::get('/contacts', [ContactsController::class, 'index'])->name('contacts');
 Route::post('/contacts', [ContactsController::class, 'contactForm']);
 
