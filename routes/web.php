@@ -22,6 +22,10 @@ Route::get('/responsive', function () {
     return view('responsive');
 })->name('responsive');
 
+Route::get('/disabled', function () {
+    return view('disabled');
+})->name('disabled');
+
 Route::get('/contacts', [ContactsController::class, 'index'])->name('contacts');
 Route::post('/contacts', [ContactsController::class, 'contactForm']);
 

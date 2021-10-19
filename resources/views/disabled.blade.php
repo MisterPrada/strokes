@@ -134,7 +134,7 @@
         </div>
 
         <div data-scroll data-scroll-speed="-6" data-target="#about" class="video-background">
-            <video src="/video/slide-2.mp4" muted autoplay loop></video>
+            <video src="/video/slide-2.mp4" muted loop></video>
             <div class="video-grid"></div>
         </div>
 
@@ -185,61 +185,37 @@
             </div>
         </div>
 
-        <div data-scroll
-             data-scroll-direction="horizontal"
-             data-scroll-speed="-1"
-             data-scroll-offset="0,105%"
-             data-scroll-target="#jobs">
+        <div>
             <div class="cover cover-3">
                 <img src="/img/slide-3/3_bw.png" alt="">
             </div>
         </div>
 
-        <div data-scroll
-             data-scroll-direction="horizontal"
-             data-scroll-speed="-2"
-             data-scroll-offset="0,105%"
-             data-scroll-target="#jobs">
+        <div>
             <div class="cover cover-1">
                 <img src="/img/slide-3/6_bw.png" alt="Dead Space">
             </div>
         </div>
 
-        <div data-scroll
-             data-scroll-direction="horizontal"
-             data-scroll-speed="-3"
-             data-scroll-offset="0,105%"
-             data-scroll-target="#jobs">
+        <div>
             <div class="cover cover-2">
                 <img src="/img/slide-3/2_bw.png" alt="">
             </div>
         </div>
 
-        <div data-scroll
-             data-scroll-direction="horizontal"
-             data-scroll-speed="2.5"
-             data-scroll-offset="0,105%"
-             data-scroll-target="#jobs">
+        <div>
             <div class="cover cover-4">
                 <img src="/img/slide-3/1_bw.png" alt="">
             </div>
         </div>
 
-        <div data-scroll
-             data-scroll-direction="horizontal"
-             data-scroll-speed="3"
-             data-scroll-offset="0,120%"
-             data-scroll-target="#jobs">
+        <div>
             <div class="cover cover-5">
                 <img src="/img/slide-3/5_bw.png" alt="">
             </div>
         </div>
 
-        <div data-scroll
-             data-scroll-direction="horizontal"
-             data-scroll-speed="2"
-             data-scroll-offset="0,105%"
-             data-scroll-target="#jobs">
+        <div>
             <div class="cover cover-6">
                 <img src="/img/slide-3/4_bw.png" alt="">
             </div>
@@ -247,12 +223,12 @@
     </section>
 
     <section id="jobs-2" class="slide-4" data-scroll-section>
-        <div data-scroll
-             data-scroll-direction="horizontal"
-             data-scroll-speed="2.5"
-             data-scroll-offset="0,105%"
-             data-scroll-target="#jobs-2" class="text-content">
-            <div class="content">
+        <div class="text-content">
+            <div data-scroll
+                 data-scroll-direction="horizontal"
+                 data-scroll-speed="2.5"
+                 data-scroll-offset="0,105%"
+                 data-scroll-target="#jobs-2" class="content">
                 <h1 data-scroll data-scroll-call="jobs">Логотипы и эмблемы</h1>
 
                 <p>
@@ -291,62 +267,38 @@
                 </div>
             </div>
 
-            <div data-scroll
-                 data-scroll-direction="horizontal"
-                 data-scroll-speed="1"
-                 data-scroll-offset="0,105%"
-                 data-scroll-target="#jobs-2" class="streetwear">
+            <div class="streetwear">
                 <div class="cover">
                     <img src="/img/slide-4/streetwear_bw.png" alt="streetwear">
                 </div>
             </div>
 
-            <div data-scroll
-                 data-scroll-direction="horizontal"
-                 data-scroll-speed="4"
-                 data-scroll-offset="0,105%"
-                 data-scroll-target="#jobs-2" class="sadday">
+            <div class="sadday">
                 <div class="cover">
                     <img src="/img/slide-4/sadday_bw.png" alt="sadday">
                 </div>
             </div>
 
-            <div data-scroll
-                 data-scroll-direction="horizontal"
-                 data-scroll-speed="4"
-                 data-scroll-offset="0,105%"
-                 data-scroll-target="#jobs-2" class="carabus">
+            <div class="carabus">
                 <div class="cover">
                     <img src="/img/slide-4/carabus_bw.png" alt="carabus">
                 </div>
             </div>
         </div>
 
-        <div data-scroll
-             data-scroll-direction="horizontal"
-             data-scroll-speed="-2"
-             data-scroll-offset="0,105%"
-             data-scroll-target="#jobs-2">
+        <div>
             <div class="cover massive">
                 <img src="/img/slide-4/massive_bw.png" alt="massive">
             </div>
         </div>
 
-        <div data-scroll
-             data-scroll-direction="horizontal"
-             data-scroll-speed="-3"
-             data-scroll-offset="0,105%"
-             data-scroll-target="#jobs-2">
+        <div>
             <div class="cover minores">
                 <img src="/img/slide-4/minores_bw.png" alt="minores">
             </div>
         </div>
 
-        <div data-scroll
-             data-scroll-direction="horizontal"
-             data-scroll-speed="-1"
-             data-scroll-offset="0,105%"
-             data-scroll-target="#jobs-2">
+        <div>
             <div class="cover neobhodimost">
                 <img src="/img/slide-4/neobhodimost_bw.png" alt="neobhodimost">
             </div>
@@ -398,41 +350,25 @@
             </div>
         </div>
 
-        <div data-scroll
-             data-scroll-direction="horizontal"
-             data-scroll-speed="-2"
-             data-scroll-offset="0,105%"
-             data-scroll-target="#jobs-3">
+        <div>
             <div class="cover merch-left-top">
                 <img src="/img/slide-5/merch-left-top_bw.png" alt="merch">
             </div>
         </div>
 
-        <div data-scroll
-             data-scroll-direction="horizontal"
-             data-scroll-speed="-3"
-             data-scroll-offset="0,105%"
-             data-scroll-target="#jobs-3">
+        <div>
             <div class="cover merch-left">
                 <img src="/img/slide-5/merch-left_bw.png" alt="merch">
             </div>
         </div>
 
-        <div data-scroll
-             data-scroll-direction="horizontal"
-             data-scroll-speed="2"
-             data-scroll-offset="0,105%"
-             data-scroll-target="#jobs-3">
+        <div>
             <div class="cover merch-right-top">
                 <img src="/img/slide-5/merch-right-top_bw.png" alt="merch">
             </div>
         </div>
 
-        <div data-scroll
-             data-scroll-direction="horizontal"
-             data-scroll-speed="3"
-             data-scroll-offset="0,105%"
-             data-scroll-target="#jobs-3">
+        <div>
             <div class="cover merch-right">
                 <img src="/img/slide-5/merch-right_bw.png" alt="merch">
             </div>
@@ -441,7 +377,7 @@
 
     <section id="reviews" class="slide-7" data-scroll-section>
         <div class="left-block-gradient">
-            <div class="hov"></div>
+{{--            <div class="hov"></div>--}}
             <span class="left-link">
                 <svg width="14" height="25" viewBox="0 0 14 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0.277534 12.8462L11.5428 24.0803C11.9119 24.4481 12.5094 24.4475 12.8779 24.0784C13.2461 23.7093 13.2452 23.1114 12.876 22.7433L2.28131 12.1778L12.8764 1.6124C13.2455 1.24422 13.2464 0.646692 12.8783 0.277552C12.6936 0.0925064 12.4516 -1.71661e-05 12.2096 -1.71661e-05C11.9682 -1.71661e-05 11.7272 0.0918884 11.5428 0.275648L0.277534 11.5094C0.0997658 11.6863 1.14441e-05 11.927 1.14441e-05 12.1778C1.14441e-05 12.4286 0.100052 12.669 0.277534 12.8462Z" fill="#343434"/>
@@ -450,7 +386,7 @@
         </div>
 
         <div class="right-block-gradient">
-            <div class="hov"></div>
+{{--            <div class="hov"></div>--}}
             <span class="right-link">
                 <svg width="14" height="25" viewBox="0 0 14 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M13.7225 12.8462L2.45722 24.0803C2.08813 24.4481 1.49056 24.4475 1.12208 24.0784C0.753896 23.7093 0.754847 23.1114 1.12399 22.7433L11.7187 12.1778L1.12361 1.6124C0.754514 1.24422 0.753563 0.646692 1.1217 0.277552C1.30642 0.0925064 1.5484 -1.71661e-05 1.79039 -1.71661e-05C2.03176 -1.71661e-05 2.27279 0.0918884 2.45717 0.275648L13.7225 11.5094C13.9002 11.6863 14 11.927 14 12.1778C14 12.4286 13.8999 12.669 13.7225 12.8462Z" fill="#343434"/>
@@ -514,17 +450,17 @@
 
                     <div class="item">
                         <div class="logo">
-                            <img src="/img/slide-7/vector-of-underground.svg" alt="vector-of-underground">
+                            <img src="/img/slide-7/hungry-pigeon.svg" alt="hungry-pigeon">
                         </div>
                         <div class="text-content">
                             <div class="head">
-                                <span class="red">Vector Of Underground</span>
+                                <span class="red">HUNGRY PIGEON</span>
                                 <span class="grey">| Музыкальная группа</span>
                             </div>
                             <div class="text">
-                                Заказ кавера для трека прошёл в комфортном режиме, сделано<br>
-                                оперативно.<br>
-                                Вопросов нет!
+                                Весь процесс работы очень понравился. STROKES крайне<br>
+                                внимательны и аккуратны. Все сделано на высшем уровне и в<br>
+                                кратчайшие сроки!
                             </div>
                         </div>
                     </div>
@@ -584,17 +520,17 @@
 
                     <div class="item">
                         <div class="logo">
-                            <img src="/img/slide-7/hungry-pigeon.svg" alt="hungry-pigeon">
+                            <img src="/img/slide-7/vector-of-underground.svg" alt="vector-of-underground">
                         </div>
                         <div class="text-content">
                             <div class="head">
-                                <span class="red">HUNGRY PIGEON</span>
+                                <span class="red">Vector Of Underground</span>
                                 <span class="grey">| Музыкальная группа</span>
                             </div>
                             <div class="text">
-                                Весь процесс работы очень понравился. STROKES крайне<br>
-                                внимательны и аккуратны. Все сделано на высшем уровне и в<br>
-                                кратчайшие сроки!
+                                Заказ кавера для трека прошёл в комфортном режиме, сделано<br>
+                                оперативно.<br>
+                                Вопросов нет!
                             </div>
                         </div>
                     </div>
