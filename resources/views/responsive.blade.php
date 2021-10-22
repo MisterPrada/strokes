@@ -86,6 +86,54 @@
         <div data-scroll data-scroll-call="main" class="main-bottom-border"></div>
     </section>
 
+    <section id="about" class="slide-2" data-scroll-section>
+        <!--<div class="pencil"></div>-->
+
+        <div data-scroll data-scroll-speed="-5" data-target="#about" class="container text-content">
+            <div class="row">
+                <div>
+                    <h1>О нас</h1>
+
+                    <p>
+                        Привет, нас зовут <span class="red">«STROKES»</span>. <br>
+                        В настоящее время мы специализируемся на дизайне<br>
+                        продукта, дизайне UI/UX, видео-дизайне и<br>
+                        художественном направлении в целом.
+                    </p>
+
+                    <p>
+                        Проект <span class="red">«STROKES»</span> направлен на визуальную поддержку<br>
+                        мировой сцены тяжелой музыки, а именно на помощь в<br>
+                        продвижении путём разработки дизайна медиа-контента<br>
+                        для музыкальных групп, дизайн их продукции и моушн <br>
+                        дизайна.
+                    </p>
+
+                    <p>
+                        Первостепенная задача, которая мной движет - подход к<br>
+                        каждому проекту с профессиональной стороны.
+                    </p>
+
+                    <p>
+                        В нашу команду входят Digital-дизайнеры, иллюстраторы и<br>
+                        2-D художники, работающие в  различных направлениях и<br>
+                        стилистиках.
+                    </p>
+
+                    <p>
+                        Каждый заказ обрабатывается <span class="red">индивидуально</span> и для него<br>
+                        подбирается специалист, который наиболее подходит для<br>
+                        реализации Вашей задачи.
+                    </p>
+
+                    <p>
+                        <br data-scroll data-scroll-call="about">
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
 </main>
 
 <div class="logo-right-bottom">

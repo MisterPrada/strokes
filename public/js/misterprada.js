@@ -100,6 +100,8 @@ $( document ).ready(function() {
         //console.log('second: ' + scrollPos);
 
         //**************** анимация для меню ************************//
+
+
         if(func.scroll.y != scrollPos){
             if (func.scroll.y <= scrollPos){
                 //console.log('показать');
@@ -114,7 +116,8 @@ $( document ).ready(function() {
 
                     $('#head-menu').removeClass('animate__fadeInDown animate__fadeIn');
                     $('#head-menu').addClass('animate__animated animate__fadeOut');
-
+                }else{
+                    mobileMenuHide();
                 }
             }
         }
@@ -140,6 +143,7 @@ $( document ).ready(function() {
 
 
     scroll.on('call', func => {
+
         $('.menu-item').removeClass('active');
         $('.menu-' + func).addClass('active');
 
@@ -199,7 +203,9 @@ $( document ).ready(function() {
                     offset = -110;
                 }
 
+
                 scroll.scrollTo(id, offset);
+
              /*   scroll.scrollTo(id, 100, 1000, [0.25, 0.00, 0.35, 1.00], true, ()=>{
                     scroll_shield = false;
                 });*/
@@ -271,27 +277,34 @@ $( document ).ready(function() {
 
     }
 
+    function mobileMenuHide() {
+        $('.menu-right').removeClass('animate__animated animate__fadeInDown animate__fadeOutUp');
+
+        $('.menu-right').addClass('animate__animated animate__fadeOutUp');
+
+        $('.menu-right').one('animationend', () => {
+            $('.menu-right').removeAttr("style");
+            $('.menu-right').removeClass('animate__animated animate__fadeInDown animate__fadeOutUp');
+        });
+    }
+
+    function mobileMenuShow() {
+        $('.menu-right').off('animationend');
+
+        $('.menu-right').removeClass('animate__animated animate__fadeInDown animate__fadeOutUp');
+
+        $('.menu-right').addClass('animate__animated animate__fadeInDown');
+    }
+
     if($('.js-mobile-menu-btn').length){
         $('.js-mobile-menu-btn').on('click', function(){
 
             $('.menu-right').show();
 
             if( !$('.menu-right').hasClass('animate__animated animate__fadeInDown') ){
-                $('.menu-right').off('animationend');
-
-                $('.menu-right').removeClass('animate__animated animate__fadeInDown animate__fadeOutUp');
-
-                $('.menu-right').addClass('animate__animated animate__fadeInDown');
+                mobileMenuShow();
             } else {
-                $('.menu-right').removeClass('animate__animated animate__fadeInDown animate__fadeOutUp');
-
-                $('.menu-right').addClass('animate__animated animate__fadeOutUp');
-
-                $('.menu-right').one('animationend', () => {
-                    $('.menu-right').removeAttr("style");
-                    $('.menu-right').removeClass('animate__animated animate__fadeInDown animate__fadeOutUp');
-                });
-
+                mobileMenuHide();
             }
 
         });
