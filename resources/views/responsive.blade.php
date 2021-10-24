@@ -133,6 +133,91 @@
         </div>
     </section>
 
+    <section id="jobs" class="slide-3" data-scroll-section>
+        <div id="slide3-content"
+             data-scroll-target="#jobs"
+             data-scroll
+             data-scroll-direction="horizontal"
+             data-scroll-speed="1.5"
+             data-scroll-offset="0,105%"
+             class="text-content">
+            <div class="content">
+                <h1>Обложки</h1>
+
+                <p>
+                    Обложка альбома – это лицо музыкального релиза.
+                    Обложка должна запоминаться, цеплять за живое и, не побоимся
+                    этих слов – оставить след в душе! Все в точности, как с музыкой.
+                </p>
+
+                <p>
+                    Мы готовы реализовать любую из ваших идей и предложить свою
+                    помощь и экспертизу для создания будущей обложки релиза.
+                    Мы разрабатываем обложки в различных стилях — начиная
+                    от коллажирования, заканчивая полноценными реалистичными
+                    артами.
+                </p>
+
+                <p>
+                    Мы верим, что обложка музыкального альбома – это визуальное
+                    воплощение смыслов, заложенных вашей музыкой.
+                </p>
+
+                <div data-scroll data-scroll-call="jobs" class="content-footer">
+                    <a target="_blank" href="https://www.facebook.com/pg/strokescoredesign/photos/?tab=album&album_id=100991604820835&ref=page_internal">
+                        <img src="/img/slide-3/facebook.svg" alt="icon">
+                        Смотреть все обложки
+                    </a>
+                    <a class="blur-material" target="_blank" href="https://www.facebook.com/pg/strokescoredesign/photos/?tab=album&album_id=100991604820835&ref=page_internal">
+                        <img src="/img/slide-3/facebook.svg" alt="icon">
+                        Смотреть все обложки
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="left-merch">
+            <div>
+                <div class="cover cover-3">
+                    <img src="/img/slide-3/3_bw.png" alt="">
+                </div>
+            </div>
+
+            <div>
+                <div class="cover cover-1">
+                    <img src="/img/slide-3/6_bw.png" alt="Dead Space">
+                </div>
+            </div>
+
+            <div>
+                <div class="cover cover-2">
+                    <img src="/img/slide-3/2_bw.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="right-merch">
+            <div>
+                <div class="cover cover-4">
+                    <img src="/img/slide-3/1_bw.png" alt="">
+                </div>
+            </div>
+
+            <div>
+                <div class="cover cover-5">
+                    <img src="/img/slide-3/5_bw.png" alt="">
+                </div>
+            </div>
+
+            <div>
+                <div class="cover cover-6">
+                    <img src="/img/slide-3/4_bw.png" alt="">
+                </div>
+            </div>
+        </div>
+
+    </section>
+
 </main>
 
 <div class="logo-right-bottom">

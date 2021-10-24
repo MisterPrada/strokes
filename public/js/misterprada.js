@@ -4,6 +4,13 @@ function isInteger(num) {
     return (num ^ 0) === num;
 }
 
+function ifMobile() {
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
+        return true;
+    }
+
+    return false;
+}
 
 function phoneResizeSetHeight() {
     const doc = document.documentElement;
@@ -11,12 +18,14 @@ function phoneResizeSetHeight() {
 }
 
 const resizeFunction = () => {
-
     if( orientationState ) {
         phoneResizeSetHeight();
         orientationState = undefined;
     }
 
+    if(!ifMobile()){
+        phoneResizeSetHeight();
+    }
 };
 window.addEventListener('resize', resizeFunction);
 resizeFunction();
@@ -105,10 +114,10 @@ $( document ).ready(function() {
         if(func.scroll.y != scrollPos){
             if (func.scroll.y <= scrollPos){
                 //console.log('показать');
-                    $('#head-menu').show();
+                $('#head-menu').show();
 
-                    $('#head-menu').removeClass('animate__fadeInDown animate__fadeOut');
-                    $('#head-menu').addClass('animate__animated animate__fadeIn');
+                $('#head-menu').removeClass('animate__fadeInDown animate__fadeOut');
+                $('#head-menu').addClass('animate__animated animate__fadeIn');
             } else {
                 if(!isInteger(func.scroll.y)){
                     $(".lang-dropdown ul").fadeOut(); // Скрываем меню выбора языка при любом скроле
@@ -154,9 +163,9 @@ $( document ).ready(function() {
         }
 
 
-       /* if(func === 'ttt'){
-            $('.logo-hider').fadeOut();
-        }*/
+        /* if(func === 'ttt'){
+             $('.logo-hider').fadeOut();
+         }*/
         //console.log( visible(document.getElementById('ttt')) )
 
 
@@ -206,9 +215,9 @@ $( document ).ready(function() {
 
                 scroll.scrollTo(id, offset);
 
-             /*   scroll.scrollTo(id, 100, 1000, [0.25, 0.00, 0.35, 1.00], true, ()=>{
-                    scroll_shield = false;
-                });*/
+                /*   scroll.scrollTo(id, 100, 1000, [0.25, 0.00, 0.35, 1.00], true, ()=>{
+                       scroll_shield = false;
+                   });*/
             }
 
         });
