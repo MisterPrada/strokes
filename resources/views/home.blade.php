@@ -137,9 +137,6 @@
         <div id="slide3-content"
              data-scroll-target="#jobs"
              data-scroll
-             data-scroll-direction="horizontal"
-             data-scroll-speed="1.5"
-             data-scroll-offset="0,105%"
              class="text-content">
             <div class="content">
                 <h1>Обложки</h1>
