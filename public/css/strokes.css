@@ -289,7 +289,8 @@ a {
     font-family: Roboto;
     font-weight: bold;
     margin-bottom: 2rem;
-    font-size: 3rem;
+    font-size: 35px;
+    line-height: 41px;
 }
 
 .slide-2 span.red {
@@ -443,7 +444,7 @@ a {
     top: 0;
     bottom: 0;
 
-    background-color: #131313;
+    /*background-color: #131313;*/
 }
 
 .slide-3 .text-content .content {
@@ -520,8 +521,8 @@ a {
     }
 
     .slide-3 .text-content .content {
-        font-size: 14px;
-        line-height: 16px;
+        font-size: 16px;
+        line-height: 19px;
     }
 
     .slide-3 .text-content .content h1 {
@@ -1286,6 +1287,8 @@ a {
         height: var(--app-height);
         min-height: unset;
         position: relative;
+        background-image: unset;
+        background-color: #131313;
     }
     .slide-2 .text-content {
         position: absolute;

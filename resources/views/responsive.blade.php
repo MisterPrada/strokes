@@ -108,7 +108,7 @@
                         product-дизайна и motion-дизайна для музыкальных групп.
                     </p>
 
-                    <p>
+                    <p >
                         Наша первостепенная задача – профессиональный<br>
                         подход к каждому проекту индивидуально.
                     </p>
@@ -135,11 +135,7 @@
 
     <section id="jobs" class="slide-3" data-scroll-section>
         <div id="slide3-content"
-             data-scroll-target="#jobs"
-             data-scroll
-             data-scroll-direction="horizontal"
-             data-scroll-speed="1.5"
-             data-scroll-offset="0,105%"
+
              class="text-content">
             <div class="content">
                 <h1>Обложки</h1>
@@ -163,7 +159,7 @@
                     воплощение смыслов, заложенных вашей музыкой.
                 </p>
 
-                <div data-scroll data-scroll-call="jobs" class="content-footer">
+                <div data-scroll data-scroll-call="jobs"  class="content-footer">
                     <a target="_blank" href="https://www.facebook.com/pg/strokescoredesign/photos/?tab=album&album_id=100991604820835&ref=page_internal">
                         <img src="/img/slide-3/facebook.svg" alt="icon">
                         Смотреть все обложки
@@ -217,7 +213,6 @@
         </div>
 
     </section>
-
 </main>
 
 <div class="logo-right-bottom">
