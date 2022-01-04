@@ -1253,6 +1253,11 @@ a {
     min-height: unset;
     position: relative;
   }
+  .slide-2 h1 {
+    margin-bottom: 30px;
+    font-size: 25px;
+    line-height: 29px;
+  }
   .slide-2 .text-content {
     position: absolute;
     width: 488px;
@@ -1307,6 +1312,11 @@ a {
     font-size: 10px;
     line-height: 12px;
     color: white;
+  }
+  .slide-2 h1 {
+    margin-bottom: 30px;
+    font-size: 25px;
+    line-height: 29px;
   }
 }
 
