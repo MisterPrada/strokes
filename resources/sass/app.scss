@@ -2497,12 +2497,10 @@ a {
 .slide-5 {
     position: relative;
     background-color: #131313;
-    height: 100vh;
-    height: var(--app-height);
     min-height: 1010px;
     margin-top: -55px;
     z-index: 99;
-    overflow-x: hidden;
+    overflow: hidden;
 
     .cover {
         img{
@@ -2651,7 +2649,7 @@ a {
     }
 
     @media (min-width: 1000px) and (max-width: 1910px) {
-        $factor: 1.2;
+        $factor: 1.4;
 
         & {
             height: 100vh;
@@ -2689,7 +2687,7 @@ a {
             width: (806px/$factor);
             height: (860px/$factor);
             left: -192.44px;
-            top: -340px;
+            top: -100px;
             bottom: 0px;
             margin: auto;
         }
@@ -2709,7 +2707,7 @@ a {
             width: (806px/$factor);
             height: (860px/$factor);
             right: -197.32px;
-            top: -330px;
+            top: -100px;
             bottom: 0px;
             margin: auto;
         }
@@ -2734,7 +2732,7 @@ a {
             width: (806px/$factor);
             height: (860px/$factor);
             left: -192.44px;
-            top: -340px;
+            top: -100px;
             bottom: 0px;
             margin: auto;
         }
@@ -2754,7 +2752,7 @@ a {
             width: (806px/$factor);
             height: (860px/$factor);
             right: -197.32px;
-            top: -330px;
+            top: -100px;
             bottom: 0px;
             margin: auto;
         }

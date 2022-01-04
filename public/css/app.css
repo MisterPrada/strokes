@@ -2173,12 +2173,10 @@ a {
 .slide-5 {
   position: relative;
   background-color: #131313;
-  height: 100vh;
-  height: var(--app-height);
   min-height: 1010px;
   margin-top: -55px;
   z-index: 99;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 .slide-5 .cover img {
   width: 100%;
@@ -2318,17 +2316,17 @@ a {
   }
   .slide-5 .merch-left-top {
     position: absolute;
-    width: 671.6666666667px;
-    height: 716.6666666667px;
+    width: 575.7142857143px;
+    height: 614.2857142857px;
     left: -192.44px;
-    top: -340px;
+    top: -100px;
     bottom: 0px;
     margin: auto;
   }
   .slide-5 .merch-left {
     position: absolute;
-    width: 592.9583333333px;
-    height: 636.7166666667px;
+    width: 508.25px;
+    height: 545.7571428571px;
     left: -164.85px;
     top: 400px;
     bottom: 0px;
@@ -2336,18 +2334,18 @@ a {
   }
   .slide-5 .merch-right-top {
     position: absolute;
-    width: 671.6666666667px;
-    height: 716.6666666667px;
+    width: 575.7142857143px;
+    height: 614.2857142857px;
     right: -197.32px;
-    top: -330px;
+    top: -100px;
     bottom: 0px;
     margin: auto;
   }
   .slide-5 .merch-right {
     position: absolute;
     z-index: 100;
-    width: 566.8666666667px;
-    height: 609.5666666667px;
+    width: 485.8857142857px;
+    height: 522.4857142857px;
     right: -134.37px;
     top: 490px;
     bottom: 0px;
@@ -2360,7 +2358,7 @@ a {
     width: 503.75px;
     height: 537.5px;
     left: -192.44px;
-    top: -340px;
+    top: -100px;
     bottom: 0px;
     margin: auto;
   }
@@ -2378,7 +2376,7 @@ a {
     width: 503.75px;
     height: 537.5px;
     right: -197.32px;
-    top: -330px;
+    top: -100px;
     bottom: 0px;
     margin: auto;
   }

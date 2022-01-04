@@ -358,6 +358,342 @@
             </div>
         </div>
     </section>
+
+    <section id="reviews" class="slide-7" data-scroll-section>
+        <div class="left-block-gradient">
+            {{--            <div class="hov"></div>--}}
+            <span class="left-link">
+                <svg width="14" height="25" viewBox="0 0 14 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.277534 12.8462L11.5428 24.0803C11.9119 24.4481 12.5094 24.4475 12.8779 24.0784C13.2461 23.7093 13.2452 23.1114 12.876 22.7433L2.28131 12.1778L12.8764 1.6124C13.2455 1.24422 13.2464 0.646692 12.8783 0.277552C12.6936 0.0925064 12.4516 -1.71661e-05 12.2096 -1.71661e-05C11.9682 -1.71661e-05 11.7272 0.0918884 11.5428 0.275648L0.277534 11.5094C0.0997658 11.6863 1.14441e-05 11.927 1.14441e-05 12.1778C1.14441e-05 12.4286 0.100052 12.669 0.277534 12.8462Z" fill="#343434"/>
+                </svg>
+            </span>
+        </div>
+
+        <div class="right-block-gradient">
+            {{--            <div class="hov"></div>--}}
+            <span class="right-link">
+                <svg width="14" height="25" viewBox="0 0 14 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13.7225 12.8462L2.45722 24.0803C2.08813 24.4481 1.49056 24.4475 1.12208 24.0784C0.753896 23.7093 0.754847 23.1114 1.12399 22.7433L11.7187 12.1778L1.12361 1.6124C0.754514 1.24422 0.753563 0.646692 1.1217 0.277552C1.30642 0.0925064 1.5484 -1.71661e-05 1.79039 -1.71661e-05C2.03176 -1.71661e-05 2.27279 0.0918884 2.45717 0.275648L13.7225 11.5094C13.9002 11.6863 14 11.927 14 12.1778C14 12.4286 13.8999 12.669 13.7225 12.8462Z" fill="#343434"/>
+                </svg>
+            </span>
+        </div>
+
+        <div class="content">
+            <div class="reviews" data-scroll data-scroll-call="reviews">
+                <div class="item-group">
+                    <div class="item">
+                        <div class="logo">
+                            <img src="/img/slide-7/hatred-city.svg" alt="hatred-city">
+                        </div>
+                        <div class="text-content">
+                            <div class="head">
+                                <span class="red">Hatred City</span>
+                                <span class="grey">| Музыкальная группа</span>
+                            </div>
+                            <div class="text">
+                                Начали работать с самого создания группы, до сих пор обращаемся.<br>
+                                Приводим сюда все свои новые проекты. Заверяем, тут все<br>
+                                качественно, быстро и технично, рекомендем!
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="logo">
+                            <img src="/img/slide-7/cold-blooded-murder.svg" alt="cold-blooded-murder">
+                        </div>
+                        <div class="text-content">
+                            <div class="head">
+                                <span class="red">Cold Blooded Murder</span>
+                                <span class="grey">| Музыкальная группа</span>
+                            </div>
+                            <div class="text">
+                                Взрывной результат, работа выполнена качественно и в кротчайшие<br>
+                                сроки. Стоит отметит профессиональный подход и ответственность.<br>
+                                Обязательно будем обращаться еще!
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="logo">
+                            <img src="/img/slide-7/pro-heroes.svg" alt="pro-heroes">
+                        </div>
+                        <div class="text-content">
+                            <div class="head">
+                                <span class="red">PRO Heroes</span>
+                                <span class="grey">| Студия звукозаписи</span>
+                            </div>
+                            <div class="text">
+                                Выше всех похвал! С первого подхода попали в яблочко<br>
+                                с редизайном бренда студии звукозаписи ProHeroes!<br>
+                                Конечно же обращусь и в следующий раз!
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="logo">
+                            <img src="/img/slide-7/hungry-pigeon.svg" alt="hungry-pigeon">
+                        </div>
+                        <div class="text-content">
+                            <div class="head">
+                                <span class="red">HUNGRY PIGEON</span>
+                                <span class="grey">| Музыкальная группа</span>
+                            </div>
+                            <div class="text">
+                                Весь процесс работы очень понравился. STROKES крайне<br>
+                                внимательны и аккуратны. Все сделано на высшем уровне и в<br>
+                                кратчайшие сроки!
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="logo">
+                            <img src="/img/slide-7/deathsquad.svg" alt="deathsquad">
+                        </div>
+                        <div class="text-content">
+                            <div class="head">
+                                <span class="red">DEATHSQUAD</span>
+                                <span class="grey">| Музыкальная группа</span>
+                            </div>
+                            <div class="text">
+                                Обратились за дизайном, профессионально нас оформил и очень<br>
+                                быстро. За два дня получили шикарный дизайн, респект.<br>
+                                Всем рекомендуем!
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="logo">
+                            <img src="/img/slide-7/doctordanver.svg" alt="doctordanver">
+                        </div>
+                        <div class="text-content">
+                            <div class="head">
+                                <span class="red">Doctordanver</span>
+                                <span class="grey">| Музыкальная группа</span>
+                            </div>
+                            <div class="text">
+                                Всем советую! Очень быстро нашли общий язык и на выходе<br>
+                                получил отличную обложку и лирик видео. Работа под ключ,<br>
+                                внимание к деталям, качество и сроки.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item-group">
+                    <div class="item">
+                        <div class="logo">
+                            <img src="/img/slide-7/brightdelight.svg" alt="brightdelight">
+                        </div>
+                        <div class="text-content">
+                            <div class="head">
+                                <span class="red">BrightDelight</span>
+                                <span class="grey">| Музыкальная группа</span>
+                            </div>
+                            <div class="text">
+                                Получили бомбическую обложку для своей банды!<br>
+                                Оперативно, Мегакачественно, Огненный Прайс.<br>
+                                Непросто рекомендую, только со STROKES и надо работать!
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="logo">
+                            <img src="/img/slide-7/vector-of-underground.svg" alt="vector-of-underground">
+                        </div>
+                        <div class="text-content">
+                            <div class="head">
+                                <span class="red">Vector Of Underground</span>
+                                <span class="grey">| Музыкальная группа</span>
+                            </div>
+                            <div class="text">
+                                Заказ кавера для трека прошёл в комфортном режиме, сделано<br>
+                                оперативно.<br>
+                                Вопросов нет!
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="logo">
+                            <img src="/img/slide-7/deceiving-lights.svg" alt="deceiving-lights">
+                        </div>
+                        <div class="text-content">
+                            <div class="head">
+                                <span class="red">Deceiving Lights</span>
+                                <span class="grey">| Музыкальная группа</span>
+                            </div>
+                            <div class="text">
+                                Очень качественная проделанная работа, с множеством<br>
+                                различных вариантов. Человек на 100500% втягивается в процесс,<br>
+                                что очень порадовало.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="logo">
+                            <img src="/img/slide-7/last-trial.svg" alt="last trial">
+                        </div>
+                        <div class="text-content">
+                            <div class="head">
+                                <span class="red">LAST TRIAL</span>
+                                <span class="grey">| Музыкальная группа</span>
+                            </div>
+                            <div class="text">
+                                Огромный респект STROKES! Идеи схватывают налету и привносят<br>
+                                новые мысли в уже имеющиеся заготовки. И всё это при<br>
+                                прекрасном соотношении цены и качества. Спасибо огромное!
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="logo">
+                            <img src="/img/slide-7/massive-overdancity.svg" alt="massive-overdancity">
+                        </div>
+                        <div class="text-content">
+                            <div class="head">
+                                <span class="red">Massive Overdancity</span>
+                                <span class="grey">| Музыкальная группа</span>
+                            </div>
+                            <div class="text">
+                                Благодарим за отлично проделанную работу. Особенно за решение<br>
+                                спорных моментов, которые в итоге вышли очень хорошими.<br>
+                                В будущем надеемся на продолжительное сотрудничество!
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="logo">
+                            <img src="/img/slide-7/fooling-the-crowd.svg" alt="Fooling the Crowd">
+                        </div>
+                        <div class="text-content">
+                            <div class="head">
+                                <span class="red">Fooling the Crowd</span>
+                                <span class="grey">| Музыкальная группа</span>
+                            </div>
+                            <div class="text">
+                                Максимально довольны обложкой. Оперативно, качественно<br>
+                                и даже пару бонусов сверху накинули. Просто супер, лучшие!<br>
+                                Всем советуем!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item-group">
+                    <div class="item">
+                        <div class="logo">
+                            <img src="/img/slide-7/beatdown-heroes.svg" alt="BEATDOWN HEROES">
+                        </div>
+                        <div class="text-content">
+                            <div class="head">
+                                <span class="red">BEATDOWN HEROES</span>
+                                <span class="grey">| Музыкальная группа</span>
+                            </div>
+                            <div class="text">
+                                Сотрудничаем уже очень долго, при каждом обращении получаем<br>
+                                ожидаемо-офигительный результат. Очень профессиональный<br>
+                                подход и исполнение в срок, услуги стоят своего. Всем советуем!
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="logo">
+                            <img src="/img/slide-7/among-your-gods.svg" alt="AMONG YOUR GODS">
+                        </div>
+                        <div class="text-content">
+                            <div class="head">
+                                <span class="red">AMONG YOUR GODS</span>
+                                <span class="grey">| Музыкальная группа</span>
+                            </div>
+                            <div class="text">
+                                Заказали лирик видео на новый трек. Работа была<br>
+                                выполнена быстро, качественно и за разумные деньги!<br>
+                                Очень приятно было иметь дело. Огромное спасибо за терпение!
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="logo">
+                            <img src="/img/slide-7/incomer.svg" alt="deceiving-lights">
+                        </div>
+                        <div class="text-content">
+                            <div class="head">
+                                <span class="red">Incomer</span>
+                                <span class="grey">| Музыкальная группа</span>
+                            </div>
+                            <div class="text">
+                                Выражаем огромную благодарность STROKES за дизайн логотипа<br>
+                                и эмблемы группы. Работа выполнена быстро, качественно, ценник<br>
+                                гуманный. Не мучайте себя в фотошопах, закажите работу у профи!
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="logo">
+                            <img src="/img/slide-7/STTD-Logo.svg" alt="SILENCE TENDS TO DESTROY">
+                        </div>
+                        <div class="text-content">
+                            <div class="head">
+                                <span class="red">SILENCE TENDS TO DESTROY</span>
+                                <span class="grey">| Музыкальная группа</span>
+                            </div>
+                            <div class="text">
+                                STROKES всегда делают работу лучше, чем мы изначально<br>
+                                задумываем. Очень рад, что есть такие люди, которые<br>
+                                дорабатывают ваши идеи и воплощают идеально. 12 пушек из 10!
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="logo">
+                            <img src="/img/slide-7/Kirill-Karklin.svg" alt="Kirill Karklin">
+                        </div>
+                        <div class="text-content">
+                            <div class="head">
+                                <span class="red">Kirill Karklin</span>
+                                <span class="grey">| Музыкант</span>
+                            </div>
+                            <div class="text">
+                                Зная себя, вообще не думал, что у кого-то получится придумать<br>
+                                логотип подходящий для моей музыкальной деятельности.<br>
+                                В итоге - результат превзошёл ожидания и я намерен вернуться!
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="logo">
+                            <img src="/img/slide-7/Voidout.svg" alt="Voidout">
+                        </div>
+                        <div class="text-content">
+                            <div class="head">
+                                <span class="red">Voidout</span>
+                                <span class="grey">| Музыкальная группа</span>
+                            </div>
+                            <div class="text">
+                                Отличная работа! Легко взаимодействовать и вносить правки,<br>
+                                понимаем друг друга с полуслова. Обязательно обратимся<br>
+                                за обложками. Большая благодарность от всего коллектива!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </main>
 
 <div class="logo-right-bottom">
