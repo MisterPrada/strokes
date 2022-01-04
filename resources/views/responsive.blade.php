@@ -213,6 +213,85 @@
         </div>
 
     </section>
+
+    <section id="jobs-2" class="slide-4" data-scroll-section>
+        <div class="text-content">
+            <div class="content">
+                <h1 data-scroll data-scroll-call="jobs">Логотипы и эмблемы</h1>
+
+                <p>
+                    Фирменный знак - это первое впечатление о вашем музыкальном проекте.
+                </p>
+
+                <p>
+                    В современном мире музыкальные коллективы
+                    используют логотипы и эмблемы в качестве презентации своей
+                    группы, будь то их размещение на афише
+                    концерта или на обложке релиза.
+                </p>
+
+                <p>
+                    В любом случае,
+                    логотип является неотъемлемой визуальной частью
+                    музыкального проекта.
+                </p>
+
+                <p>
+                    Мы предлагаем разработку текстовых, символических либо
+                    комбинированных логотипов и эмблем в различных стилях:
+                    #Metal #Hardcore #Punk и многие другие.
+                </p>
+
+                <div class="content-footer">
+                    <a target="_blank" href="https://www.facebook.com/pg/strokescoredesign/photos/?tab=album&album_id=100989934821002&ref=page_internal">
+                        <img src="/img/slide-3/facebook.svg" alt="icon">
+                        Смотреть все логотипы и эмблемы
+                    </a>
+
+                    <a class="blur-material" target="_blank" href="https://www.facebook.com/pg/strokescoredesign/photos/?tab=album&album_id=100989934821002&ref=page_internal">
+                        <img src="/img/slide-3/facebook.svg" alt="icon">
+                        Смотреть все логотипы и эмблемы
+                    </a>
+                </div>
+            </div>
+
+            <div class="streetwear">
+                <div class="cover">
+                    <img src="/img/slide-4/streetwear_bw.png" alt="streetwear">
+                </div>
+            </div>
+
+            <div class="sadday">
+                <div class="cover">
+                    <img src="/img/slide-4/sadday_bw.png" alt="sadday">
+                </div>
+            </div>
+
+            <div class="carabus">
+                <div class="cover">
+                    <img src="/img/slide-4/carabus_bw.png" alt="carabus">
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <div class="cover massive">
+                <img src="/img/slide-4/massive_bw.png" alt="massive">
+            </div>
+        </div>
+
+        <div>
+            <div class="cover minores">
+                <img src="/img/slide-4/minores_bw.png" alt="minores">
+            </div>
+        </div>
+
+        <div>
+            <div class="cover neobhodimost">
+                <img src="/img/slide-4/neobhodimost_bw.png" alt="neobhodimost">
+            </div>
+        </div>
+    </section>
 </main>
 
 <div class="logo-right-bottom">
