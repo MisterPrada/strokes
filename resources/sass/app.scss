@@ -2456,6 +2456,435 @@ a {
         }
     }
 
+    @media (max-width: 320px) {
+        & {
+            height: 100vh;
+            height: var(--app-height);
+            position: relative;
+            min-height: unset;
+
+            .text-content {
+                .content {
+                    font-size: 12px;
+                    line-height: 14px;
+                    margin-left: 4%;
+                    padding-right: 35px;
+
+                    h1 {
+                        margin-bottom: 30px;
+
+                        font-size: 25px;
+                        line-height: 29px;
+                    }
+                }
+
+                .content-footer a {
+                    font-size: 16px;
+                    line-height: 18px;
+                    margin-top: 21px;
+                }
+            }
+        }
+    }
+}
+
+/************   Slide 5   *************/
+
+.slide-5 {
+    position: relative;
+    background-color: #131313;
+    height: 100vh;
+    height: var(--app-height);
+    min-height: 1010px;
+    margin-top: -55px;
+    z-index: 99;
+    overflow-x: hidden;
+
+    .cover {
+        img{
+            width: 100%;
+            height: 100%;
+            -webkit-transition: all 1s ease;
+            -moz-transition: all 1s ease;
+            -o-transition: all 1s ease;
+            -ms-transition: all 1s ease;
+            transition: all 1s ease;
+            filter: blur(2px);
+            transform: scale(1.01);
+            opacity: 1;
+
+            &:hover{
+                filter: blur(0px);
+                opacity: 0;
+            }
+        }
+    }
+
+    .text-content {
+        position: absolute;
+        /*width: 1272px;*/
+        width: 100%;
+        height: 430px;
+
+        margin: auto;
+        top: 0;
+        bottom: 0;
+
+        /*background-color: #131313;*/
+
+        .content {
+            /*margin-left: 49px;*/
+            margin-left: 36.3%;
+            margin-top: 30px;
+            max-width: 539px;
+
+            font-family: Roboto Light;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 19px;
+            color: #ABABAB;
+
+            h1 {
+                margin-bottom: 29px;
+                font-family: Roboto Bold;
+                color: white;
+
+                font-style: normal;
+                font-weight: bold;
+                font-size: 50px;
+                line-height: 59px;
+            }
+        }
+
+        .content-footer{
+            position: relative;
+            padding-top: 14px;
+
+            a {
+                font-family: 'Roboto Bold';
+                letter-spacing: 1px;
+                color: white;
+                font-size: 20px;
+                line-height: 24px;
+                margin-top: 31px;
+                text-decoration: none;
+            }
+
+            a.blur-material {
+                position: absolute;
+                /*top: 0;*/
+                left: 0;
+                margin: 0;
+                -webkit-transition: all 0.2s ease;
+                -moz-transition: all 0.2s ease;
+                -o-transition: all 0.2s ease;
+                -ms-transition: all 0.2s ease;
+                transition: all 0.2s ease;
+                filter: blur(0px);
+                opacity: 0;
+
+                &:hover {
+                    filter: blur(10px);
+                    opacity: 1;
+                }
+            }
+
+            img {
+                vertical-align: bottom;
+            }
+        }
+    }
+
+    .merch-left-top {
+        position: absolute;
+        width: 806px;
+        height: 860px;
+        left: -192.44px;
+        top: -6.35px;
+        transform: rotate(15deg);
+
+        background-image: url("/img/slide-5/merch-left-top.png");
+        background-size: contain;
+    }
+
+    .merch-left {
+        position: absolute;
+        width: 711.55px;
+        height: 764.06px;
+        left: -164.85px;
+        top: 435.76px;
+        transform: rotate(-14.46deg);
+
+        background-image: url("/img/slide-5/merch-left.png");
+        background-size: contain;
+    }
+
+    .merch-right-top {
+        position: absolute;
+        width: 806px;
+        height: 860px;
+        right: -197.32px;
+        top: 7.6px;
+        transform: rotate(-9.32deg);
+        z-index: 10;
+
+        background-image: url("/img/slide-5/merch-right-top.png");
+        background-size: contain;
+    }
+
+    .merch-right {
+        position: absolute;
+        z-index: 100;
+        width: 680.24px;
+        height: 731.48px;
+        right: -134.37px;
+        top: 471.9px;
+        transform: rotate(8.83deg);
+
+        background-image: url("/img/slide-5/merch-right.png");
+        background-size: contain;
+    }
+
+    @media (min-width: 1000px) and (max-width: 1910px) {
+        $factor: 1.2;
+
+        & {
+            height: 100vh;
+            height: var(--app-height);
+            position: relative;
+
+            min-height: unset;
+            margin-top: -10px;
+
+            .text-content {
+                .content {
+                    font-size: 16px;
+                    line-height: 19px;
+
+                    h1 {
+                        margin-bottom: 20px;
+
+                        font-size: 35px;
+                        line-height: 41px;
+                    }
+                }
+
+                .content-footer {
+                    a {
+                        font-size: 16px;
+                        line-height: 18px;
+                        margin-top: 21px;
+                    }
+                }
+            }
+        }
+
+        .merch-left-top {
+            position: absolute;
+            width: (806px/$factor);
+            height: (860px/$factor);
+            left: -192.44px;
+            top: -340px;
+            bottom: 0px;
+            margin: auto;
+        }
+
+        .merch-left {
+            position: absolute;
+            width: (711.55px/$factor);
+            height: (764.06px/$factor);
+            left: -164.85px;
+            top: 400px;
+            bottom: 0px;
+            margin: auto;
+        }
+
+        .merch-right-top {
+            position: absolute;
+            width: (806px/$factor);
+            height: (860px/$factor);
+            right: -197.32px;
+            top: -330px;
+            bottom: 0px;
+            margin: auto;
+        }
+
+        .merch-right {
+            position: absolute;
+            z-index: 100;
+            width: (680.24px/$factor);
+            height: (731.48px/$factor);
+            right: -134.37px;
+            top: 490px;
+            bottom: 0px;
+            margin: auto;
+        }
+    }
+
+    @media (max-width: 1500px) {
+        $factor: 1.6;
+
+        .merch-left-top {
+            position: absolute;
+            width: (806px/$factor);
+            height: (860px/$factor);
+            left: -192.44px;
+            top: -340px;
+            bottom: 0px;
+            margin: auto;
+        }
+
+        .merch-left {
+            position: absolute;
+            width: (711.55px/$factor);
+            height: (764.06px/$factor);
+            left: -164.85px;
+            top: 400px;
+            bottom: 0px;
+            margin: auto;
+        }
+
+        .merch-right-top {
+            position: absolute;
+            width: (806px/$factor);
+            height: (860px/$factor);
+            right: -197.32px;
+            top: -330px;
+            bottom: 0px;
+            margin: auto;
+        }
+
+        .merch-right {
+            position: absolute;
+            z-index: 100;
+            width: (680.24px/$factor);
+            height: (731.48px/$factor);
+            right: -134.37px;
+            top: 490px;
+            bottom: 0px;
+            margin: auto;
+        }
+    }
+
+    @media (max-width: 1300px) {
+        .text-content {
+            .content {
+                margin-left: 28%;
+            }
+        }
+
+        $factor: 1.7;
+    }
+
+    @media (max-width: 1170px) {
+        & {
+            background-image: url(/img/slide-5/background.png);
+            background-position-y: 65%;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        & .cover {
+            display: none;
+        }
+
+        & .text-content {
+            background-color: unset;
+        }
+    }
+
+    @media (min-width: 480px) and (max-width: 1000px) {
+        & {
+            height: 100vh;
+            height: var(--app-height);
+            position: relative;
+
+            min-height: unset;
+        }
+
+        & .text-content {
+            .content {
+                font-size: 12px;
+                line-height: 14px;
+                padding-right: 45px;
+                margin-left: 28%;
+
+                h1 {
+                    margin-bottom: 20px;
+
+                    font-size: 35px;
+                    line-height: 41px;
+                }
+            }
+
+            .content-footer a {
+                font-size: 16px;
+                line-height: 18px;
+                margin-top: 21px;
+            }
+        }
+    }
+
+    @media (max-width: 630px) {
+        background-color: #131313;
+
+        & {
+            height: 100vh;
+            height: var(--app-height);
+            position: relative;
+            min-height: unset;
+        }
+
+        & .text-content {
+            .content {
+                margin-left: 18%;
+                padding-right: 45px;
+                color: white;
+            }
+        }
+    }
+
+    @media (min-width: 320px) and (max-width: 480px) {
+        & {
+            height: 100vh;
+            height: var(--app-height);
+            position: relative;
+            min-height: unset;
+
+            .text-content {
+                .content {
+                    font-size: 12px;
+                    line-height: 14px;
+                    margin-left: 8%;
+                    padding-right: 35px;
+
+                    h1 {
+                        margin-bottom: 30px;
+
+                        font-size: 25px;
+                        line-height: 29px;
+                    }
+                }
+
+                .content-footer a {
+                    font-size: 16px;
+                    line-height: 18px;
+                    margin-top: 21px;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 390px) {
+        & .text-content .content {
+            font-size: 12px;
+            line-height: 14px;
+            margin-left: 4%;
+            padding-right: 35px;
+        }
+    }
+
     @media (max-width: 320px){
         & {
             height: 100vh;
@@ -2488,165 +2917,6 @@ a {
     }
 }
 
-
-
-
-
-
-/************    Slide 5   *************/
-
-.slide-5 {
-    position: relative;
-    background-color: #131313;
-    height: 100vh;
-    min-height: 1010px;
-    margin-top: -55px;
-    z-index: 99;
-}
-
-.slide-5 .cover img{
-    width: 100%;
-    height: 100%;
-    -webkit-transition: all 1s ease;
-    -moz-transition: all 1s ease;
-    -o-transition: all 1s ease;
-    -ms-transition: all 1s ease;
-    transition: all 1s ease;
-    filter: blur(2px);
-    transform: scale(1.01);
-    opacity: 1;
-}
-
-.slide-5 .cover img:hover{
-    filter: blur(0px);
-    opacity: 0;
-}
-
-
-.slide-5 .text-content {
-    position: absolute;
-    /*width: 1272px;*/
-    width: 100%;
-    height: 430px;
-
-    top: 336px;
-    /*left: 648px;*/
-
-    background-color: #131313;
-}
-.slide-5 .text-content .content {
-    margin-left: 697px;
-    margin-top: 30px;
-    max-width: 604px;
-
-    font-family: Roboto Light;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 19px;
-    color: #ABABAB;
-}
-
-
-.slide-5 .text-content .content h1 {
-    margin-bottom: 29px;
-    font-family: Roboto Bold;
-    color: white;
-
-    font-style: normal;
-    font-weight: bold;
-    font-size: 50px;
-    line-height: 59px;
-}
-
-.slide-5 .text-content .content-footer{
-    position: relative;
-    padding-top: 14px;
-}
-
-.slide-5 .text-content .content-footer a{
-    font-family: 'Roboto Medium';
-    letter-spacing: 1px;
-    color: white;
-    font-size: 20px;
-    line-height: 24px;
-    margin-top: 31px;
-    text-decoration: none;
-}
-
-.slide-5 .text-content .content-footer a.blur-material {
-    position: absolute;
-    /*top: 0;*/
-    left: 0;
-    margin: 0;
-    -webkit-transition: all 0.2s ease;
-    -moz-transition: all 0.2s ease;
-    -o-transition: all 0.2s ease;
-    -ms-transition: all 0.2s ease;
-    transition: all 0.2s ease;
-    filter: blur(0px);
-    opacity: 0;
-}
-
-
-.slide-5 .text-content .content-footer a.blur-material:hover {
-    filter: blur(10px);
-    opacity: 1;
-}
-
-.slide-5 .text-content .content-footer img {
-    vertical-align: bottom;
-}
-
-.slide-5 .merch-left-top {
-    position: absolute;
-    width: 806px;
-    height: 860px;
-    left: -192.44px;
-    top: -6.35px;
-    transform: rotate(15deg);
-
-    background-image: url("/img/slide-5/merch-left-top.png");
-    background-size: contain;
-}
-
-.slide-5 .merch-left {
-    position: absolute;
-    width: 711.55px;
-    height: 764.06px;
-    left: -164.85px;
-    top: 435.76px;
-    transform: rotate(-14.46deg);
-
-    background-image: url("/img/slide-5/merch-left.png");
-    background-size: contain;
-}
-
-.slide-5 .merch-right-top {
-    position: absolute;
-    width: 806px;
-    height: 860px;
-    right: -197.32px;
-    top: 7.6px;
-    transform: rotate(-9.32deg);
-    z-index: 10;
-
-    background-image: url("/img/slide-5/merch-right-top.png");
-    background-size: contain;
-}
-
-.slide-5 .merch-right {
-    position: absolute;
-    z-index: 100;
-    width: 680.24px;
-    height: 731.48px;
-    right: -134.37px;
-    top: 471.9px;
-    transform: rotate(8.83deg);
-
-    background-image: url("/img/slide-5/merch-right.png");
-    background-size: contain;
-}
 
 /************    Slide 6   *************/
 

@@ -2165,16 +2165,17 @@ a {
   }
 }
 
-/************    Slide 5   *************/
+/************   Slide 5   *************/
 .slide-5 {
   position: relative;
   background-color: #131313;
   height: 100vh;
+  height: var(--app-height);
   min-height: 1010px;
   margin-top: -55px;
   z-index: 99;
+  overflow-x: hidden;
 }
-
 .slide-5 .cover img {
   width: 100%;
   height: 100%;
@@ -2183,26 +2184,25 @@ a {
   transform: scale(1.01);
   opacity: 1;
 }
-
 .slide-5 .cover img:hover {
   filter: blur(0px);
   opacity: 0;
 }
-
 .slide-5 .text-content {
   position: absolute;
   /*width: 1272px;*/
   width: 100%;
   height: 430px;
-  top: 336px;
-  /*left: 648px;*/
-  background-color: #131313;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  /*background-color: #131313;*/
 }
-
 .slide-5 .text-content .content {
-  margin-left: 697px;
+  /*margin-left: 49px;*/
+  margin-left: 36.3%;
   margin-top: 30px;
-  max-width: 604px;
+  max-width: 539px;
   font-family: Roboto Light;
   font-style: normal;
   font-weight: normal;
@@ -2210,7 +2210,6 @@ a {
   line-height: 19px;
   color: #ABABAB;
 }
-
 .slide-5 .text-content .content h1 {
   margin-bottom: 29px;
   font-family: Roboto Bold;
@@ -2220,14 +2219,12 @@ a {
   font-size: 50px;
   line-height: 59px;
 }
-
 .slide-5 .text-content .content-footer {
   position: relative;
   padding-top: 14px;
 }
-
 .slide-5 .text-content .content-footer a {
-  font-family: "Roboto Medium";
+  font-family: "Roboto Bold";
   letter-spacing: 1px;
   color: white;
   font-size: 20px;
@@ -2235,7 +2232,6 @@ a {
   margin-top: 31px;
   text-decoration: none;
 }
-
 .slide-5 .text-content .content-footer a.blur-material {
   position: absolute;
   /*top: 0;*/
@@ -2245,16 +2241,13 @@ a {
   filter: blur(0px);
   opacity: 0;
 }
-
 .slide-5 .text-content .content-footer a.blur-material:hover {
   filter: blur(10px);
   opacity: 1;
 }
-
 .slide-5 .text-content .content-footer img {
   vertical-align: bottom;
 }
-
 .slide-5 .merch-left-top {
   position: absolute;
   width: 806px;
@@ -2265,7 +2258,6 @@ a {
   background-image: url("/img/slide-5/merch-left-top.png");
   background-size: contain;
 }
-
 .slide-5 .merch-left {
   position: absolute;
   width: 711.55px;
@@ -2276,7 +2268,6 @@ a {
   background-image: url("/img/slide-5/merch-left.png");
   background-size: contain;
 }
-
 .slide-5 .merch-right-top {
   position: absolute;
   width: 806px;
@@ -2288,7 +2279,6 @@ a {
   background-image: url("/img/slide-5/merch-right-top.png");
   background-size: contain;
 }
-
 .slide-5 .merch-right {
   position: absolute;
   z-index: 100;
@@ -2299,6 +2289,220 @@ a {
   transform: rotate(8.83deg);
   background-image: url("/img/slide-5/merch-right.png");
   background-size: contain;
+}
+@media (min-width: 1000px) and (max-width: 1910px) {
+  .slide-5 {
+    height: 100vh;
+    height: var(--app-height);
+    position: relative;
+    min-height: unset;
+    margin-top: -10px;
+  }
+  .slide-5 .text-content .content {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .slide-5 .text-content .content h1 {
+    margin-bottom: 20px;
+    font-size: 35px;
+    line-height: 41px;
+  }
+  .slide-5 .text-content .content-footer a {
+    font-size: 16px;
+    line-height: 18px;
+    margin-top: 21px;
+  }
+  .slide-5 .merch-left-top {
+    position: absolute;
+    width: 671.6666666667px;
+    height: 716.6666666667px;
+    left: -192.44px;
+    top: -340px;
+    bottom: 0px;
+    margin: auto;
+  }
+  .slide-5 .merch-left {
+    position: absolute;
+    width: 592.9583333333px;
+    height: 636.7166666667px;
+    left: -164.85px;
+    top: 400px;
+    bottom: 0px;
+    margin: auto;
+  }
+  .slide-5 .merch-right-top {
+    position: absolute;
+    width: 671.6666666667px;
+    height: 716.6666666667px;
+    right: -197.32px;
+    top: -330px;
+    bottom: 0px;
+    margin: auto;
+  }
+  .slide-5 .merch-right {
+    position: absolute;
+    z-index: 100;
+    width: 566.8666666667px;
+    height: 609.5666666667px;
+    right: -134.37px;
+    top: 490px;
+    bottom: 0px;
+    margin: auto;
+  }
+}
+@media (max-width: 1500px) {
+  .slide-5 .merch-left-top {
+    position: absolute;
+    width: 503.75px;
+    height: 537.5px;
+    left: -192.44px;
+    top: -340px;
+    bottom: 0px;
+    margin: auto;
+  }
+  .slide-5 .merch-left {
+    position: absolute;
+    width: 444.71875px;
+    height: 477.5375px;
+    left: -164.85px;
+    top: 400px;
+    bottom: 0px;
+    margin: auto;
+  }
+  .slide-5 .merch-right-top {
+    position: absolute;
+    width: 503.75px;
+    height: 537.5px;
+    right: -197.32px;
+    top: -330px;
+    bottom: 0px;
+    margin: auto;
+  }
+  .slide-5 .merch-right {
+    position: absolute;
+    z-index: 100;
+    width: 425.15px;
+    height: 457.175px;
+    right: -134.37px;
+    top: 490px;
+    bottom: 0px;
+    margin: auto;
+  }
+}
+@media (max-width: 1300px) {
+  .slide-5 .text-content .content {
+    margin-left: 28%;
+  }
+}
+@media (max-width: 1170px) {
+  .slide-5 {
+    background-image: url(/img/slide-5/background.png);
+    background-position-y: 65%;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .slide-5 .cover {
+    display: none;
+  }
+  .slide-5 .text-content {
+    background-color: unset;
+  }
+}
+@media (min-width: 480px) and (max-width: 1000px) {
+  .slide-5 {
+    height: 100vh;
+    height: var(--app-height);
+    position: relative;
+    min-height: unset;
+  }
+  .slide-5 .text-content .content {
+    font-size: 12px;
+    line-height: 14px;
+    padding-right: 45px;
+    margin-left: 28%;
+  }
+  .slide-5 .text-content .content h1 {
+    margin-bottom: 20px;
+    font-size: 35px;
+    line-height: 41px;
+  }
+  .slide-5 .text-content .content-footer a {
+    font-size: 16px;
+    line-height: 18px;
+    margin-top: 21px;
+  }
+}
+@media (max-width: 630px) {
+  .slide-5 {
+    background-color: #131313;
+  }
+  .slide-5 {
+    height: 100vh;
+    height: var(--app-height);
+    position: relative;
+    min-height: unset;
+  }
+  .slide-5 .text-content .content {
+    margin-left: 18%;
+    padding-right: 45px;
+    color: white;
+  }
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .slide-5 {
+    height: 100vh;
+    height: var(--app-height);
+    position: relative;
+    min-height: unset;
+  }
+  .slide-5 .text-content .content {
+    font-size: 12px;
+    line-height: 14px;
+    margin-left: 8%;
+    padding-right: 35px;
+  }
+  .slide-5 .text-content .content h1 {
+    margin-bottom: 30px;
+    font-size: 25px;
+    line-height: 29px;
+  }
+  .slide-5 .text-content .content-footer a {
+    font-size: 16px;
+    line-height: 18px;
+    margin-top: 21px;
+  }
+}
+@media (max-width: 390px) {
+  .slide-5 .text-content .content {
+    font-size: 12px;
+    line-height: 14px;
+    margin-left: 4%;
+    padding-right: 35px;
+  }
+}
+@media (max-width: 320px) {
+  .slide-5 {
+    height: 100vh;
+    height: var(--app-height);
+    position: relative;
+    min-height: unset;
+  }
+  .slide-5 .text-content .content {
+    font-size: 12px;
+    line-height: 14px;
+    margin-left: 4%;
+    padding-right: 35px;
+  }
+  .slide-5 .text-content .content h1 {
+    margin-bottom: 30px;
+    font-size: 25px;
+    line-height: 29px;
+  }
+  .slide-5 .text-content .content-footer a {
+    font-size: 16px;
+    line-height: 18px;
+    margin-top: 21px;
+  }
 }
 
 /************    Slide 6   *************/
