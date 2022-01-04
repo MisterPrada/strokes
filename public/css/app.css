@@ -728,6 +728,9 @@ a {
 }
 
 /************    Slide 1   *************/
+.slide-1 {
+  overflow: hidden;
+}
 .slide-1 .contacts {
   position: absolute;
   top: 167px;
@@ -1014,7 +1017,8 @@ a {
     background-color: #131313;
   }
   .slide-1 .video-grid, .slide-1 .video-background {
-    display: none;
+    -o-object-position: 50%, 50%;
+       object-position: 50%, 50%;
   }
 }
 @media (min-width: 320px) and (max-width: 480px) {

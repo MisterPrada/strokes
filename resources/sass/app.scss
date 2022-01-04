@@ -732,6 +732,9 @@ a {
 /************    Slide 1   *************/
 
 .slide-1 {
+
+    overflow: hidden;
+
     .contacts{
         position: absolute;
         top: 167px;
@@ -1052,7 +1055,8 @@ a {
         }
 
         & .video-grid, & .video-background {
-            display: none;
+            //display: none;
+            object-position: 50%, 50%;
         }
     }
 
