@@ -1843,6 +1843,7 @@ a {
             .content {
                 margin-left: 18%;
                 padding-right: 45px;
+                color: white;
             }
         }
     }
@@ -2398,6 +2399,7 @@ a {
     }
 
     @media (max-width: 630px) {
+        background-color: #131313;
         & {
             height: 100vh;
             height: var(--app-height);
@@ -2409,6 +2411,7 @@ a {
             .content {
                 margin-left: 18%;
                 padding-right: 45px;
+                color: white;
             }
         }
     }

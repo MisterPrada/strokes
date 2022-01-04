@@ -1643,6 +1643,7 @@ a {
   .slide-3 .text-content .content {
     margin-left: 18%;
     padding-right: 45px;
+    color: white;
   }
 }
 @media (min-width: 320px) and (max-width: 480px) {
@@ -2093,6 +2094,9 @@ a {
 }
 @media (max-width: 630px) {
   .slide-4 {
+    background-color: #131313;
+  }
+  .slide-4 {
     height: 100vh;
     height: var(--app-height);
     position: relative;
@@ -2101,6 +2105,7 @@ a {
   .slide-4 .text-content .content {
     margin-left: 18%;
     padding-right: 45px;
+    color: white;
   }
 }
 @media (min-width: 320px) and (max-width: 480px) {
