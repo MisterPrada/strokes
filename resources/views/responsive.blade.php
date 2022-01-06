@@ -66,7 +66,7 @@
     </div>
 </header>
 
-<main>
+<main id="app">
 {{--    <section id="home" class="slide-1 unselectable" data-scroll-section>--}}
 {{--        <video id="main-video" class="video-background" data-src="/video/background-contacts.mp4" muted autoplay playsinline loop>--}}
 {{--            <source data-src="/video/background-mobile.mp4" data-mw="480" type="video/mp4" >--}}
@@ -691,13 +691,25 @@
         </div>
     </section>
 
+    <section id="contacts" class="slide-contact-us" data-scroll-section>
+{{--        <video src="/video/background-contacts.mp4" muted autoplay loop class="video-background"></video>--}}
+{{--        <div class="video-grid"></div>--}}
+
+
+        <div class="contacts">
+            <div class="header">
+                ФОРМА ОБРАТНОЙ СВЯЗИ
+            </div>
+
+            <contact-form></contact-form>
+        </div>
+    </section>
+
     <footer id="footer" class="slide-8" data-scroll-section>
         <div id="footer-line-top"></div>
 
         <div class="content">
-            <div data-scroll
-                 data-scroll-speed="1"
-                 data-scroll-target="#footer" class="social">
+            <div class="social">
                 <div class="link">
                     <a href="https://vk.com/strokesdesign" target="_blank">
                         <img src="/img/slide-8/vk.svg" alt="vk">
@@ -740,6 +752,21 @@
 
         </div>
     </footer>
+
+    <div id="modal_result" class="modal-result">
+        <div class="back"></div>
+
+        <div class="text-content">
+            <h2>
+                Ваша заявка отправлена!
+            </h2>
+
+            <p>
+                После отправки вашей заявки мы свяжется с Вами по Вашему E-mail
+                для уточнения данных и обработки вашего заказа.
+            </p>
+        </div>
+    </div>
 </main>
 
 <div class="logo-right-bottom">
@@ -752,6 +779,7 @@
 
 </body>
 
+<script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.min.js" crossorigin="anonymous"></script>
 <script src="js/swipe.js"></script>
 <script src="js/bootstrap.min.js"></script>
