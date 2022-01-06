@@ -2920,6 +2920,9 @@ a {
   top: 40.2%;
 }
 @media (max-width: 700px) {
+  .slide-8 {
+    background-color: #131313;
+  }
   .slide-8 .content {
     width: 75px;
   }
