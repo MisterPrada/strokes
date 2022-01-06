@@ -223,27 +223,25 @@ $( document ).ready(function() {
         });
     };
 
-
-
-    if($('#reviews').length){
-
+    function reviewsSlider(el) {
         let default_group = 0;
-        let group_count = $('#reviews .item-group').length;
+        let group_count = $(el + ' .item-group').length;
         let animation_lock = false;
 
 
-        $('#reviews .item-group').each(function( index ) {
+        $(el + ' .item-group').each(function( index ) {
             if(index !== default_group){
                 $(this).hide();
             }
         });
 
-        $('#reviews .left-link').on('click', function () {
+
+        let leftLink = function () {
             if(animation_lock) { return false; }
             animation_lock = true;
 
-            $($('#reviews .item-group')[default_group]).removeClass('animate__animated animate__fadeOutRight animate__fadeOutLeft animate__fadeInLeft animate__fadeInRight');
-            $($('#reviews .item-group')[default_group]).addClass('animate__animated animate__fadeOutRight');
+            $($(el + ' .item-group')[default_group]).removeClass('animate__animated animate__fadeOutRight animate__fadeOutLeft animate__fadeInLeft animate__fadeInRight');
+            $($(el + ' .item-group')[default_group]).addClass('animate__animated animate__fadeOutRight');
 
             if( (default_group + 1) < group_count ){
                 default_group++;
@@ -251,22 +249,21 @@ $( document ).ready(function() {
                 default_group = 0;
             }
 
-            $($('#reviews .item-group')[default_group]).show();
-            $($('#reviews .item-group')[default_group]).removeClass('animate__animated animate__fadeOutRight animate__fadeOutLeft animate__fadeInLeft animate__fadeInRight');
-            $($('#reviews .item-group')[default_group]).addClass('animate__animated animate__fadeInLeft');
+            $($(el + ' .item-group')[default_group]).show();
+            $($(el + ' .item-group')[default_group]).removeClass('animate__animated animate__fadeOutRight animate__fadeOutLeft animate__fadeInLeft animate__fadeInRight');
+            $($(el + ' .item-group')[default_group]).addClass('animate__animated animate__fadeInLeft');
 
-            $($('#reviews .item-group')[default_group]).on('animationend', function () {
+            $($(el + ' .item-group')[default_group]).on('animationend', function () {
                 animation_lock = false
             });
 
-        });
-
-        $('#reviews .right-link').on('click', function () {
+        };
+        let rightLink = function () {
             if(animation_lock) { return false; }
             animation_lock = true;
 
-            $($('#reviews .item-group')[default_group]).removeClass('animate__animated animate__fadeOutRight animate__fadeOutLeft animate__fadeInLeft animate__fadeInRight');
-            $($('#reviews .item-group')[default_group]).addClass('animate__animated animate__fadeOutLeft');
+            $($(el + ' .item-group')[default_group]).removeClass('animate__animated animate__fadeOutRight animate__fadeOutLeft animate__fadeInLeft animate__fadeInRight');
+            $($(el + ' .item-group')[default_group]).addClass('animate__animated animate__fadeOutLeft');
 
             if( (default_group + 1) < group_count ){
                 default_group++;
@@ -274,16 +271,34 @@ $( document ).ready(function() {
                 default_group = 0;
             }
 
-            $($('#reviews .item-group')[default_group]).show();
-            $($('#reviews .item-group')[default_group]).removeClass('animate__animated animate__fadeOutRight animate__fadeOutLeft animate__fadeInLeft animate__fadeInRight');
-            $($('#reviews .item-group')[default_group]).addClass('animate__animated animate__fadeInRight');
+            $($(el + ' .item-group')[default_group]).show();
+            $($(el + ' .item-group')[default_group]).removeClass('animate__animated animate__fadeOutRight animate__fadeOutLeft animate__fadeInLeft animate__fadeInRight');
+            $($(el + ' .item-group')[default_group]).addClass('animate__animated animate__fadeInRight');
 
-            $($('#reviews .item-group')[default_group]).on('animationend', function () {
+            $($(el + ' .item-group')[default_group]).on('animationend', function () {
                 animation_lock = false
             });
 
-        });
+        };
 
+        default_group = group_count;
+        rightLink();
+
+        $(el).onSwipe(function(results){
+            if(results.left == true)
+                rightLink();
+
+            if(results.right == true)
+                leftLink();
+        }, 50, 20, 100);
+
+        $(el + ' .left-link').on('click', leftLink);
+
+        $(el + ' .right-link').on('click', rightLink);
+    }
+
+    if($('#reviews').length){
+        reviewsSlider('.reviews-desktop');
     }
 
     function mobileMenuHide() {
