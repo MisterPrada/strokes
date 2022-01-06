@@ -1017,8 +1017,11 @@ a {
     background-color: #131313;
   }
   .slide-1 .video-grid, .slide-1 .video-background {
-    -o-object-position: 50%, 50%;
-       object-position: 50%, 50%;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 @media (min-width: 320px) and (max-width: 480px) {
@@ -2746,11 +2749,13 @@ a {
     width: 100%;
   }
   .slide-7 .left-link {
+    display: none;
     top: 50%;
     left: 0%;
     transform: scale(1) translateY(-120%);
   }
   .slide-7 .right-link {
+    display: none;
     top: 50%;
     right: 0%;
     transform: scale(1) translateY(-120%);

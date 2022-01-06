@@ -67,230 +67,233 @@
 </header>
 
 <main>
-{{--    <section id="home" class="slide-1 unselectable" data-scroll-section>--}}
-{{--        <video src="/video/background-contacts.mp4" muted autoplay playsinline loop class="video-background"></video>--}}
-{{--        <div class="video-grid"></div>--}}
+    <section id="home" class="slide-1 unselectable" data-scroll-section>
+        <video id="main-video" class="video-background" data-src="/video/background-contacts.mp4" muted autoplay playsinline loop>
+            <source data-src="/video/background-mobile.mp4" data-mw="480" type="video/mp4" >
+        </video>
 
-{{--        <div class="left-logo-block custom">--}}
-{{--            <div class="rect-top"></div>--}}
+        <div class="video-grid"></div>
 
-{{--            <div class="logo-text" data-scroll data-scroll-call="main">--}}
-{{--                <span>Мы создаем цифровые продукты,</span> которые преобразуются с помощью анализа данных.--}}
-{{--            </div>--}}
-{{--        </div>--}}
+        <div class="left-logo-block custom">
+            <div class="rect-top"></div>
 
-{{--        <div class="main-center-text">--}}
-{{--            <img class="main-logo-img" src="/img/logo/logo.svg">--}}
-{{--        </div>--}}
+            <div class="logo-text" data-scroll data-scroll-call="main">
+                <span>Мы создаем цифровые продукты,</span> которые преобразуются с помощью анализа данных.
+            </div>
+        </div>
 
-{{--        <div data-scroll data-scroll-call="main" class="main-bottom-border"></div>--}}
-{{--    </section>--}}
+        <div class="main-center-text">
+            <img class="main-logo-img" src="/img/logo/logo.svg">
+        </div>
 
-{{--    <section id="about" class="slide-2" data-scroll-section>--}}
-{{--        <!--<div class="pencil"></div>-->--}}
+        <div data-scroll data-scroll-call="main" class="main-bottom-border"></div>
+    </section>
 
-{{--        <div data-scroll data-scroll-speed="-5" data-target="#about" class="container text-content">--}}
-{{--            <div class="row">--}}
-{{--                <div>--}}
-{{--                    <h1>О нас</h1>--}}
+    <section id="about" class="slide-2" data-scroll-section>
+        <!--<div class="pencil"></div>-->
 
-{{--                    <p>--}}
-{{--                        Привет, нас зовут <span class="red">«STROKES»</span>. <br>--}}
-{{--                        В настоящее время мы специализируемся<br>--}}
-{{--                        на product-дизайне, UI/UX дизайне, motion-дизайне<br>--}}
-{{--                        и художественном направлении в целом.--}}
-{{--                    </p>--}}
+        <div data-scroll data-scroll-speed="-5" data-target="#about" class="container text-content">
+            <div class="row">
+                <div>
+                    <h1>О нас</h1>
 
-{{--                    <p>--}}
-{{--                        Проект <span class="red">«STROKES»</span> направлен на визуальную поддержку<br>--}}
-{{--                        мировой сцены тяжелой музыки, а именно на помощь<br>--}}
-{{--                        в продвижении путём разработки дизайна медиа-контента,<br>--}}
-{{--                        product-дизайна и motion-дизайна для музыкальных групп.--}}
-{{--                    </p>--}}
+                    <p>
+                        Привет, нас зовут <span class="red">«STROKES»</span>. <br>
+                        В настоящее время мы специализируемся<br>
+                        на product-дизайне, UI/UX дизайне, motion-дизайне<br>
+                        и художественном направлении в целом.
+                    </p>
 
-{{--                    <p >--}}
-{{--                        Наша первостепенная задача – профессиональный<br>--}}
-{{--                        подход к каждому проекту индивидуально.--}}
-{{--                    </p>--}}
+                    <p>
+                        Проект <span class="red">«STROKES»</span> направлен на визуальную поддержку<br>
+                        мировой сцены тяжелой музыки, а именно на помощь<br>
+                        в продвижении путём разработки дизайна медиа-контента,<br>
+                        product-дизайна и motion-дизайна для музыкальных групп.
+                    </p>
 
-{{--                    <p>--}}
-{{--                        В нашу команду входят Digital-дизайнеры, иллюстраторы<br>--}}
-{{--                        и 2D художники, работающие в различных направлениях<br>--}}
-{{--                        и стилях.--}}
-{{--                    </p>--}}
+                    <p >
+                        Наша первостепенная задача – профессиональный<br>
+                        подход к каждому проекту индивидуально.
+                    </p>
 
-{{--                    <p>--}}
-{{--                        Каждый заказ обрабатывается индивидуально и для него<br>--}}
-{{--                        подбирается специалист, наиболее подходящий для<br>--}}
-{{--                        реализации Вашей задачи.--}}
-{{--                    </p>--}}
+                    <p>
+                        В нашу команду входят Digital-дизайнеры, иллюстраторы<br>
+                        и 2D художники, работающие в различных направлениях<br>
+                        и стилях.
+                    </p>
 
-{{--                    <p>--}}
-{{--                        <br data-scroll data-scroll-call="about">--}}
-{{--                    </p>--}}
-{{--                </div>--}}
-{{--            </div>--}}
-{{--        </div>--}}
-{{--    </section>--}}
+                    <p>
+                        Каждый заказ обрабатывается индивидуально и для него<br>
+                        подбирается специалист, наиболее подходящий для<br>
+                        реализации Вашей задачи.
+                    </p>
 
-{{--    <section id="jobs" class="slide-3" data-scroll-section>--}}
-{{--        <div id="slide3-content"--}}
+                    <p>
+                        <br data-scroll data-scroll-call="about">
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-{{--             class="text-content">--}}
-{{--            <div class="content">--}}
-{{--                <h1>Обложки</h1>--}}
+    <section id="jobs" class="slide-3" data-scroll-section>
+        <div id="slide3-content"
 
-{{--                <p>--}}
-{{--                    Обложка альбома – это лицо музыкального релиза.--}}
-{{--                    Обложка должна запоминаться, цеплять за живое и, не побоимся--}}
-{{--                    этих слов – оставить след в душе! Все в точности, как с музыкой.--}}
-{{--                </p>--}}
+             class="text-content">
+            <div class="content">
+                <h1>Обложки</h1>
 
-{{--                <p>--}}
-{{--                    Мы готовы реализовать любую из ваших идей и предложить свою--}}
-{{--                    помощь и экспертизу для создания будущей обложки релиза.--}}
-{{--                    Мы разрабатываем обложки в различных стилях — начиная--}}
-{{--                    от коллажирования, заканчивая полноценными реалистичными--}}
-{{--                    артами.--}}
-{{--                </p>--}}
+                <p>
+                    Обложка альбома – это лицо музыкального релиза.
+                    Обложка должна запоминаться, цеплять за живое и, не побоимся
+                    этих слов – оставить след в душе! Все в точности, как с музыкой.
+                </p>
 
-{{--                <p>--}}
-{{--                    Мы верим, что обложка музыкального альбома – это визуальное--}}
-{{--                    воплощение смыслов, заложенных вашей музыкой.--}}
-{{--                </p>--}}
+                <p>
+                    Мы готовы реализовать любую из ваших идей и предложить свою
+                    помощь и экспертизу для создания будущей обложки релиза.
+                    Мы разрабатываем обложки в различных стилях — начиная
+                    от коллажирования, заканчивая полноценными реалистичными
+                    артами.
+                </p>
 
-{{--                <div data-scroll data-scroll-call="jobs"  class="content-footer">--}}
-{{--                    <a target="_blank" href="https://www.facebook.com/pg/strokescoredesign/photos/?tab=album&album_id=100991604820835&ref=page_internal">--}}
-{{--                        <img src="/img/slide-3/facebook.svg" alt="icon">--}}
-{{--                        Смотреть все обложки--}}
-{{--                    </a>--}}
-{{--                    <a class="blur-material" target="_blank" href="https://www.facebook.com/pg/strokescoredesign/photos/?tab=album&album_id=100991604820835&ref=page_internal">--}}
-{{--                        <img src="/img/slide-3/facebook.svg" alt="icon">--}}
-{{--                        Смотреть все обложки--}}
-{{--                    </a>--}}
-{{--                </div>--}}
-{{--            </div>--}}
-{{--        </div>--}}
+                <p>
+                    Мы верим, что обложка музыкального альбома – это визуальное
+                    воплощение смыслов, заложенных вашей музыкой.
+                </p>
 
-{{--        <div class="left-merch">--}}
-{{--            <div>--}}
-{{--                <div class="cover cover-3">--}}
-{{--                    <img src="/img/slide-3/3_bw.png" alt="">--}}
-{{--                </div>--}}
-{{--            </div>--}}
+                <div data-scroll data-scroll-call="jobs"  class="content-footer">
+                    <a target="_blank" href="https://www.facebook.com/pg/strokescoredesign/photos/?tab=album&album_id=100991604820835&ref=page_internal">
+                        <img src="/img/slide-3/facebook.svg" alt="icon">
+                        Смотреть все обложки
+                    </a>
+                    <a class="blur-material" target="_blank" href="https://www.facebook.com/pg/strokescoredesign/photos/?tab=album&album_id=100991604820835&ref=page_internal">
+                        <img src="/img/slide-3/facebook.svg" alt="icon">
+                        Смотреть все обложки
+                    </a>
+                </div>
+            </div>
+        </div>
 
-{{--            <div>--}}
-{{--                <div class="cover cover-1">--}}
-{{--                    <img src="/img/slide-3/6_bw.png" alt="Dead Space">--}}
-{{--                </div>--}}
-{{--            </div>--}}
+        <div class="left-merch">
+            <div>
+                <div class="cover cover-3">
+                    <img src="/img/slide-3/3_bw.png" alt="">
+                </div>
+            </div>
 
-{{--            <div>--}}
-{{--                <div class="cover cover-2">--}}
-{{--                    <img src="/img/slide-3/2_bw.png" alt="">--}}
-{{--                </div>--}}
-{{--            </div>--}}
-{{--        </div>--}}
+            <div>
+                <div class="cover cover-1">
+                    <img src="/img/slide-3/6_bw.png" alt="Dead Space">
+                </div>
+            </div>
 
-{{--        <div class="right-merch">--}}
-{{--            <div>--}}
-{{--                <div class="cover cover-4">--}}
-{{--                    <img src="/img/slide-3/1_bw.png" alt="">--}}
-{{--                </div>--}}
-{{--            </div>--}}
+            <div>
+                <div class="cover cover-2">
+                    <img src="/img/slide-3/2_bw.png" alt="">
+                </div>
+            </div>
+        </div>
 
-{{--            <div>--}}
-{{--                <div class="cover cover-5">--}}
-{{--                    <img src="/img/slide-3/5_bw.png" alt="">--}}
-{{--                </div>--}}
-{{--            </div>--}}
+        <div class="right-merch">
+            <div>
+                <div class="cover cover-4">
+                    <img src="/img/slide-3/1_bw.png" alt="">
+                </div>
+            </div>
 
-{{--            <div>--}}
-{{--                <div class="cover cover-6">--}}
-{{--                    <img src="/img/slide-3/4_bw.png" alt="">--}}
-{{--                </div>--}}
-{{--            </div>--}}
-{{--        </div>--}}
-{{--    </section>--}}
+            <div>
+                <div class="cover cover-5">
+                    <img src="/img/slide-3/5_bw.png" alt="">
+                </div>
+            </div>
 
-{{--    <section id="jobs-2" class="slide-4" data-scroll-section>--}}
-{{--        <div class="text-content">--}}
-{{--            <div class="content">--}}
-{{--                <h1 data-scroll data-scroll-call="jobs">Логотипы и эмблемы</h1>--}}
+            <div>
+                <div class="cover cover-6">
+                    <img src="/img/slide-3/4_bw.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
 
-{{--                <p>--}}
-{{--                    Фирменный знак - это первое впечатление о вашем музыкальном проекте.--}}
-{{--                </p>--}}
+    <section id="jobs-2" class="slide-4" data-scroll-section>
+        <div class="text-content">
+            <div class="content">
+                <h1 data-scroll data-scroll-call="jobs">Логотипы и эмблемы</h1>
 
-{{--                <p>--}}
-{{--                    В современном мире музыкальные коллективы--}}
-{{--                    используют логотипы и эмблемы в качестве презентации своей--}}
-{{--                    группы, будь то их размещение на афише--}}
-{{--                    концерта или на обложке релиза.--}}
-{{--                </p>--}}
+                <p>
+                    Фирменный знак - это первое впечатление о вашем музыкальном проекте.
+                </p>
 
-{{--                <p>--}}
-{{--                    В любом случае,--}}
-{{--                    логотип является неотъемлемой визуальной частью--}}
-{{--                    музыкального проекта.--}}
-{{--                </p>--}}
+                <p>
+                    В современном мире музыкальные коллективы
+                    используют логотипы и эмблемы в качестве презентации своей
+                    группы, будь то их размещение на афише
+                    концерта или на обложке релиза.
+                </p>
 
-{{--                <p>--}}
-{{--                    Мы предлагаем разработку текстовых, символических либо--}}
-{{--                    комбинированных логотипов и эмблем в различных стилях:--}}
-{{--                    #Metal #Hardcore #Punk и многие другие.--}}
-{{--                </p>--}}
+                <p>
+                    В любом случае,
+                    логотип является неотъемлемой визуальной частью
+                    музыкального проекта.
+                </p>
 
-{{--                <div class="content-footer">--}}
-{{--                    <a target="_blank" href="https://www.facebook.com/pg/strokescoredesign/photos/?tab=album&album_id=100989934821002&ref=page_internal">--}}
-{{--                        <img src="/img/slide-3/facebook.svg" alt="icon">--}}
-{{--                        Смотреть все логотипы и эмблемы--}}
-{{--                    </a>--}}
+                <p>
+                    Мы предлагаем разработку текстовых, символических либо
+                    комбинированных логотипов и эмблем в различных стилях:
+                    #Metal #Hardcore #Punk и многие другие.
+                </p>
 
-{{--                    <a class="blur-material" target="_blank" href="https://www.facebook.com/pg/strokescoredesign/photos/?tab=album&album_id=100989934821002&ref=page_internal">--}}
-{{--                        <img src="/img/slide-3/facebook.svg" alt="icon">--}}
-{{--                        Смотреть все логотипы и эмблемы--}}
-{{--                    </a>--}}
-{{--                </div>--}}
-{{--            </div>--}}
+                <div class="content-footer">
+                    <a target="_blank" href="https://www.facebook.com/pg/strokescoredesign/photos/?tab=album&album_id=100989934821002&ref=page_internal">
+                        <img src="/img/slide-3/facebook.svg" alt="icon">
+                        Смотреть все логотипы и эмблемы
+                    </a>
 
-{{--            <div class="streetwear">--}}
-{{--                <div class="cover">--}}
-{{--                    <img src="/img/slide-4/streetwear_bw.png" alt="streetwear">--}}
-{{--                </div>--}}
-{{--            </div>--}}
+                    <a class="blur-material" target="_blank" href="https://www.facebook.com/pg/strokescoredesign/photos/?tab=album&album_id=100989934821002&ref=page_internal">
+                        <img src="/img/slide-3/facebook.svg" alt="icon">
+                        Смотреть все логотипы и эмблемы
+                    </a>
+                </div>
+            </div>
 
-{{--            <div class="sadday">--}}
-{{--                <div class="cover">--}}
-{{--                    <img src="/img/slide-4/sadday_bw.png" alt="sadday">--}}
-{{--                </div>--}}
-{{--            </div>--}}
+            <div class="streetwear">
+                <div class="cover">
+                    <img src="/img/slide-4/streetwear_bw.png" alt="streetwear">
+                </div>
+            </div>
 
-{{--            <div class="carabus">--}}
-{{--                <div class="cover">--}}
-{{--                    <img src="/img/slide-4/carabus_bw.png" alt="carabus">--}}
-{{--                </div>--}}
-{{--            </div>--}}
-{{--        </div>--}}
+            <div class="sadday">
+                <div class="cover">
+                    <img src="/img/slide-4/sadday_bw.png" alt="sadday">
+                </div>
+            </div>
 
-{{--        <div>--}}
-{{--            <div class="cover massive">--}}
-{{--                <img src="/img/slide-4/massive_bw.png" alt="massive">--}}
-{{--            </div>--}}
-{{--        </div>--}}
+            <div class="carabus">
+                <div class="cover">
+                    <img src="/img/slide-4/carabus_bw.png" alt="carabus">
+                </div>
+            </div>
+        </div>
 
-{{--        <div>--}}
-{{--            <div class="cover minores">--}}
-{{--                <img src="/img/slide-4/minores_bw.png" alt="minores">--}}
-{{--            </div>--}}
-{{--        </div>--}}
+        <div>
+            <div class="cover massive">
+                <img src="/img/slide-4/massive_bw.png" alt="massive">
+            </div>
+        </div>
 
-{{--        <div>--}}
-{{--            <div class="cover neobhodimost">--}}
-{{--                <img src="/img/slide-4/neobhodimost_bw.png" alt="neobhodimost">--}}
-{{--            </div>--}}
-{{--        </div>--}}
-{{--    </section>--}}
+        <div>
+            <div class="cover minores">
+                <img src="/img/slide-4/minores_bw.png" alt="minores">
+            </div>
+        </div>
+
+        <div>
+            <div class="cover neobhodimost">
+                <img src="/img/slide-4/neobhodimost_bw.png" alt="neobhodimost">
+            </div>
+        </div>
+    </section>
 
     <section id="jobs-3" class="slide-5" data-scroll-section>
         <div class="text-content">
@@ -627,8 +630,8 @@
                         </div>
                         <div class="text-content">
                             <div class="head">
-                                <span class="red">SILENCE TENDS TO DESTROY</span>
-                                <span class="grey">| М. группа</span>
+                                <span class="red">STTD</span>
+                                <span class="grey">| Музыкальная группа</span>
                             </div>
                             <div class="text">
                                 STROKES всегда делают работу лучше, чем мы изначально<br>
