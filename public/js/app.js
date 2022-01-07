@@ -1922,6 +1922,7 @@ __webpack_require__.r(__webpack_exports__);
       setTimeout(function () {
         $('#modal_result').fadeOut();
         $('#contact-form').trigger("reset");
+        grecaptcha.reset();
       }, 3000);
     }
   }
