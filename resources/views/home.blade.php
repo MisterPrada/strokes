@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
@@ -66,9 +66,12 @@
     </div>
 </header>
 
-<main>
+<main id="app">
     <section id="home" class="slide-1 unselectable" data-scroll-section>
-        <video src="/video/background-contacts.mp4" muted playsinline autoplay loop class="video-background"></video>
+        <video id="main-video" class="video-background" data-src="/video/background-contacts.mp4" muted autoplay playsinline loop>
+            <source data-src="/video/background-mobile.mp4" data-mw="480" type="video/mp4" >
+        </video>
+
         <div class="video-grid"></div>
 
         <div class="left-logo-block custom">
@@ -108,7 +111,7 @@
                         product-дизайна и motion-дизайна для музыкальных групп.
                     </p>
 
-                    <p>
+                    <p >
                         Наша первостепенная задача – профессиональный<br>
                         подход к каждому проекту индивидуально.
                     </p>
@@ -135,8 +138,7 @@
 
     <section id="jobs" class="slide-3" data-scroll-section>
         <div id="slide3-content"
-             data-scroll-target="#jobs"
-             data-scroll
+
              class="text-content">
             <div class="content">
                 <h1>Обложки</h1>
@@ -160,7 +162,7 @@
                     воплощение смыслов, заложенных вашей музыкой.
                 </p>
 
-                <div data-scroll data-scroll-call="jobs" class="content-footer">
+                <div data-scroll data-scroll-call="jobs"  class="content-footer">
                     <a target="_blank" href="https://www.facebook.com/pg/strokescoredesign/photos/?tab=album&album_id=100991604820835&ref=page_internal">
                         <img src="/img/slide-3/facebook.svg" alt="icon">
                         Смотреть все обложки
@@ -212,16 +214,11 @@
                 </div>
             </div>
         </div>
-
     </section>
 
     <section id="jobs-2" class="slide-4" data-scroll-section>
         <div class="text-content">
-            <div data-scroll
-                 data-scroll-direction="horizontal"
-                 data-scroll-speed="2.5"
-                 data-scroll-offset="0,105%"
-                 data-scroll-target="#jobs-2" class="content">
+            <div class="content">
                 <h1 data-scroll data-scroll-call="jobs">Логотипы и эмблемы</h1>
 
                 <p>
@@ -299,11 +296,7 @@
     </section>
 
     <section id="jobs-3" class="slide-5" data-scroll-section>
-        <div data-scroll
-             data-scroll-direction="horizontal"
-             data-scroll-speed="2.5"
-             data-scroll-offset="0,105%"
-             data-scroll-target="#jobs-3" class="text-content">
+        <div class="text-content">
             <div class="content">
                 <h1 data-scroll data-scroll-call="jobs">Мерч</h1>
 
@@ -369,26 +362,8 @@
     </section>
 
     <section id="reviews" class="slide-7" data-scroll-section>
-        <div class="left-block-gradient">
-            {{--            <div class="hov"></div>--}}
-            <span class="left-link">
-                <svg width="14" height="25" viewBox="0 0 14 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M0.277534 12.8462L11.5428 24.0803C11.9119 24.4481 12.5094 24.4475 12.8779 24.0784C13.2461 23.7093 13.2452 23.1114 12.876 22.7433L2.28131 12.1778L12.8764 1.6124C13.2455 1.24422 13.2464 0.646692 12.8783 0.277552C12.6936 0.0925064 12.4516 -1.71661e-05 12.2096 -1.71661e-05C11.9682 -1.71661e-05 11.7272 0.0918884 11.5428 0.275648L0.277534 11.5094C0.0997658 11.6863 1.14441e-05 11.927 1.14441e-05 12.1778C1.14441e-05 12.4286 0.100052 12.669 0.277534 12.8462Z" fill="#343434"/>
-                </svg>
-            </span>
-        </div>
-
-        <div class="right-block-gradient">
-            {{--            <div class="hov"></div>--}}
-            <span class="right-link">
-                <svg width="14" height="25" viewBox="0 0 14 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M13.7225 12.8462L2.45722 24.0803C2.08813 24.4481 1.49056 24.4475 1.12208 24.0784C0.753896 23.7093 0.754847 23.1114 1.12399 22.7433L11.7187 12.1778L1.12361 1.6124C0.754514 1.24422 0.753563 0.646692 1.1217 0.277552C1.30642 0.0925064 1.5484 -1.71661e-05 1.79039 -1.71661e-05C2.03176 -1.71661e-05 2.27279 0.0918884 2.45717 0.275648L13.7225 11.5094C13.9002 11.6863 14 11.927 14 12.1778C14 12.4286 13.8999 12.669 13.7225 12.8462Z" fill="#343434"/>
-                </svg>
-            </span>
-        </div>
-
         <div class="content">
-            <div class="reviews" data-scroll data-scroll-call="reviews">
+            <div id="reviews-desktop" class="reviews reviews-desktop" data-scroll data-scroll-call="reviews">
                 <div class="item-group">
                     <div class="item">
                         <div class="logo">
@@ -655,7 +630,7 @@
                         </div>
                         <div class="text-content">
                             <div class="head">
-                                <span class="red">SILENCE TENDS TO DESTROY</span>
+                                <span class="red">STTD</span>
                                 <span class="grey">| Музыкальная группа</span>
                             </div>
                             <div class="text">
@@ -700,7 +675,33 @@
                         </div>
                     </div>
                 </div>
+
+                <span class="left-link">
+                    <svg width="14" height="25" viewBox="0 0 14 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.277534 12.8462L11.5428 24.0803C11.9119 24.4481 12.5094 24.4475 12.8779 24.0784C13.2461 23.7093 13.2452 23.1114 12.876 22.7433L2.28131 12.1778L12.8764 1.6124C13.2455 1.24422 13.2464 0.646692 12.8783 0.277552C12.6936 0.0925064 12.4516 -1.71661e-05 12.2096 -1.71661e-05C11.9682 -1.71661e-05 11.7272 0.0918884 11.5428 0.275648L0.277534 11.5094C0.0997658 11.6863 1.14441e-05 11.927 1.14441e-05 12.1778C1.14441e-05 12.4286 0.100052 12.669 0.277534 12.8462Z" fill="#343434"/>
+                    </svg>
+                </span>
+
+                <span class="right-link">
+                    <svg width="14" height="25" viewBox="0 0 14 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.7225 12.8462L2.45722 24.0803C2.08813 24.4481 1.49056 24.4475 1.12208 24.0784C0.753896 23.7093 0.754847 23.1114 1.12399 22.7433L11.7187 12.1778L1.12361 1.6124C0.754514 1.24422 0.753563 0.646692 1.1217 0.277552C1.30642 0.0925064 1.5484 -1.71661e-05 1.79039 -1.71661e-05C2.03176 -1.71661e-05 2.27279 0.0918884 2.45717 0.275648L13.7225 11.5094C13.9002 11.6863 14 11.927 14 12.1778C14 12.4286 13.8999 12.669 13.7225 12.8462Z" fill="#343434"/>
+                    </svg>
+                </span>
             </div>
+        </div>
+    </section>
+
+    <section id="contacts" class="slide-contact-us" data-scroll-section>
+        {{--        <video src="/video/background-contacts.mp4" muted autoplay loop class="video-background"></video>--}}
+        {{--        <div class="video-grid"></div>--}}
+
+
+        <div class="contacts">
+            <div class="header">
+                ФОРМА ОБРАТНОЙ СВЯЗИ
+            </div>
+
+            <contact-form></contact-form>
         </div>
     </section>
 
@@ -708,9 +709,7 @@
         <div id="footer-line-top"></div>
 
         <div class="content">
-            <div data-scroll
-                 data-scroll-speed="1"
-                 data-scroll-target="#footer" class="social">
+            <div class="social">
                 <div class="link">
                     <a href="https://vk.com/strokesdesign" target="_blank">
                         <img src="/img/slide-8/vk.svg" alt="vk">
@@ -755,6 +754,23 @@
     </footer>
 </main>
 
+<div id="modal_result" class="modal-result">
+    <div class="back"></div>
+
+    <div class="text-content">
+        <h2>
+            Ваша заявка отправлена!
+        </h2>
+
+        <p>
+            После отправки вашей заявки мы свяжется с Вами по Вашему E-mail
+            для уточнения данных и обработки вашего заказа.
+        </p>
+
+        {{--            <button>Ок</button>--}}
+    </div>
+</div>
+
 <div class="logo-right-bottom">
     <a href="/contacts">
         <img src="/img/logo/logo.svg" class="logo-mini">
@@ -765,7 +781,9 @@
 
 </body>
 
+<script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.min.js" crossorigin="anonymous"></script>
+<script src="js/swipe.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/locomotive-scroll.min.js"></script>
 <script src="js/misterprada.js"></script>

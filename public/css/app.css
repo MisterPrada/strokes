@@ -348,9 +348,8 @@ a {
   .nav-header {
     margin-top: 0;
   }
-
-  .menu-background {
-    height: 0;
+  .nav-header .row {
+    height: 60px;
   }
 
   .menu-right {
@@ -451,8 +450,20 @@ a {
     pointer-events: none;
   }
 
+  .menu-background {
+    background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0.81) 59.97%, rgba(0, 0, 0, 0) 102.77%);
+    display: none;
+    top: -44px;
+    position: absolute;
+    width: 100%;
+    height: 240%;
+  }
+
   .nav-header {
     margin-top: 0px;
+  }
+  .nav-header .row {
+    height: 60px;
   }
 
   .header-left-logo {
