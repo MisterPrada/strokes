@@ -2790,7 +2790,7 @@ a {
 .modal-result {
   width: 572px;
   height: 688px;
-  position: absolute;
+  position: fixed;
   left: 50%;
   top: 50%;
   z-index: 999999999;
