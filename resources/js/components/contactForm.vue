@@ -76,7 +76,7 @@
             closeModal: function () {
                 setTimeout(function () {
                     $('#modal_result').fadeOut();
-                }, 5000);
+                }, 3000);
             }
         }
     }

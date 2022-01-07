@@ -676,57 +676,6 @@ a {
     }
 }
 
-/** Contacts **/
-
-.modal-result {
-    width: 572px;
-    height: 688px;
-    position: absolute;
-    left: 50%;
-    top: 167px;
-    z-index: 999999999;
-    display: none;
-    transform: translateX(-50%);
-    padding: 24px;
-
-    .back{
-        display: block;
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-        background-color: rgba(18,18,18,0.99);
-    }
-
-    .text-content{
-        height: 0;
-        margin-top: 50%;
-        display: block;
-        position: relative;
-        color: white;
-        transform: translateY(-50%);
-
-        h2{
-            font-family: Roboto;
-            font-style: normal;
-            font-weight: bold;
-            font-size: 38px;
-            line-height: 45px;
-            text-align: center;
-        }
-
-        p{
-            padding-top: 28px;
-            font-family: Roboto;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 16px;
-            line-height: 19px;
-            text-align: center;
-        }
-    }
-}
 
 /************    Slide 1   *************/
 
@@ -3329,6 +3278,125 @@ a {
 }
 
 /************    Slide Contact Us   *************/
+
+
+/** Contacts **/
+
+.modal-result {
+    width: 572px;
+    height: 688px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 999999999;
+    display: none;
+    transform: translate(-50%, -50%);
+    padding: 24px;
+
+    .back{
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: rgba(18,18,18,0.99);
+    }
+
+    .text-content{
+        height: 0;
+        margin-top: 50%;
+        display: block;
+        position: relative;
+        color: white;
+        transform: translateY(-50%);
+
+        h2{
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 38px;
+            line-height: 45px;
+            text-align: center;
+        }
+
+        p{
+            padding-top: 28px;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 19px;
+            text-align: center;
+        }
+
+        button {
+            margin-top: 21px;
+            width: 440px;
+            height: 89px;
+            background: #BA2425;
+            border-style: none;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 38px;
+            line-height: 45px;
+            color: #FFFFFF;
+            margin-left: 50%;
+            transform: translateX(-50%);
+            outline: none;
+        }
+    }
+
+    @media (max-width: 640px) {
+        width: 502px;
+
+        .text-content{
+            height: 0;
+            margin-top: 50%;
+            display: block;
+            position: relative;
+            color: white;
+            transform: translateY(-50%);
+
+            h2{
+                font-size: 28px;
+                line-height: 35px;
+            }
+
+            p{
+                padding-top: 28px;
+                font-size: 14px;
+                line-height: 17px;
+            }
+        }
+    }
+
+    @media (max-width: 540px) {
+        width: 352px;
+        height: 500px;
+
+        .text-content{
+            height: 0;
+            margin-top: 50%;
+            display: block;
+            position: relative;
+            color: white;
+            transform: translateY(-50%);
+
+            h2{
+                font-size: 20px;
+                line-height: 27px;
+            }
+
+            p{
+                padding-top: 28px;
+                font-size: 12px;
+                line-height: 15px;
+            }
+        }
+    }
+}
 
 .slide-contact-us {
     height: 100%;
