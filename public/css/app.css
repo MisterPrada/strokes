@@ -1306,7 +1306,7 @@ a {
   height: 100%;
   transition: all 1s ease;
   filter: blur(2px);
-  transform: scale(1.01);
+  transform: scale(1.02);
   opacity: 1;
 }
 .slide-3 .cover img:hover {
