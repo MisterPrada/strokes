@@ -1,4 +1,6 @@
 var orientationState = true;
+var listenMenus = true;
+var listenMenusTimer = undefined;
 
 function isInteger(num) {
     return (num ^ 0) === num;
@@ -41,6 +43,16 @@ document.addEventListener('touchmove', function (event) {
 document.addEventListener('dblclick', (event) => {
     event.preventDefault()
 }, { passive: false });
+
+$.fn.isInViewport = function() {
+    var elementTop = $(this).offset().top;
+    var elementBottom = elementTop + $(this).outerHeight();
+
+    var viewportTop = $(window).scrollTop();
+    var viewportBottom = viewportTop + $(window).height();
+
+    return elementBottom > viewportTop && elementTop < viewportBottom;
+};
 
 $( document ).ready(function() {
 
@@ -126,7 +138,7 @@ $( document ).ready(function() {
                     $('#head-menu').removeClass('animate__fadeInDown animate__fadeIn');
                     $('#head-menu').addClass('animate__animated animate__fadeOut');
                 }else{
-                    mobileMenuHide();
+                    //mobileMenuHide();
                 }
             }
         }
@@ -140,23 +152,49 @@ $( document ).ready(function() {
             $('.menu-background').fadeIn(); // скрываем тень на меню
         }
 
+        //*************** включение активного элемента меню **************//
+        if(listenMenus){
+            if ($('#home').isInViewport()) {
+                $('.menu-item').removeClass('active');
+            }
+
+            if ($('#about').isInViewport()) {
+                $('.menu-item').removeClass('active');
+                $('.menu-about').addClass('active');
+            }
+
+            if ($('#jobs').isInViewport() || $('#jobs-2').isInViewport() || $('#jobs-3').isInViewport()) {
+                $('.menu-item').removeClass('active');
+                $('.menu-jobs').addClass('active');
+            }
+
+            if ($('#reviews').isInViewport()) {
+                $('.menu-item').removeClass('active');
+                $('.menu-reviews').addClass('active');
+            }
+
+            if ($('#contacts').isInViewport()) {
+                $('.menu-item').removeClass('active');
+                $('.menu-contacts').addClass('active');
+            }
+        }
     });
 
-    /*$('#head-menu').on('animationend', () => {
-        if (menu_trigger > scrollPos){
-            $('#head-menu').show();
-        } else {
-            $('#head-menu').hide();
-        }
-    });*/
+    // $('#head-menu').on('animationend', () => {
+    //     if (menu_trigger > scrollPos){
+    //         $('#head-menu').show();
+    //     } else {
+    //         $('#head-menu').hide();
+    //     }
+    // });
 
 
     scroll.on('call', func => {
 
-        $('.menu-item').removeClass('active');
-        $('.menu-' + func).addClass('active');
+        // $('.menu-item').removeClass('active');
+        // $('.menu-' + func).addClass('active');
 
-        if(func === 'main' || func === 'about'){
+        if(func === 'main'){
             $('.logo-hider').fadeOut() // скрываем логотип слева если на главном экране
         }else{
             $('.logo-hider').fadeIn()
@@ -208,10 +246,26 @@ $( document ).ready(function() {
                     scroll_shield = false;
                 }, 600);*/
 
-                if(id == '#reviews'){
-                    offset = -110;
+                if($(window).width() < 480){
+                    if(id == '#reviews'){
+                        offset = -110;
+                    }
+
+                    if(id == '#about' || id == '#jobs'){
+                        offset = -100;
+                    }
                 }
 
+                if(id == '#contacts'){
+                    offset = -65;
+                }
+
+                listenMenus = false;
+
+                clearTimeout(listenMenusTimer);
+                listenMenusTimer = setTimeout(()=>{
+                    listenMenus = true;
+                },1000)
 
                 scroll.scrollTo(id, offset);
 

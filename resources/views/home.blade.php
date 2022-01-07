@@ -49,7 +49,7 @@
                     </li>
 
                     <li class="menu-item menu-contacts">
-                        <a href="/contacts">Заказать</a>
+                        <a href="#contacts">Заказать</a>
                     </li>
                 </ul>
             </div>
@@ -137,10 +137,11 @@
     </section>
 
     <section id="jobs" class="slide-3" data-scroll-section>
-        <div id="slide3-content"
-
-             class="text-content">
-            <div class="content">
+        <div id="slide3-content" class="text-content">
+            <div class="content" data-scroll-target="#jobs"
+                 data-scroll
+                 data-scroll-direction="horizontal"
+                 data-scroll-speed="0">
                 <h1>Обложки</h1>
 
                 <p>
@@ -218,8 +219,11 @@
 
     <section id="jobs-2" class="slide-4" data-scroll-section>
         <div class="text-content">
-            <div class="content">
-                <h1 data-scroll data-scroll-call="jobs">Логотипы и эмблемы</h1>
+            <div class="content" data-scroll-target="#jobs-2"
+                 data-scroll
+                 data-scroll-direction="horizontal"
+                 data-scroll-speed="0">
+                <h1>Логотипы и эмблемы</h1>
 
                 <p>
                     Фирменный знак - это первое впечатление о вашем музыкальном проекте.
@@ -297,8 +301,12 @@
 
     <section id="jobs-3" class="slide-5" data-scroll-section>
         <div class="text-content">
-            <div class="content">
-                <h1 data-scroll data-scroll-call="jobs">Мерч</h1>
+            <div class="content" data-scroll-target="#jobs-3"
+                 data-scroll
+                 data-scroll-direction="horizontal"
+                 data-scroll-speed="0"
+                 >
+                <h1>Мерч</h1>
 
                 <p>
                     На сегодняшний день большинство музыкальных групп могут расти
@@ -696,7 +704,7 @@
         {{--        <div class="video-grid"></div>--}}
 
 
-        <div class="contacts">
+        <div class="contacts" data-scroll data-scroll-call="contacts">
             <div class="header">
                 ФОРМА ОБРАТНОЙ СВЯЗИ
             </div>
