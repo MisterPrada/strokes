@@ -78,6 +78,8 @@
                     $('#modal_result').fadeOut();
 
                     $('#contact-form').trigger("reset");
+
+                    grecaptcha.reset();
                 }, 3000);
             }
         }
