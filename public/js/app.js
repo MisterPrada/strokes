@@ -1921,6 +1921,7 @@ __webpack_require__.r(__webpack_exports__);
     closeModal: function closeModal() {
       setTimeout(function () {
         $('#modal_result').fadeOut();
+        $('#contact-form').trigger("reset");
       }, 3000);
     }
   }

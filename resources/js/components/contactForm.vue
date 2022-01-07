@@ -76,6 +76,8 @@
             closeModal: function () {
                 setTimeout(function () {
                     $('#modal_result').fadeOut();
+
+                    $('#contact-form').trigger("reset");
                 }, 3000);
             }
         }
