@@ -1770,6 +1770,12 @@ a {
 
         & .text-content {
             background-color: unset;
+
+            .content-footer{
+                a.blur-material {
+                    display: none;
+                }
+            }
         }
     }
 
@@ -2337,6 +2343,12 @@ a {
 
         & .text-content {
             background-color: unset;
+
+            .content-footer{
+                a.blur-material {
+                    display: none;
+                }
+            }
         }
     }
 
@@ -2763,6 +2775,12 @@ a {
 
         & .text-content {
             background-color: unset;
+
+            .content-footer{
+                a.blur-material {
+                    display: none;
+                }
+            }
         }
     }
 
@@ -4102,6 +4120,22 @@ a {
             transform-origin: 0% 0%;
             transform: rotate(-90deg) translateX(-49%);
             top: 40.2%;
+        }
+    }
+
+    @media (max-width: 1170px) {
+        .content {
+            .social {
+                .link {
+                    &:hover {
+                        background-color: white;
+                    }
+
+                    &:hover img{
+                        filter: none;
+                    }
+                }
+            }
         }
     }
 

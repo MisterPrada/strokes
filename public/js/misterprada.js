@@ -44,6 +44,8 @@ document.addEventListener('dblclick', (event) => {
     event.preventDefault()
 }, { passive: false });
 
+$('body').on('touchstart', function() {});
+
 $.fn.isInViewport = function() {
     var elementTop = $(this).offset().top;
     var elementBottom = elementTop + $(this).outerHeight();
@@ -138,7 +140,7 @@ $( document ).ready(function() {
                     $('#head-menu').removeClass('animate__fadeInDown animate__fadeIn');
                     $('#head-menu').addClass('animate__animated animate__fadeOut');
                 }else{
-                    //mobileMenuHide();
+                    mobileMenuHide();
                 }
             }
         }

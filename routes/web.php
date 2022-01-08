@@ -14,9 +14,21 @@ use App\Http\Controllers\ContactsController;
 |
 */
 
+// роут редирект на домашнюю страницу с префиксом языка
 Route::get('/', function () {
-    return view('home');
-})->name('home');
+    return redirect('/' . \Illuminate\Support\Facades\App::getLocale());
+})->name('default');
+
+// роуты локализации
+Route::get('setlocale/{locale}', 'LanguageController@index')->name('locale');
+
+Route::group(['prefix' => App\Http\Middleware\Locale::getLocale()], function () {
+    Route::get('/', function () {
+        return view('home');
+    })->name('home');
+});
+
+
 
 Route::get('/responsive', function () {
     return view('responsive');

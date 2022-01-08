@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="ru">
+<html lang="{{ $lang }}">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
@@ -55,7 +55,12 @@
             </div>
 
             <div class="lang-dropdown">
+                @php
+                    $langAssociate = ['ru' => 'RUS', 'en' => 'ENG'];
+                @endphp
+
                 <span>RUS</span>
+
                 <img src="/img/main/lang.svg" alt="Иконка">
 
                 <ul>
