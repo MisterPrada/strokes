@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ContactsController;
 use App\Http\Controllers\LanguageController;
+use Illuminate\Support\Facades\Session;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,10 +16,12 @@ use App\Http\Controllers\LanguageController;
 |
 */
 
+//dd(\Illuminate\Support\Facades\App::getLocale());
+
 // роут редирект на домашнюю страницу с префиксом языка
 Route::get('/', function () {
-    return redirect('/' . \Illuminate\Support\Facades\App::getLocale());
-})->name('default');
+    return view('home');
+})->withoutMiddleware([\App\Http\Middleware\Locale::class])->name('default');
 
 // роуты локализации
 Route::get('setlocale/{locale}', [LanguageController::class, 'index'])->name('locale');
@@ -32,16 +35,16 @@ Route::group(['prefix' => App\Http\Middleware\Locale::getLocale()], function () 
 
 
 
-Route::get('/responsive', function () {
-    return view('responsive');
-})->name('responsive');
-
-Route::get('/disabled', function () {
-    return view('disabled');
-})->name('disabled');
-
-Route::get('/contacts', [ContactsController::class, 'index'])->name('contacts');
-Route::post('/contacts', [ContactsController::class, 'contactForm']);
+//Route::get('/responsive', function () {
+//    return view('responsive');
+//})->name('responsive');
+//
+//Route::get('/disabled', function () {
+//    return view('disabled');
+//})->name('disabled');
+//
+//Route::get('/contacts', [ContactsController::class, 'index'])->name('contacts');
+//Route::post('/contacts', [ContactsController::class, 'contactForm']);
 
 // Errors
 Route::get('/404', function(){

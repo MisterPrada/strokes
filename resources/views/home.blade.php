@@ -15,7 +15,6 @@
     <meta property="og:image" content="/img/og.png" />
     <meta property="og:description" content="{{ __('seo_description') }}" />
 
-
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/locomotive-scroll.min.css">
     <link rel="stylesheet" href="css/strokes.css">
@@ -283,10 +282,16 @@
                         @php
                             $langKey = array_key_first($langAssociateFilter);
 
-                            $currentLang = array_shift($langAssociateFilter)
+                            $currentLang = array_shift($langAssociateFilter);
+
+                            if(config('app.default_locale') == $langKey){
+                                $link = route('default');
+                            }else{
+                                $link = route('locale', ['locale' => $langKey] );
+                            }
                         @endphp
 
-                        <a href="{{ route('locale', ['locale' => $langKey] )  }}">
+                        <a href="{{ $link  }}">
                             {{ $currentLang }}
                         </a>
                     </li>
@@ -1267,7 +1272,7 @@
 </div>
 
 <div id="logo-right-bottom" class="logo-right-bottom">
-    <a href="/contacts">
+    <a href="#contacts">
         <img src="/img/logo/logo.svg" class="logo-mini">
         <img src="/img/logo/{{ 'text_' . $lang }}.svg" class="logo-text-mini">
     </a>
