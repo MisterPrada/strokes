@@ -21,7 +21,7 @@ class ContactsController extends Controller
 
         $form = (object) $request->all();
 
-        Notification::route('mail', 'lesha.skorpion@gmail.com')
+        Notification::route('mail', 'strokescoredesign@gmail.com')
             ->notify(new ContactForm($form));
 
 
