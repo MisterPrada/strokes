@@ -6,8 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Strokes Design</title>
     <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
-    <meta name="description" content="Создание дизайна для мировой сцены тяжелой музыки. Разработка логотипов, эмблем, иллюстраций для продукции и оформление социальных сетей. Мы - визуальная поддержка мировой кор-сцены.">
-    <meta name="keywords" content="Дизайн, Музыкальных, мерч, логотипы, strokes, обложка, metal">
+    <meta name="description" content="{{ __('seo_description') }}">
+    <meta name="keywords" content="{{ __('seo_keywords') }}">
+
+    <meta property="og:title" content="Strokes Design" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="{{ url()->current() }}" />
+    <meta property="og:image" content="/img/og.png" />
+    <meta property="og:description" content="{{ __('seo_description') }}" />
+
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/locomotive-scroll.min.css">

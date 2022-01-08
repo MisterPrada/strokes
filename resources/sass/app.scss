@@ -342,6 +342,10 @@ a {
 }
 
 @media (max-width: 630px) {
+    body {
+        background-color: #131313;
+    }
+
     .logo-right-bottom, .header-left-logo  {
         display: none !important;
     }
@@ -3324,7 +3328,8 @@ a {
 
 .modal-result {
     width: 572px;
-    height: 688px;
+    //height: 688px;
+    height: 168px;
     position: fixed;
     left: 50%;
     top: 50%;
@@ -3345,7 +3350,7 @@ a {
 
     .text-content{
         height: 0;
-        margin-top: 50%;
+        margin-top: 0%;
         display: block;
         position: relative;
         color: white;
@@ -3393,7 +3398,7 @@ a {
 
         .text-content{
             height: 0;
-            margin-top: 50%;
+            margin-top: 0%;
             display: block;
             position: relative;
             color: white;
@@ -4037,7 +4042,7 @@ a {
         width: 200px;
         height: 440px;
         position: absolute;
-        top: 30px;
+        top: 60px;
         left: 50%;
         bottom: 0;
         transform: translateX(-50%);
@@ -4131,6 +4136,8 @@ a {
 
     @media (max-width: 1170px) {
         .content {
+            top: 30px;
+
             .social {
                 .link {
                     &:hover {
@@ -4150,6 +4157,7 @@ a {
 
         .content {
             width: 75px;
+            top: 0px;
 
             .right-text, .center-text {
                 display: none;

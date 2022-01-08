@@ -342,6 +342,10 @@ a {
   }
 }
 @media (max-width: 630px) {
+  body {
+    background-color: #131313;
+  }
+
   .logo-right-bottom, .header-left-logo {
     display: none !important;
   }
@@ -2808,7 +2812,7 @@ a {
 /** Contacts **/
 .modal-result {
   width: 572px;
-  height: 688px;
+  height: 168px;
   position: fixed;
   left: 50%;
   top: 50%;
@@ -2828,7 +2832,7 @@ a {
 }
 .modal-result .text-content {
   height: 0;
-  margin-top: 50%;
+  margin-top: 0%;
   display: block;
   position: relative;
   color: white;
@@ -2873,7 +2877,7 @@ a {
   }
   .modal-result .text-content {
     height: 0;
-    margin-top: 50%;
+    margin-top: 0%;
     display: block;
     position: relative;
     color: white;
@@ -3447,7 +3451,7 @@ a {
   width: 200px;
   height: 440px;
   position: absolute;
-  top: 30px;
+  top: 60px;
   left: 50%;
   bottom: 0;
   transform: translateX(-50%);
@@ -3524,6 +3528,9 @@ a {
   top: 40.2%;
 }
 @media (max-width: 1170px) {
+  .slide-8 .content {
+    top: 30px;
+  }
   .slide-8 .content .social .link:hover {
     background-color: white;
   }
@@ -3537,6 +3544,7 @@ a {
   }
   .slide-8 .content {
     width: 75px;
+    top: 0px;
   }
   .slide-8 .content .right-text, .slide-8 .content .center-text {
     display: none;
