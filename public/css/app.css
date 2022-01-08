@@ -2917,7 +2917,7 @@ a {
   height: 100%;
   background-image: url(/img/logo/logo-gray.svg);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 70%;
   background-position: center 0;
   overflow: hidden;
 }
