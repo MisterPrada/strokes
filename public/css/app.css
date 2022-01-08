@@ -2917,7 +2917,7 @@ a {
   height: 100%;
   background-image: url(/img/logo/logo-gray.svg);
   background-repeat: no-repeat;
-  background-size: 70%;
+  background-size: contain;
   background-position: center 0;
   overflow: hidden;
 }
@@ -3447,6 +3447,7 @@ a {
   width: 200px;
   height: 440px;
   position: absolute;
+  top: 30px;
   left: 50%;
   bottom: 0;
   transform: translateX(-50%);
