@@ -44,7 +44,8 @@ Route::group(['prefix' => App\Http\Middleware\Locale::getLocale()], function () 
 //})->name('disabled');
 //
 //Route::get('/contacts', [ContactsController::class, 'index'])->name('contacts');
-//Route::post('/contacts', [ContactsController::class, 'contactForm']);
+
+Route::post('/contacts', [ContactsController::class, 'contactForm']);
 
 // Errors
 Route::get('/404', function(){
