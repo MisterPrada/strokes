@@ -5,19 +5,49 @@ let timer = setInterval(() => {
     time = time + 1;
 }, timeBetweenLetters);
 
-function fadeOutEffect() {
-    var fadeTarget = document.getElementById("preloader");
-    var fadeEffect = setInterval(function () {
-        if (!fadeTarget.style.opacity) {
-            fadeTarget.style.opacity = 1;
-        }
-        if (fadeTarget.style.opacity > 0) {
-            fadeTarget.style.opacity -= 0.1;
-        } else {
-            clearInterval(fadeEffect);
-        }
-    }, 200);
+// left: 37, up: 38, right: 39, down: 40,
+// spacebar: 32, pageup: 33, pagedown: 34, end: 35, home: 36
+var keys = {37: 1, 38: 1, 39: 1, 40: 1};
+
+function preventDefault(e) {
+    e.preventDefault();
 }
+
+function preventDefaultForScrollKeys(e) {
+    if (keys[e.keyCode]) {
+        preventDefault(e);
+        return false;
+    }
+}
+
+// modern Chrome requires { passive: false } when adding event
+var supportsPassive = false;
+try {
+    window.addEventListener("test", null, Object.defineProperty({}, 'passive', {
+        get: function () { supportsPassive = true; }
+    }));
+} catch(e) {}
+
+var wheelOpt = supportsPassive ? { passive: false } : false;
+var wheelEvent = 'onwheel' in document.createElement('div') ? 'wheel' : 'mousewheel';
+
+// call this to Disable
+function disableScroll() {
+    window.addEventListener('DOMMouseScroll', preventDefault, false); // older FF
+    window.addEventListener(wheelEvent, preventDefault, wheelOpt); // modern desktop
+    window.addEventListener('touchmove', preventDefault, wheelOpt); // mobile
+    window.addEventListener('keydown', preventDefaultForScrollKeys, false);
+}
+
+// call this to Enable
+function enableScroll() {
+    window.removeEventListener('DOMMouseScroll', preventDefault, false);
+    window.removeEventListener(wheelEvent, preventDefault, wheelOpt);
+    window.removeEventListener('touchmove', preventDefault, wheelOpt);
+    window.removeEventListener('keydown', preventDefaultForScrollKeys, false);
+}
+
+disableScroll();
 
 let paintSymbal = setInterval(() => {
     switch (time) {
@@ -85,6 +115,11 @@ let paintSymbal = setInterval(() => {
             preloaderEl.style.opacity = 0;
             preloaderEl.style.pointerEvents = "none";
 
+            document.getElementById("main-video").currentTime = 0;
+            document.body.style.overflow = 'visible';
+            scroll.start();
+            enableScroll();
+
             setTimeout(()=>{
                 preloaderEl.remove();
             }, 800)
@@ -92,8 +127,7 @@ let paintSymbal = setInterval(() => {
             clearInterval(paintSymbal);
             break;
     }
-}, 100);
-
+}, 125);
 
 let color_default = () => {
     primer11.setAttribute("fill", "#FFFFFF");

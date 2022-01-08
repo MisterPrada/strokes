@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="css/app.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
-<body data-scroll-container>
+<body data-scroll-container style="overflow: hidden;">
 
 <style>
     #head-menu, #logo-right-bottom{
@@ -212,7 +212,6 @@
         </g>
     </svg>
 </div>
-<script src="js/preloader.js" type="text/javascript"></script>
 
 <header>
     <div id="head-menu" class="container-fluid fixed-top nav-header unselectable animate__animated animate__fadeIn">
@@ -1277,6 +1276,7 @@
 <script src="js/locomotive-scroll.min.js"></script>
 <script src="/lang-{{ $lang ?? '' }}"></script>
 <script src="js/misterprada.js"></script>
+<script src="js/preloader.js" type="text/javascript"></script>
 <script src="js/app.js"></script>
 
 </html>

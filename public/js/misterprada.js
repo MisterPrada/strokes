@@ -70,6 +70,10 @@ $( document ).ready(function() {
         repeat: true
     });
 
+    window.scroll = scroll;
+
+    scroll.stop();
+
     let deg = 0;
     let passive_mode = false;
     let offset = 0;
