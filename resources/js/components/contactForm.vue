@@ -2,30 +2,29 @@
     <form ref="contactForm" id="contact-form" @submit.prevent="sendContactFrom" method="post">
         <div class="form-group">
             <span>&nbsp;</span>
-            <input required v-model="name" type="text" minlength="3" maxlength="60" placeholder="Ваше имя*" name="firstname">
+            <input required v-model="name" type="text" minlength="3" maxlength="60" :placeholder="__('slide_contact_name') + '*'" name="firstname">
         </div>
 
         <div class="form-group">
             <span>&nbsp;</span>
-            <input required v-model="email" type="email" placeholder="Ваш E-mail*" name="email">
+            <input required v-model="email" type="email" :placeholder="__('slide_contact_email') + '*'" name="email">
         </div>
 
         <div class="form-group">
             <span>&nbsp;</span>
-            <textarea required minlength="10" maxlength="7000" v-model="message" type="text" placeholder="Ваш комментарий*" name="message"></textarea>
+            <textarea required minlength="10" maxlength="7000" v-model="message" type="text" :placeholder="__('slide_contact_comment') + '*'" name="message"></textarea>
         </div>
 
         <div id="contacts-rec" class="g-recaptcha" ></div>
 
         <div class="form-group">
-            <button v-bind:class="{ 'd-none': sending }" type="submit">Отправить</button>
+            <button v-bind:class="{ 'd-none': sending }" type="submit">{{__('slide_contact_send_button') }}</button>
 
             <img v-bind:class="{ 'd-none': !sending }" src="/img/loaders/ball-triangle.svg" alt="">
         </div>
 
         <div class="footer">
-            После отправки вашей заявки мы свяжется с Вами по Вашему E-mail
-            для уточнения данных и обработки вашего заказа.
+            {{ __('slide_contact_footer_text') }}
         </div>
     </form>
 </template>
@@ -61,7 +60,6 @@
 
                 axios.post('/contacts', formData)
                     .then((response) => {
-                        console.log('Отправили');
                         this.$refs.contactForm.reset();
                         this.sending = false;
                         $('#modal_result').fadeIn();

@@ -4,6 +4,8 @@ require('./bootstrap');
 window.Vue = require('vue');
 import Vue from 'vue';
 
+window.__ = Vue.prototype.__ = str => _.get(window.i18n, str); // Объявляем функцию для перевода
+
 var contactsRec;
 window.contactsRec = contactsRec;
 window.onloadCallback = function () {

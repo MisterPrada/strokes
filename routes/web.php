@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ContactsController;
+use App\Http\Controllers\LanguageController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,7 +21,8 @@ Route::get('/', function () {
 })->name('default');
 
 // роуты локализации
-Route::get('setlocale/{locale}', 'LanguageController@index')->name('locale');
+Route::get('setlocale/{locale}', [LanguageController::class, 'index'])->name('locale');
+Route::get('/lang-{lang}', [LanguageController::class, 'show']);
 
 Route::group(['prefix' => App\Http\Middleware\Locale::getLocale()], function () {
     Route::get('/', function () {

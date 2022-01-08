@@ -24,47 +24,69 @@
 
             <div class="mobile-menu-button">
                 <button class="js-mobile-menu-btn">
-                    <img src="/img/mobile-menu-button.svg" alt="Открыть меню">
+                    <img src="/img/mobile-menu-button.svg" alt="{{ __('open_menu') }}">
                 </button>
             </div>
 
             <div class="header-left-logo logo-hider">
                 <a href="#home">
-                    <img src="/img/left-logo.svg" alt="Логотип">
+                    <img src="/img/left-logo.svg" alt="{{ __('logo_alt') }}">
                 </a>
             </div>
 
             <div class="menu-right">
                 <ul>
                     <li class="menu-item menu-about">
-                        <a href="#about">О нас</a>
+                        <a href="#about">
+                            {{ __('menu_list_about_us') }}
+                        </a>
                     </li>
 
                     <li class="menu-item menu-jobs">
-                        <a href="#jobs">Работы</a>
+                        <a href="#jobs">
+                            {{ __('menu_list_jobs') }}
+                        </a>
                     </li>
 
                     <li class="menu-item menu-reviews">
-                        <a href="#reviews">Отзывы</a>
+                        <a href="#reviews">
+                            {{ __('menu_list_reviews') }}
+                        </a>
                     </li>
 
                     <li class="menu-item menu-contacts">
-                        <a href="#contacts">Заказать</a>
+                        <a href="#contacts">
+                            {{ __('menu_list_order') }}
+                        </a>
                     </li>
                 </ul>
             </div>
 
             <div class="lang-dropdown">
                 @php
-                    $langAssociate = ['ru' => 'RUS', 'en' => 'ENG'];
+                    $langAssociate = $langAssociateFilter = ['ru' => 'RUS', 'en' => 'ENG'];
                 @endphp
 
-                <span>RUS</span>
+                <span>{{ $langAssociate[$lang] }}</span>
 
-                <img src="/img/main/lang.svg" alt="Иконка">
+                <img src="/img/main/lang.svg">
 
                 <ul>
-                    <li><a href="javascript: void(0);">ENG</a></li>
+                    @php
+                        unset($langAssociateFilter[$lang]);
+                    @endphp
+
+                    <li>
+                        @php
+                            $langKey = array_key_first($langAssociateFilter);
+
+                            $currentLang = array_shift($langAssociateFilter)
+                        @endphp
+
+                        <a href="{{ route('locale', ['locale' => $langKey] )  }}">
+                            {{ $currentLang }}
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -79,11 +101,14 @@
 
         <div class="video-grid"></div>
 
-        <div class="left-logo-block custom">
+        <div class="left-logo-block custom" data-scroll-speed="0"
+             data-scroll>
             <div class="rect-top"></div>
 
-            <div class="logo-text" data-scroll data-scroll-call="main">
-                <span>Мы создаем цифровые продукты,</span> которые преобразуются с помощью анализа данных.
+            <div class="logo-text"
+                 data-scroll
+                 data-scroll-call="main">
+                {!! __('slide_1_left_description') !!}
             </div>
         </div>
 
@@ -100,38 +125,73 @@
         <div data-scroll data-scroll-speed="-5" data-target="#about" class="container text-content">
             <div class="row">
                 <div>
-                    <h1>О нас</h1>
+                    @if($lang == 'ru')
+                        <h1>О нас</h1>
 
-                    <p>
-                        Привет, нас зовут <span class="red">«STROKES»</span>. <br>
-                        В настоящее время мы специализируемся<br>
-                        на product-дизайне, UI/UX дизайне, motion-дизайне<br>
-                        и художественном направлении в целом.
-                    </p>
+                        <p>
+                            Привет, нас зовут <span class="red">«STROKES»</span>. <br>
+                            В настоящее время мы специализируемся<br>
+                            на product-дизайне, UI/UX дизайне, motion-дизайне<br>
+                            и художественном направлении в целом.
+                        </p>
 
-                    <p>
-                        Проект <span class="red">«STROKES»</span> направлен на визуальную поддержку<br>
-                        мировой сцены тяжелой музыки, а именно на помощь<br>
-                        в продвижении путём разработки дизайна медиа-контента,<br>
-                        product-дизайна и motion-дизайна для музыкальных групп.
-                    </p>
+                        <p>
+                            Проект <span class="red">«STROKES»</span> направлен на визуальную поддержку<br>
+                            мировой сцены тяжелой музыки, а именно на помощь<br>
+                            в продвижении путём разработки дизайна медиа-контента,<br>
+                            product-дизайна и motion-дизайна для музыкальных групп.
+                        </p>
 
-                    <p >
-                        Наша первостепенная задача – профессиональный<br>
-                        подход к каждому проекту индивидуально.
-                    </p>
+                        <p >
+                            Наша первостепенная задача – профессиональный<br>
+                            подход к каждому проекту индивидуально.
+                        </p>
 
-                    <p>
-                        В нашу команду входят Digital-дизайнеры, иллюстраторы<br>
-                        и 2D художники, работающие в различных направлениях<br>
-                        и стилях.
-                    </p>
+                        <p>
+                            В нашу команду входят Digital-дизайнеры, иллюстраторы<br>
+                            и 2D художники, работающие в различных направлениях<br>
+                            и стилях.
+                        </p>
 
-                    <p>
-                        Каждый заказ обрабатывается индивидуально и для него<br>
-                        подбирается специалист, наиболее подходящий для<br>
-                        реализации Вашей задачи.
-                    </p>
+                        <p>
+                            Каждый заказ обрабатывается индивидуально и для него<br>
+                            подбирается специалист, наиболее подходящий для<br>
+                            реализации Вашей задачи.
+                        </p>
+                    @endif
+
+                    @if($lang == 'en')
+                        <h1>About us</h1>
+
+                        <p>
+                            Hi, we are <span class="red">«STROKES»</span>.<br>
+                            We currently specialize in product design, UI/UX design,<br>
+                            video design, art direction etc.
+                        </p>
+
+                        <p>
+                            The <span class="red">«STROKES»</span> project’s aim is to visually support<br>
+                            heavy music scene worldwide, namely to help with<br>
+                            promotion through media content design, product<br>
+                            design, and motion design for music bands.
+                        </p>
+
+                        <p>
+                            The primary goal that drives us is a professional<br>
+                            individual approach to every project.
+                        </p>
+
+                        <p>
+                            Our team includes Digital designers, illustrators and<br>
+                            2-D artists working in different directions and styles.
+                        </p>
+
+                        <p>
+                            Each order is considered individually. The most suitable<br>
+                            specialist for the specifics of your order is selected<br>
+                            for resolving your task.
+                        </p>
+                    @endif
 
                     <p>
                         <br data-scroll data-scroll-call="about">
@@ -147,35 +207,65 @@
                  data-scroll
                  data-scroll-direction="horizontal"
                  data-scroll-speed="0">
-                <h1>Обложки</h1>
 
-                <p>
-                    Обложка альбома – это лицо музыкального релиза.
-                    Обложка должна запоминаться, цеплять за живое и, не побоимся
-                    этих слов – оставить след в душе! Все в точности, как с музыкой.
-                </p>
+                @if($lang == 'ru')
+                    <h1>Обложки</h1>
 
-                <p>
-                    Мы готовы реализовать любую из ваших идей и предложить свою
-                    помощь и экспертизу для создания будущей обложки релиза.
-                    Мы разрабатываем обложки в различных стилях — начиная
-                    от коллажирования, заканчивая полноценными реалистичными
-                    артами.
-                </p>
+                    <p>
+                        Обложка альбома – это лицо музыкального релиза. Обложка должна
+                        запоминаться, цеплять за живое и, не побоимся этих слов – оставить
+                        след в душе! Все в точности, как с музыкой.
+                    </p>
 
-                <p>
-                    Мы верим, что обложка музыкального альбома – это визуальное
-                    воплощение смыслов, заложенных вашей музыкой.
-                </p>
+                    <p>
+                        Мы готовы реализовать любую из ваших идей и предложить свою
+                        помощь и экспертизу для создания будущей обложки релиза.
+                    </p>
 
-                <div data-scroll data-scroll-call="jobs"  class="content-footer">
+                    <p>
+                        Мы разрабатываем обложки в различных стилях — начиная
+                        от коллажирования, заканчивая полноценными реалистичными артами.
+                    </p>
+
+                    <p>
+                        Мы верим, что обложка музыкального альбома – это визуальное
+                        воплощение смыслов, заложенных вашей музыкой.
+                    </p>
+                @endif
+
+                @if($lang == 'en')
+                        <h1>Covers</h1>
+
+                        <p>
+                            An album cover is the face of a musical release. It have
+                            to be memorable, touch a nerve and leave a mark on the
+                            soul! It works the same way as music does.
+                        </p>
+
+                        <p>
+                            We are ready to realize all your ideas and suggest
+                            our help and expertise to create your future cover.
+                        </p>
+
+                        <p>
+                            We design covers in a variety of styles - from
+                            collage to full-fledged realistic arts.
+                        </p>
+
+                        <p>
+                            We believe that music album cover is a visual
+                            meaning behind your music.
+                        </p>
+                @endif
+
+                <div data-scroll data-scroll-call="jobs" class="content-footer">
                     <a target="_blank" href="https://www.facebook.com/pg/strokescoredesign/photos/?tab=album&album_id=100991604820835&ref=page_internal">
                         <img src="/img/slide-3/facebook.svg" alt="icon">
-                        Смотреть все обложки
+                        {{ __('slide_3_link') }}
                     </a>
                     <a class="blur-material" target="_blank" href="https://www.facebook.com/pg/strokescoredesign/photos/?tab=album&album_id=100991604820835&ref=page_internal">
                         <img src="/img/slide-3/facebook.svg" alt="icon">
-                        Смотреть все обложки
+                        {{ __('slide_3_link') }}
                     </a>
                 </div>
             </div>
@@ -228,40 +318,67 @@
                  data-scroll
                  data-scroll-direction="horizontal"
                  data-scroll-speed="0">
-                <h1>Логотипы и эмблемы</h1>
 
-                <p>
-                    Фирменный знак - это первое впечатление о вашем музыкальном проекте.
-                </p>
+                @if($lang == 'ru')
+                    <h1>Логотипы и эмблемы</h1>
 
-                <p>
-                    В современном мире музыкальные коллективы
-                    используют логотипы и эмблемы в качестве презентации своей
-                    группы, будь то их размещение на афише
-                    концерта или на обложке релиза.
-                </p>
+                    <p>
+                        Фирменный знак - это первое впечатление о вашем музыкальном проекте.
+                    </p>
 
-                <p>
-                    В любом случае,
-                    логотип является неотъемлемой визуальной частью
-                    музыкального проекта.
-                </p>
+                    <p>
+                        В современном мире музыкальные коллективы
+                        используют логотипы и эмблемы в качестве презентации своей
+                        группы, будь то их размещение на афише
+                        концерта или на обложке релиза.
+                    </p>
 
-                <p>
-                    Мы предлагаем разработку текстовых, символических либо
-                    комбинированных логотипов и эмблем в различных стилях:
-                    #Metal #Hardcore #Punk и многие другие.
-                </p>
+                    <p>
+                        В любом случае,
+                        логотип является неотъемлемой визуальной частью
+                        музыкального проекта.
+                    </p>
+
+                    <p>
+                        Мы предлагаем разработку текстовых, символических либо
+                        комбинированных логотипов и эмблем в различных стилях:
+                        #Metal #Hardcore #Punk и многие другие.
+                    </p>
+                @endif
+
+                @if($lang == 'en')
+                        <h1>Logos and Emblems</h1>
+
+                        <p>
+                            A trademark is the first impression of your musical project.
+                        </p>
+
+                        <p>
+                            In today's world, musical ensembles use logos and emblems
+                            as a presentation of their projects, placing them on the poster
+                            of a concert or on the cover of a release.
+                        </p>
+
+                        <p>
+                            Anyway, the logo is an integral visual part of a musical project.
+                        </p>
+
+                        <p>
+                            We offer the design of text, symbolic or combined logos and
+                            emblems in various styles: #Metal #Hardcore #Punk
+                            and many more.
+                        </p>
+                @endif
 
                 <div class="content-footer">
                     <a target="_blank" href="https://www.facebook.com/pg/strokescoredesign/photos/?tab=album&album_id=100989934821002&ref=page_internal">
                         <img src="/img/slide-3/facebook.svg" alt="icon">
-                        Смотреть все логотипы и эмблемы
+                        {{ __('slide_4_link') }}
                     </a>
 
                     <a class="blur-material" target="_blank" href="https://www.facebook.com/pg/strokescoredesign/photos/?tab=album&album_id=100989934821002&ref=page_internal">
                         <img src="/img/slide-3/facebook.svg" alt="icon">
-                        Смотреть все логотипы и эмблемы
+                        {{ __('slide_4_link') }}
                     </a>
                 </div>
             </div>
@@ -311,39 +428,67 @@
                  data-scroll-direction="horizontal"
                  data-scroll-speed="0"
                  >
-                <h1>Мерч</h1>
 
-                <p>
-                    На сегодняшний день большинство музыкальных групп могут расти
-                    и продвигаться лишь при поддержке фанатов, которые приобретают
-                    мерч музыкальных коллективов.
-                </p>
+                @if($lang == 'ru')
+                    <h1>Мерч</h1>
 
-                <p>
-                    Не важно, футболка ли это, толстовка, бандана, снепбек или CD-продукция.
-                    Главное - то, как выглядит мерч, насколько он качественен.
-                </p>
+                    <p>
+                        На сегодняшний день большинство музыкальных групп могут расти
+                        и продвигаться лишь при поддержке фанатов, которые приобретают
+                        мерч музыкальных коллективов.
+                    </p>
 
-                <p>
-                    Действительно классный продукт хочется купить и таким образом поддержать
-                    любимый музыкальный коллектив.
-                </p>
+                    <p>
+                        Не важно, футболка ли это, толстовка, бандана, снепбек или CD-продукция.
+                        Главное - то, как выглядит мерч, насколько он качественен.
+                    </p>
 
-                <p>
-                    Мы готовы разработать иллюстрацию или дизайн для вашего
-                    мерча, который поможет вам расти дальше и
-                    продвигать свою музыкальную группу.
-                </p>
+                    <p>
+                        Действительно классный продукт хочется купить и таким образом поддержать
+                        любимый музыкальный коллектив.
+                    </p>
+
+                    <p>
+                        Мы готовы разработать иллюстрацию или дизайн для вашего
+                        мерча, который поможет вам расти дальше и
+                        продвигать свою музыкальную группу.
+                    </p>
+                @endif
+
+                @if($lang == 'en')
+                    <h1>Merch</h1>
+
+                    <p>
+                        Nowadays, most musical bands can only grow and promote
+                        themselves with the support of fans, who purchase band merch.
+                    </p>
+
+                    <p>
+                        It doesn't matter if it's a T-shirt, sweatshirt, bandana, snapback or
+                        CD products. What matters is how the merch looks and the level of its
+                        quality.
+                    </p>
+
+                    <p>
+                        Really cool product sells easily and thus supports the band.
+                    </p>
+
+                    <p>
+                        We are ready to develop an illustration or design for your
+                        merchandise that will help you to grow and promote
+                        your musical band.
+                    </p>
+                @endif
 
                 <div class="content-footer">
                     <a target="_blank" href="https://www.facebook.com/pg/strokescoredesign/photos/?tab=album&album_id=100993951487267&ref=page_internal">
                         <img src="/img/slide-3/facebook.svg" alt="icon">
-                        Смотреть все иллюстрации
+                        {{ __('slide_5_link') }}
                     </a>
 
                     <a class="blur-material" target="_blank" href="https://www.facebook.com/pg/strokescoredesign/photos/?tab=album&album_id=100993951487267&ref=page_internal">
                         <img src="/img/slide-3/facebook.svg" alt="icon">
-                        Смотреть все иллюстрации
+                        {{ __('slide_5_link') }}
                     </a>
                 </div>
             </div>
@@ -385,12 +530,20 @@
                         <div class="text-content">
                             <div class="head">
                                 <span class="red">Hatred City</span>
-                                <span class="grey">| Музыкальная группа</span>
+                                <span class="grey">| {{ __('slide_reviews_title_1') }}</span>
                             </div>
                             <div class="text">
-                                Начали работать с самого создания группы, до сих пор обращаемся.<br>
-                                Приводим сюда все свои новые проекты. Заверяем, тут все<br>
-                                качественно, быстро и технично, рекомендем!
+                                @if($lang == 'ru')
+                                    Начали работать с самого создания группы, до сих пор обращаемся.<br>
+                                    Приводим сюда все свои новые проекты. Заверяем, тут все<br>
+                                    качественно, быстро и технично, рекомендем!
+                                @endif
+
+                                @if($lang == 'en')
+                                    We started working with the very creation of the group, and we still do.<br>
+                                    We bring all our new projects here. We recommend these guys as their<br>
+                                    work is always done with high quality, quickly and skillfully.
+                                @endif
                             </div>
                         </div>
                     </div>
@@ -402,12 +555,20 @@
                         <div class="text-content">
                             <div class="head">
                                 <span class="red">Cold Blooded Murder</span>
-                                <span class="grey">| Музыкальная группа</span>
+                                <span class="grey">| {{ __('slide_reviews_title_1') }}</span>
                             </div>
                             <div class="text">
-                                Взрывной результат, работа выполнена качественно и в кротчайшие<br>
-                                сроки. Стоит отметит профессиональный подход и ответственность.<br>
-                                Обязательно будем обращаться еще!
+                                @if($lang == 'ru')
+                                    Взрывной результат, работа выполнена качественно и в кротчайшие<br>
+                                    сроки. Стоит отметит профессиональный подход и ответственность.<br>
+                                    Обязательно будем обращаться еще!
+                                @endif
+
+                                @if($lang == 'en')
+                                    The explosive result, the work is done qualitatively and in the shortest<br>
+                                    time. It is worth noting the professional approach and responsibility.<br>
+                                    We will definitely come again!
+                                @endif
                             </div>
                         </div>
                     </div>
@@ -419,12 +580,20 @@
                         <div class="text-content">
                             <div class="head">
                                 <span class="red">PRO Heroes</span>
-                                <span class="grey">| Студия звукозаписи</span>
+                                <span class="grey">| {{ __('slide_reviews_title_2') }}</span>
                             </div>
                             <div class="text">
-                                Выше всех похвал! С первого подхода попали в яблочко<br>
-                                с редизайном бренда студии звукозаписи ProHeroes!<br>
-                                Конечно же обращусь и в следующий раз!
+                                @if($lang == 'ru')
+                                    Выше всех похвал! С первого подхода попали в яблочко<br>
+                                    с редизайном бренда студии звукозаписи ProHeroes!<br>
+                                    Конечно же обращусь и в следующий раз!
+                                @endif
+
+                                @if($lang == 'en')
+                                    You are beyond praise! They hit the bull's-eye from the first approach<br>
+                                    with the redesign of the ProHeroes recording studio brand!<br>
+                                    I'll certainly do it next time too!
+                                @endif
                             </div>
                         </div>
                     </div>
@@ -436,12 +605,20 @@
                         <div class="text-content">
                             <div class="head">
                                 <span class="red">HUNGRY PIGEON</span>
-                                <span class="grey">| Музыкальная группа</span>
+                                <span class="grey">| {{ __('slide_reviews_title_1') }}</span>
                             </div>
                             <div class="text">
-                                Весь процесс работы очень понравился. STROKES крайне<br>
-                                внимательны и аккуратны. Все сделано на высшем уровне и в<br>
-                                кратчайшие сроки!
+                                @if($lang == 'ru')
+                                    Весь процесс работы очень понравился. STROKES крайне<br>
+                                    внимательны и аккуратны. Все сделано на высшем уровне и в<br>
+                                    кратчайшие сроки!
+                                @endif
+
+                                @if($lang == 'en')
+                                    I enjoyed the whole process very much. STROKES are extremely<br>
+                                    attentive and accurate. Everything was done to the highest<br>
+                                    standard and in the shortest time!
+                                @endif
                             </div>
                         </div>
                     </div>
@@ -453,12 +630,20 @@
                         <div class="text-content">
                             <div class="head">
                                 <span class="red">DEATHSQUAD</span>
-                                <span class="grey">| Музыкальная группа</span>
+                                <span class="grey">| {{ __('slide_reviews_title_1') }}</span>
                             </div>
                             <div class="text">
-                                Обратились за дизайном, профессионально нас оформил и очень<br>
-                                быстро. За два дня получили шикарный дизайн, респект.<br>
-                                Всем рекомендуем!
+                                @if($lang == 'ru')
+                                    Обратились за дизайном, профессионально нас оформил и очень<br>
+                                    быстро. За два дня получили шикарный дизайн, респект.<br>
+                                    Всем рекомендуем!
+                                @endif
+
+                                @if($lang == 'en')
+                                    We applied for the design. They professionally arranged us and<br>
+                                    did their job very quickly. In two days we got an awesome design,<br>
+                                    THX. We recommend it to everyone!
+                                @endif
                             </div>
                         </div>
                     </div>
@@ -470,12 +655,20 @@
                         <div class="text-content">
                             <div class="head">
                                 <span class="red">Doctordanver</span>
-                                <span class="grey">| Музыкальная группа</span>
+                                <span class="grey">| {{ __('slide_reviews_title_1') }}</span>
                             </div>
                             <div class="text">
-                                Всем советую! Очень быстро нашли общий язык и на выходе<br>
-                                получил отличную обложку и лирик видео. Работа под ключ,<br>
-                                внимание к деталям, качество и сроки.
+                                @if($lang == 'ru')
+                                    Всем советую! Очень быстро нашли общий язык и на выходе<br>
+                                    получил отличную обложку и лирик видео. Работа под ключ,<br>
+                                    внимание к деталям, качество и сроки.
+                                @endif
+
+                                @if($lang == 'en')
+                                    I recommend it to everyone! Very quickly found a common language<br>
+                                    and as the result I got a great cover and lyric video. Worked on a turnkey<br>
+                                    basis, they pay attention to detail and quality, meet deadlines.
+                                @endif
                             </div>
                         </div>
                     </div>
@@ -489,12 +682,19 @@
                         <div class="text-content">
                             <div class="head">
                                 <span class="red">BrightDelight</span>
-                                <span class="grey">| Музыкальная группа</span>
+                                <span class="grey">| {{ __('slide_reviews_title_1') }}</span>
                             </div>
                             <div class="text">
-                                Получили бомбическую обложку для своей банды!<br>
-                                Оперативно, Мегакачественно, Огненный Прайс.<br>
-                                Непросто рекомендую, только со STROKES и надо работать!
+                                @if($lang == 'ru')
+                                    Получили бомбическую обложку для своей банды!<br>
+                                    Оперативно, Мегакачественно, Огненный Прайс.<br>
+                                    Непросто рекомендую, только со STROKES и надо работать!
+                                @endif
+
+                                @if($lang == 'en')
+                                    Got a bombastic cover for my gang! Prompt, Mega Quality, Fiery Price.<br>
+                                    Not easy to recommend, STROKES is the only one to work with!
+                                @endif
                             </div>
                         </div>
                     </div>
@@ -506,12 +706,19 @@
                         <div class="text-content">
                             <div class="head">
                                 <span class="red">Vector Of Underground</span>
-                                <span class="grey">| Музыкальная группа</span>
+                                <span class="grey">| {{ __('slide_reviews_title_1') }}</span>
                             </div>
                             <div class="text">
-                                Заказ кавера для трека прошёл в комфортном режиме, сделано<br>
-                                оперативно.<br>
-                                Вопросов нет!
+                                @if($lang == 'ru')
+                                    Заказ кавера для трека прошёл в комфортном режиме, сделано<br>
+                                    оперативно.<br>
+                                    Вопросов нет!
+                                @endif
+
+                                @if($lang == 'en')
+                                    Ordering a cover for the track went comfortably, done promptly.<br>
+                                    No questions asked!
+                                @endif
                             </div>
                         </div>
                     </div>
@@ -523,12 +730,19 @@
                         <div class="text-content">
                             <div class="head">
                                 <span class="red">Deceiving Lights</span>
-                                <span class="grey">| Музыкальная группа</span>
+                                <span class="grey">| {{ __('slide_reviews_title_1') }}</span>
                             </div>
                             <div class="text">
-                                Очень качественная проделанная работа, с множеством<br>
-                                различных вариантов. Человек на 100500% втягивается в процесс,<br>
-                                что очень порадовало.
+                                @if($lang == 'ru')
+                                    Очень качественная проделанная работа, с множеством<br>
+                                    различных вариантов. Человек на 100500% втягивается в процесс,<br>
+                                    что очень порадовало.
+                                @endif
+
+                                @if($lang == 'en')
+                                    Very high-quality work done, with many<br>
+                                    different options. The person is 100500% into the process, which is very satisfying.
+                                @endif
                             </div>
                         </div>
                     </div>
@@ -540,12 +754,20 @@
                         <div class="text-content">
                             <div class="head">
                                 <span class="red">LAST TRIAL</span>
-                                <span class="grey">| Музыкальная группа</span>
+                                <span class="grey">| {{ __('slide_reviews_title_1') }}</span>
                             </div>
                             <div class="text">
-                                Огромный респект STROKES! Идеи схватывают налету и привносят<br>
-                                новые мысли в уже имеющиеся заготовки. И всё это при<br>
-                                прекрасном соотношении цены и качества. Спасибо огромное!
+                                @if($lang == 'ru')
+                                    Огромный респект STROKES! Идеи схватывают налету и привносят<br>
+                                    новые мысли в уже имеющиеся заготовки. И всё это при<br>
+                                    прекрасном соотношении цены и качества. Спасибо огромное!
+                                @endif
+
+                                @if($lang == 'en')
+                                    Huge respect for STROKES! Ideas are grasped on the fly and bring<br>
+                                    new thoughts into the already existing blanks. And all this at<br>
+                                    great value for money. Thank you so much!
+                                @endif
                             </div>
                         </div>
                     </div>
@@ -557,12 +779,20 @@
                         <div class="text-content">
                             <div class="head">
                                 <span class="red">Massive Overdancity</span>
-                                <span class="grey">| Музыкальная группа</span>
+                                <span class="grey">| {{ __('slide_reviews_title_1') }}</span>
                             </div>
                             <div class="text">
-                                Благодарим за отлично проделанную работу. Особенно за решение<br>
-                                спорных моментов, которые в итоге вышли очень хорошими.<br>
-                                В будущем надеемся на продолжительное сотрудничество!
+                                @if($lang == 'ru')
+                                    Благодарим за отлично проделанную работу. Особенно за решение<br>
+                                    спорных моментов, которые в итоге вышли очень хорошими.<br>
+                                    В будущем надеемся на продолжительное сотрудничество!
+                                @endif
+
+                                @if($lang == 'en')
+                                    Thank you for a job well done. Especially for solving<br>
+                                    the controversial points, which turned out very well in the end.<br>
+                                    We look forward to continued cooperation in the future!
+                                @endif
                             </div>
                         </div>
                     </div>
@@ -574,12 +804,20 @@
                         <div class="text-content">
                             <div class="head">
                                 <span class="red">Fooling the Crowd</span>
-                                <span class="grey">| Музыкальная группа</span>
+                                <span class="grey">| {{ __('slide_reviews_title_1') }}</span>
                             </div>
                             <div class="text">
-                                Максимально довольны обложкой. Оперативно, качественно<br>
-                                и даже пару бонусов сверху накинули. Просто супер, лучшие!<br>
-                                Всем советуем!
+                                @if($lang == 'ru')
+                                    Максимально довольны обложкой. Оперативно, качественно<br>
+                                    и даже пару бонусов сверху накинули. Просто супер, лучшие!<br>
+                                    Всем советуем!
+                                @endif
+
+                                @if($lang == 'en')
+                                    Maximum satisfaction with the cover. Prompt, high quality and<br>
+                                    even a couple of bonuses on top. Just super, the best!<br>
+                                    Everyone is highly recommended!
+                                @endif
                             </div>
                         </div>
                     </div>
@@ -593,12 +831,20 @@
                         <div class="text-content">
                             <div class="head">
                                 <span class="red">BEATDOWN HEROES</span>
-                                <span class="grey">| Музыкальная группа</span>
+                                <span class="grey">| {{ __('slide_reviews_title_1') }}</span>
                             </div>
                             <div class="text">
-                                Сотрудничаем уже очень долго, при каждом обращении получаем<br>
-                                ожидаемо-офигительный результат. Очень профессиональный<br>
-                                подход и исполнение в срок, услуги стоят своего. Всем советуем!
+                                @if($lang == 'ru')
+                                    Сотрудничаем уже очень долго, при каждом обращении получаем<br>
+                                    ожидаемо-офигительный результат. Очень профессиональный<br>
+                                    подход и исполнение в срок, услуги стоят своего. Всем советуем!
+                                @endif
+
+                                @if($lang == 'en')
+                                    We have been working together for a very long time, each time we<br>
+                                    get a great result. Very professional approach and performance<br>
+                                    on time, the service is worth it. We recommend it to everybody!
+                                @endif
                             </div>
                         </div>
                     </div>
@@ -610,12 +856,20 @@
                         <div class="text-content">
                             <div class="head">
                                 <span class="red">AMONG YOUR GODS</span>
-                                <span class="grey">| Музыкальная группа</span>
+                                <span class="grey">| {{ __('slide_reviews_title_1') }}</span>
                             </div>
                             <div class="text">
-                                Заказали лирик видео на новый трек. Работа была<br>
-                                выполнена быстро, качественно и за разумные деньги!<br>
-                                Очень приятно было иметь дело. Огромное спасибо за терпение!
+                                @if($lang == 'ru')
+                                    Заказали лирик видео на новый трек. Работа была<br>
+                                    выполнена быстро, качественно и за разумные деньги!<br>
+                                    Очень приятно было иметь дело. Огромное спасибо за терпение!
+                                @endif
+
+                                @if($lang == 'en')
+                                    Ordered a lyric video for a new track. The work was<br>
+                                    fast, high quality, and reasonably priced!<br>
+                                    It was a pleasure doing business. Thank you very much for your patience!
+                                @endif
                             </div>
                         </div>
                     </div>
@@ -627,12 +881,20 @@
                         <div class="text-content">
                             <div class="head">
                                 <span class="red">Incomer</span>
-                                <span class="grey">| Музыкальная группа</span>
+                                <span class="grey">| {{ __('slide_reviews_title_1') }}</span>
                             </div>
                             <div class="text">
-                                Выражаем огромную благодарность STROKES за дизайн логотипа<br>
-                                и эмблемы группы. Работа выполнена быстро, качественно, ценник<br>
-                                гуманный. Не мучайте себя в фотошопах, закажите работу у профи!
+                                @if($lang == 'ru')
+                                    Выражаем огромную благодарность STROKES за дизайн логотипа<br>
+                                    и эмблемы группы. Работа выполнена быстро, качественно, ценник<br>
+                                    гуманный. Не мучайте себя в фотошопах, закажите работу у профи!
+                                @endif
+
+                                @if($lang == 'en')
+                                    We express our gratitude to STROKES for the design. The work was<br>
+                                    done quickly, high quality, the price tag is humane. Do not torture<br>
+                                    yourself in photoshop, order the work of a pro!
+                                @endif
                             </div>
                         </div>
                     </div>
@@ -644,12 +906,20 @@
                         <div class="text-content">
                             <div class="head">
                                 <span class="red">STTD</span>
-                                <span class="grey">| Музыкальная группа</span>
+                                <span class="grey">| {{ __('slide_reviews_title_1') }}</span>
                             </div>
                             <div class="text">
-                                STROKES всегда делают работу лучше, чем мы изначально<br>
-                                задумываем. Очень рад, что есть такие люди, которые<br>
-                                дорабатывают ваши идеи и воплощают идеально. 12 пушек из 10!
+                                @if($lang == 'ru')
+                                    STROKES всегда делают работу лучше, чем мы изначально<br>
+                                    задумываем. Очень рад, что есть такие люди, которые<br>
+                                    дорабатывают ваши идеи и воплощают идеально. 12 пушек из 10!
+                                @endif
+
+                                @if($lang == 'en')
+                                    STROKES always does a better job than we originally<br>
+                                    intended. I'm very glad there are people like that<br>
+                                    who refine your ideas and do them perfectly. 12 guns out of 10!
+                                @endif
                             </div>
                         </div>
                     </div>
@@ -661,12 +931,20 @@
                         <div class="text-content">
                             <div class="head">
                                 <span class="red">Kirill Karklin</span>
-                                <span class="grey">| Музыкант</span>
+                                <span class="grey">| {{ __('slide_reviews_title_3') }}</span>
                             </div>
                             <div class="text">
-                                Зная себя, вообще не думал, что у кого-то получится придумать<br>
-                                логотип подходящий для моей музыкальной деятельности.<br>
-                                В итоге - результат превзошёл ожидания и я намерен вернуться!
+                                @if($lang == 'ru')
+                                    Зная себя, вообще не думал, что у кого-то получится придумать<br>
+                                    логотип подходящий для моей музыкальной деятельности.<br>
+                                    В итоге - результат превзошёл ожидания и я намерен вернуться!
+                                @endif
+
+                                @if($lang == 'en')
+                                    Knowing myself, I didn't think anyone could come up with a logo<br>
+                                    suitable for my musical activities. In the end - the result exceeded<br>
+                                    expectations and I intend to come back!
+                                @endif
                             </div>
                         </div>
                     </div>
@@ -678,12 +956,20 @@
                         <div class="text-content">
                             <div class="head">
                                 <span class="red">Voidout</span>
-                                <span class="grey">| Музыкальная группа</span>
+                                <span class="grey">| {{ __('slide_reviews_title_1') }}</span>
                             </div>
                             <div class="text">
-                                Отличная работа! Легко взаимодействовать и вносить правки,<br>
-                                понимаем друг друга с полуслова. Обязательно обратимся<br>
-                                за обложками. Большая благодарность от всего коллектива!
+                                @if($lang == 'ru')
+                                    Отличная работа! Легко взаимодействовать и вносить правки,<br>
+                                    понимаем друг друга с полуслова. Обязательно обратимся<br>
+                                    за обложками. Большая благодарность от всего коллектива!
+                                @endif
+
+                                @if($lang == 'en')
+                                    Great job! Easy to communicate and make edits,<br>
+                                    we understand each other at a glance. We'll be sure to apply<br>
+                                    for the covers. Big thanks from the whole team!
+                                @endif
                             </div>
                         </div>
                     </div>
@@ -705,13 +991,9 @@
     </section>
 
     <section id="contacts" class="slide-contact-us" data-scroll-section>
-        {{--        <video src="/video/background-contacts.mp4" muted autoplay loop class="video-background"></video>--}}
-        {{--        <div class="video-grid"></div>--}}
-
-
         <div class="contacts" data-scroll data-scroll-call="contacts">
             <div class="header">
-                ФОРМА ОБРАТНОЙ СВЯЗИ
+                {{ __('slide_contact_title') }}
             </div>
 
             <contact-form></contact-form>
@@ -772,22 +1054,19 @@
 
     <div class="text-content">
         <h2>
-            Ваша заявка отправлена!
+            {{ __('slide_contact_modal_success_title') }}
         </h2>
 
         <p>
-            После отправки вашей заявки мы свяжется с Вами по Вашему E-mail
-            для уточнения данных и обработки вашего заказа.
+            {{ __('slide_contact_modal_success_description') }}
         </p>
-
-        {{--            <button>Ок</button>--}}
     </div>
 </div>
 
 <div class="logo-right-bottom">
     <a href="/contacts">
         <img src="/img/logo/logo.svg" class="logo-mini">
-        <img src="/img/logo/text.svg" class="logo-text-mini">
+        <img src="/img/logo/{{ 'text_' . $lang }}.svg" class="logo-text-mini">
     </a>
 </div>
 
@@ -799,6 +1078,7 @@
 <script src="js/swipe.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/locomotive-scroll.min.js"></script>
+<script src="/lang-{{ $lang ?? '' }}"></script>
 <script src="js/misterprada.js"></script>
 <script src="js/app.js"></script>
 

@@ -3459,6 +3459,7 @@ a {
             margin-left: 50%;
             transform: translateX(-50%);
             margin-top: 40px;
+            text-align: center;
 
             font-family: Roboto;
             font-style: normal;
@@ -3490,6 +3491,7 @@ a {
                 color: #FFFFFF;
                 padding: 19px 20px 18px 20px;
                 outline: none;
+                box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
 
                 &::placeholder {
                     color: #FFFFFF;
@@ -3505,6 +3507,7 @@ a {
                 padding: 19px 20px 18px 20px;
                 resize: none;
                 outline: none;
+                box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
 
                 &::placeholder {
                     color: #FFFFFF;

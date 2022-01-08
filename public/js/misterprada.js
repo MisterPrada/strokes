@@ -140,7 +140,9 @@ $( document ).ready(function() {
                     $('#head-menu').removeClass('animate__fadeInDown animate__fadeIn');
                     $('#head-menu').addClass('animate__animated animate__fadeOut');
                 }else{
-                    mobileMenuHide();
+                    if($(window).width() < 630) {
+                        mobileMenuHide();
+                    }
                 }
             }
         }

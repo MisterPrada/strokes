@@ -1,1 +1,34 @@
-{}
+{
+    "seo_description": "Create designs for hard music bands. Logos, emblems, illustrations for products and social media design. We are visual support of the world hard music scene.",
+    "seo_keywords": "Design, Music, merch, logo, strokes, cover, metal",
+
+    "menu_list_about_us": "About us",
+    "menu_list_jobs": "Portfolio",
+    "menu_list_reviews": "Reviews",
+    "menu_list_order": "Order",
+
+    "open_menu": "Open menu",
+    "logo_alt": "Logo",
+
+    "slide_1_left_description": "<span>We create digital products,</span><br> that are transformed through<br> data analysis.",
+
+    "slide_3_link": "See all covers",
+
+    "slide_4_link": "See all logos and emblems",
+
+    "slide_5_link": "See all illustrations",
+
+
+    "slide_reviews_title_1": "Music band",
+    "slide_reviews_title_2": "Recording studio",
+    "slide_reviews_title_3": "Musician",
+
+    "slide_contact_title": "ORDER DESIGN",
+    "slide_contact_name": "Your name",
+    "slide_contact_email": "Your E-mail",
+    "slide_contact_comment": "Your comment",
+    "slide_contact_send_button": "SEND",
+    "slide_contact_footer_text": "After sending your order we will contact you by your E-mail to clarify data and process your order.",
+    "slide_contact_modal_success_title": "Your message has been sent!",
+    "slide_contact_modal_success_description": "After sending your order we will contact you by your E-mail to clarify data and process your order."
+}

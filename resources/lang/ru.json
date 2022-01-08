@@ -1,1 +1,34 @@
-{}
+{
+    "seo_description": "Создание дизайна для мировой сцены тяжелой музыки. Разработка логотипов, эмблем, иллюстраций для продукции и оформление социальных сетей. Мы - визуальная поддержка мировой кор-сцены.",
+    "seo_keywords": "Дизайн, Музыкальных, мерч, логотипы, strokes, обложка, metal",
+
+    "menu_list_about_us": "О нас",
+    "menu_list_jobs": "Работы",
+    "menu_list_reviews": "Отзывы",
+    "menu_list_order": "Заказать",
+
+    "open_menu": "Открыть меню",
+    "logo_alt": "Логотип",
+
+    "slide_1_left_description": "<span>Мы создаем цифровые продукты,</span> которые преобразуются с помощью анализа данных.",
+
+    "slide_3_link": "Смотреть все обложки",
+
+    "slide_4_link": "Смотреть все логотипы и эмблемы",
+
+    "slide_5_link": "Смотреть все иллюстрации",
+
+
+    "slide_reviews_title_1": "Музыкальная группа",
+    "slide_reviews_title_2": "Студия звукозаписи",
+    "slide_reviews_title_3": "Музыкант",
+
+    "slide_contact_title": "ЗАКАЗАТЬ ДИЗЙАН",
+    "slide_contact_name": "Ваше имя",
+    "slide_contact_email": "Ваш E-mail",
+    "slide_contact_comment": "Ваш комментарий",
+    "slide_contact_send_button": "Отправить",
+    "slide_contact_footer_text": "После отправки вашей заявки мы свяжется с Вами по Вашему E-mail для уточнения данных и обработки вашего заказа.",
+    "slide_contact_modal_success_title": "Ваша заявка отправлена!",
+    "slide_contact_modal_success_description": "После отправки вашей заявки мы свяжется с Вами по Вашему E-mail для уточнения данных и обработки вашего заказа."
+}

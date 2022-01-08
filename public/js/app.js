@@ -1876,7 +1876,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: "contactForm",
   data: function data() {
@@ -1905,8 +1904,6 @@ __webpack_require__.r(__webpack_exports__);
       formData.append('g-recaptcha-response', response);
       this.sending = true;
       axios.post('/contacts', formData).then(function (response) {
-        console.log('Отправили');
-
         _this.$refs.contactForm.reset();
 
         _this.sending = false;
@@ -1942,6 +1939,12 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
 window.Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm.js");
+
+
+window.__ = vue__WEBPACK_IMPORTED_MODULE_0__.default.prototype.__ = function (str) {
+  return _.get(window.i18n, str);
+}; // Объявляем функцию для перевода
+
 
 var contactsRec;
 window.contactsRec = contactsRec;
@@ -19530,7 +19533,7 @@ var render = function() {
             type: "text",
             minlength: "3",
             maxlength: "60",
-            placeholder: "Ваше имя*",
+            placeholder: _vm.__("slide_contact_name") + "*",
             name: "firstname"
           },
           domProps: { value: _vm.name },
@@ -19560,7 +19563,7 @@ var render = function() {
           attrs: {
             required: "",
             type: "email",
-            placeholder: "Ваш E-mail*",
+            placeholder: _vm.__("slide_contact_email") + "*",
             name: "email"
           },
           domProps: { value: _vm.email },
@@ -19592,7 +19595,7 @@ var render = function() {
             minlength: "10",
             maxlength: "7000",
             type: "text",
-            placeholder: "Ваш комментарий*",
+            placeholder: _vm.__("slide_contact_comment") + "*",
             name: "message"
           },
           domProps: { value: _vm.message },
@@ -19613,7 +19616,7 @@ var render = function() {
         _c(
           "button",
           { class: { "d-none": _vm.sending }, attrs: { type: "submit" } },
-          [_vm._v("Отправить")]
+          [_vm._v(_vm._s(_vm.__("slide_contact_send_button")))]
         ),
         _vm._v(" "),
         _c("img", {
@@ -19624,7 +19627,7 @@ var render = function() {
       _vm._v(" "),
       _c("div", { staticClass: "footer" }, [
         _vm._v(
-          "\n        После отправки вашей заявки мы свяжется с Вами по Вашему E-mail\n        для уточнения данных и обработки вашего заказа.\n    "
+          "\n        " + _vm._s(_vm.__("slide_contact_footer_text")) + "\n    "
         )
       ])
     ]

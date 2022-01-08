@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\Session;
 
-class LanguageContrller extends Controller
+class LanguageController extends Controller
 {
     /**
      * Функция для смены языка приложения
