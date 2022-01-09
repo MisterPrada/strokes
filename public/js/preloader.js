@@ -1,8 +1,10 @@
 let time = 0;
-let timeBetweenLetters = 200;
+let timeBetweenLetters = 230;
 
 let timer = setInterval(() => {
     time = time + 1;
+
+    paintSymbal();
 }, timeBetweenLetters);
 
 // left: 37, up: 38, right: 39, down: 40,
@@ -49,7 +51,7 @@ function enableScroll() {
 
 disableScroll();
 
-let paintSymbal = setInterval(() => {
+let paintSymbal = () => {
     switch (time) {
         case 1:
             primer11.setAttribute("fill", "#BA2425");
@@ -124,10 +126,10 @@ let paintSymbal = setInterval(() => {
                 preloaderEl.remove();
             }, 800)
 
-            clearInterval(paintSymbal);
+            clearInterval(timer);
             break;
     }
-}, 125);
+};
 
 let color_default = () => {
     primer11.setAttribute("fill", "#FFFFFF");
