@@ -3756,7 +3756,6 @@ a {
     }
 
     @media (max-width: 560px) {
-
         .contacts{
             width: 100%;
             text-align: center;
@@ -3946,11 +3945,17 @@ a {
                 }
             }
         }
+
+        .contacts {
+            form {
+                .footer {
+                    width: 263px;
+                }
+            }
+        }
     }
 
     @media (max-width: 320px){
-        /************    Slide 1   *************/
-
         & {
             position: relative;
             z-index: 100;
@@ -4023,6 +4028,14 @@ a {
                 img{
                     width: 211.85px;
                     height: 136px;
+                }
+            }
+        }
+
+        .contacts {
+            form {
+                .footer {
+                    width: 263px;
                 }
             }
         }
