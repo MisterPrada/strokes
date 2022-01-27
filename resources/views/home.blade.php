@@ -1263,11 +1263,15 @@
             </div>
 
             <div>
-                <div class="center-text">
+                <div data-scroll
+                     data-scroll-speed="1"
+                     data-scroll-target="#footer"  class="center-text">
                     <span>STAY TRUE</span>
                 </div>
 
-                <div class="right-text">
+                <div data-scroll
+                     data-scroll-speed="1"
+                     data-scroll-target="#footer" class="right-text">
                     <span>STAY FU**ING TRUE!</span>
                 </div>
             </div>
