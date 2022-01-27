@@ -4102,7 +4102,7 @@ a {
             span {
                 position: absolute;
                 display: block;
-                width: 360px;
+                width: max-content;
                 font-family: Roboto Bold;
                 font-style: normal;
                 font-weight: bold;
@@ -4130,7 +4130,7 @@ a {
         span {
             position: absolute;
             display: block;
-            width: 360px;
+            width: max-content;
 
             font-family: Roboto Bold;
             font-style: normal;
